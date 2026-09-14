@@ -1,4 +1,4 @@
-﻿/* Custom Design Tokens & Effects for Industrial Portfolio */
+/* Executive Industrial Design Tokens */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap');
 
 :root {
@@ -7,23 +7,24 @@
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   background-color: #0A0E17;
   color: #E2E8F0;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  line-height: 1.6;
 }
 
 .font-mono {
   font-family: 'JetBrains Mono', monospace;
 }
 
-/* Glassmorphism Surface */
+/* Glassmorphism Surfaces */
 .glass-panel {
-  background: rgba(15, 23, 42, 0.75);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(51, 65, 85, 0.6);
+  background: rgba(15, 23, 42, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(51, 65, 85, 0.7);
 }
 
 .glass-panel:hover {
@@ -31,16 +32,17 @@ body {
 }
 
 .glass-card-interactive {
-  background: rgba(15, 23, 42, 0.75);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(51, 65, 85, 0.6);
+  background: rgba(15, 23, 42, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(51, 65, 85, 0.7);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .glass-card-interactive:hover {
-  transform: translateY(-4px);
+  transform: translateY(-3px);
   border-color: rgba(56, 189, 248, 0.6);
-  box-shadow: 0 20px 30px -10px rgba(14, 165, 233, 0.15);
+  box-shadow: 0 20px 35px -10px rgba(14, 165, 233, 0.18);
 }
 
 /* Subtle Grid Background Pattern */
@@ -51,7 +53,7 @@ body {
     linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
 }
 
-/* Gradient Text */
+/* Gradient Text Styles */
 .gradient-text-blue {
   background: linear-gradient(135deg, #60A5FA 0%, #38BDF8 50%, #818CF8 100%);
   -webkit-background-clip: text;
@@ -67,7 +69,7 @@ body {
 /* Pulse animation */
 @keyframes pulse-glow {
   0%, 100% { opacity: 0.6; transform: scale(1); }
-  50% { opacity: 0.9; transform: scale(1.05); }
+  50% { opacity: 0.9; transform: scale(1.04); }
 }
 
 .animate-glow {
@@ -87,4 +89,24 @@ body {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #475569;
+}
+
+/* Case Study Accordion / Detail Container */
+.case-study-box {
+  background: rgba(15, 23, 42, 0.95);
+  border: 1px solid rgba(51, 65, 85, 0.8);
+}
+
+/* Math containers */
+.math-block {
+  background: rgba(10, 14, 23, 0.85);
+  border: 1px solid rgba(51, 65, 85, 0.6);
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  margin: 0.75rem 0;
+  overflow-x: auto;
+}
+
+.katex {
+  font-size: 1.08em !important;
 }
