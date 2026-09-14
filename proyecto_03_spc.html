@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caso de Estudio: Control Estadístico (SPC) & Minitab | Ing. Angelo Apolo</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body class="bg-[#070B14] text-slate-100 antialiased bg-corporate-grid">
+
+
+    <!-- TOP NAVIGATION -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-[#0A0F1D]/95 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Identity -->
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-lg bg-blue-600 flex items-center justify-center font-mono font-bold text-white text-base shadow-md group-hover:bg-blue-500 transition-colors">
+                        AA
+                    </div>
+                    <div>
+                        <div class="font-bold text-slate-100 text-base tracking-tight group-hover:text-blue-400 transition-colors">
+                            ING. ANGELO APOLO
+                        </div>
+                        <div class="text-xs font-mono text-slate-400">
+                            INGENIERO QUÍMICO · OPERACIONES & PTAR
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-300">
+                    <a href="index.html#perfil" class="hover:text-blue-400 transition-colors">Perfil</a>
+                    <a href="index.html#casos-estudio" class="hover:text-blue-400 transition-colors flex items-center gap-1.5">
+                        Casos de Estudio
+                        <span class="px-2 py-0.5 text-[10px] font-mono bg-blue-500/10 text-blue-400 rounded border border-blue-500/20">3 Casos</span>
+                    </a>
+                    <a href="index.html#experiencia" class="hover:text-blue-400 transition-colors">Experiencia de Planta</a>
+                    <a href="index.html#competencias" class="hover:text-blue-400 transition-colors">Competencias</a>
+                    <a href="index.html#contacto" class="hover:text-blue-400 transition-colors">Contacto</a>
+                </div>
+
+                <!-- CTA Actions -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/593969763084?text=Hola%20Ing.%20Angelo%20Apolo,%20revisamos%20su%20portafolio%20y%20nos%20gustar%C3%ADa%20conversar%20sobre%20una%20oportunidad%20laboral." target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-3.5 py-2 text-xs font-mono font-semibold text-emerald-400 bg-emerald-950/40 hover:bg-emerald-900/60 border border-emerald-700/60 rounded-lg transition-all">
+                        <i data-lucide="message-circle" class="w-4 h-4"></i>
+                        WHATSAPP: 0969763084
+                    </a>
+                    <a href="https://www.linkedin.com/in/angelo-a-44a9a323b" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-3.5 py-2 text-xs font-mono font-semibold text-white bg-blue-600 hover:bg-blue-500 rounded-lg transition-all shadow-md">
+                        <i data-lucide="linkedin" class="w-4 h-4"></i>
+                        LINKEDIN
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- BREADCRUMB & HEADER -->
+    <div class="pt-28 pb-10 border-b border-slate-800 bg-[#0A0F1D]/60">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center gap-2 text-xs font-mono text-slate-400 mb-4">
+                <a href="index.html" class="hover:text-blue-400">Inicio</a>
+                <span>/</span>
+                <a href="index.html#casos-estudio" class="hover:text-blue-400">Casos de Estudio</a>
+                <span>/</span>
+                <span class="text-indigo-400">Caso 03: Calidad SPC & Giveaway</span>
+            </div>
+
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-indigo-500/10 text-indigo-400 text-xs font-mono font-bold uppercase mb-3 border border-indigo-500/20">
+                ESTUDIO DE CASO TÉCNICO · CONTROL ESTADÍSTICO DE CALIDAD
+            </div>
+
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                Control Estadístico de Procesos (SPC) en Minitab: Erradicación de Pérdidas por Sobrellenado (Giveaway) sin Riesgo Legal
+            </h1>
+
+            <div class="flex flex-wrap items-center gap-6 mt-6 text-xs font-mono text-slate-400 border-t border-slate-800/80 pt-4">
+                <div><span class="text-slate-500">SOFTWARE:</span> Minitab 21 (Cartas Shewhart X-bar R)</div>
+                <div><span class="text-slate-500">NORMATIVA:</span> Control Metrológico de Contenido Neto NTE INEN</div>
+                <div><span class="text-slate-500">AHORRO:</span> $28,000 USD/año en Materia Prima</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT BODY -->
+    <main class="py-12 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        
+        <!-- FAST EXECUTIVE SYNOPSIS -->
+        <div class="corp-card rounded-2xl p-6 border-l-4 border-l-indigo-500">
+            <h3 class="text-xs font-mono font-bold uppercase text-indigo-400 tracking-wider mb-2">Sinopsis Ejecutiva del Caso</h3>
+            <p class="text-sm text-slate-200 leading-relaxed">
+                En las líneas automáticas de llenado, despachar envases con menor contenido al declarado en etiqueta constituye una infracción legal sujeta a multas y retención de producto. Ante una máquina descalibrada con alta dispersión, la supervisión de planta solía sobrellenar deliberadamente los envases con <strong class="text-white">+4.8 g adicionales</strong> por unidad, generando un costo oculto anual de <strong class="text-rose-400 font-bold">$28,000 USD</strong> en materia prima regalada (<em class="text-slate-300">giveaway</em>). Mediante muestreos racionales, verificación de normalidad y control estadístico en <strong class="text-white">Minitab</strong>, se elevó el índice de capacidad <strong class="text-white">Cpk de 0.89 a 1.42</strong>, eliminando el sobrecosto sin generar un solo envase no conforme.
+            </p>
+        </div>
+
+        <!-- 1. THE DILEMMA -->
+        <section>
+            <h2 class="case-section-title">
+                <i data-lucide="scale" class="w-5 h-5 text-indigo-400"></i>
+                1. El Dilema del Giveaway en la Industria de Envasado
+            </h2>
+            <div class="text-sm text-slate-300 space-y-3 leading-relaxed">
+                <p>
+                    La empresa envasa formulaciones químicas y líquidas de consumo masivo con una producción de 250,000 unidades mensuales. Para la regulación metrológica legal (INEN / ARCSA), ninguna unidad puede estar por debajo del Límite Inferior de Especificación (\(\text{LSL}\)).
+                </p>
+                <div class="corp-card p-4 rounded-xl border-l-2 border-l-rose-500 text-xs font-mono text-slate-300">
+                    <strong class="text-rose-400 block mb-1">El Costo Silencioso de la Calibración Defensiva:</strong>
+                    Debido a que la máquina presentaba vibraciones y desviaciones de boquilla, los operadores ajustaban la dosificadora hacia arriba por seguridad. Ese exceso de +4.8 gramos parecía insignificante por unidad, pero multiplicado por 250,000 unidades al mes representaba 14.4 toneladas de producto terminado regalado anualmente ($28,000 USD de pérdida neta).
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. STATISTICAL INTERVENTION IN MINITAB -->
+        <section>
+            <h2 class="case-section-title">
+                <i data-lucide="activity" class="w-5 h-5 text-blue-400"></i>
+                2. Diagnóstico y Control Estadístico en Minitab
+            </h2>
+            <div class="space-y-4 text-xs font-mono text-slate-300">
+                <div class="corp-card p-4 rounded-xl border border-slate-800">
+                    <strong class="text-blue-400 block mb-1">Paso 1: Prueba de Normalidad de Anderson-Darling</strong>
+                    <p class="text-slate-400 leading-relaxed">
+                        Se tomaron muestras horarias y se evaluó el ajuste a la distribución normal en Minitab (\(p\text{-value} = 0.34 > 0.05\)), confirmando que era viable aplicar límites de control Shewhart de 3 sigmas.
+                    </p>
+                </div>
+                <div class="corp-card p-4 rounded-xl border border-slate-800">
+                    <strong class="text-blue-400 block mb-1">Paso 2: Cartas de Control \(\bar{X}-R\) en Subgrupos Racionales</strong>
+                    <p class="text-slate-400 leading-relaxed">
+                        Se implementaron cartas para monitorear la media y el rango en 25 subgrupos de \(n=5\). La carta reveló causas especiales evidentes: fluctuación en la presión del manifold principal y desgaste en los sellos de émbolo de las boquillas 2 y 4.
+                    </p>
+                </div>
+                <div class="corp-card p-4 rounded-xl border border-slate-800">
+                    <strong class="text-blue-400 block mb-1">Paso 3: Análisis de Capacidad de Proceso</strong>
+                    <p class="text-slate-400 leading-relaxed">
+                        Se calcularon los índices antes y después del mantenimiento correctivo de boquillas y estabilización de presión:
+                    </p>
+                    <div class="math-box mt-2">
+                        $$C_{pk} = \min\left( \frac{\text{USL} - \mu}{3\sigma}, \frac{\mu - \text{LSL}}{3\sigma} \right)$$
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. VERIFIED RESULTS -->
+        <section>
+            <h2 class="case-section-title">
+                <i data-lucide="award" class="w-5 h-5 text-emerald-400"></i>
+                3. Resultados de Calidad & Ahorro Verificado
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center font-mono">
+                <div class="corp-card p-5 rounded-xl">
+                    <div class="text-slate-500 text-xs uppercase">Capacidad Cpk</div>
+                    <div class="text-2xl font-bold text-emerald-400 mt-1">1.42</div>
+                    <div class="text-[11px] text-slate-400 mt-1">De incapaz (0.89) a Clase Mundial</div>
+                </div>
+                <div class="corp-card p-5 rounded-xl">
+                    <div class="text-slate-500 text-xs uppercase">Sobrellenado Medio</div>
+                    <div class="text-2xl font-bold text-cyan-400 mt-1">+0.7 g</div>
+                    <div class="text-[11px] text-slate-400 mt-1">Reducido desde +4.8 g iniciales</div>
+                </div>
+                <div class="corp-card p-5 rounded-xl">
+                    <div class="text-slate-500 text-xs uppercase">Ahorro Económico</div>
+                    <div class="text-2xl font-bold text-indigo-400 mt-1">$28,000</div>
+                    <div class="text-[11px] text-slate-400 mt-1">USD/año en materia prima</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NAVIGATION -->
+        <div class="pt-8 border-t border-slate-800 flex items-center justify-between font-mono text-xs">
+            <a href="proyecto_02_oee.html" class="text-slate-400 hover:text-white flex items-center gap-1.5">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i> Caso Anterior: Eficiencia OEE & SMED
+            </a>
+            <a href="index.html#casos-estudio" class="text-blue-400 hover:underline flex items-center gap-1.5">
+                Volver a la Página Principal <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-800 bg-[#070B14] py-12 text-center text-xs font-mono text-slate-500">
+        <div class="max-w-7xl mx-auto px-4 space-y-3">
+            <div class="flex items-center justify-center gap-2 text-slate-400">
+                <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                <span>Ing. Angelo Omar Apolo Chamba · Guayaquil, Ecuador</span>
+            </div>
+            <div class="text-slate-400">
+                Ingeniero Químico (UTMACH) · Experiencia en PTAR, Operaciones Industriales, HSE y Control de Calidad
+            </div>
+            <div class="text-[11px] text-slate-600">
+                Portafolio Profesional & Casos de Estudio Técnicos © 2026
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            lucide.createIcons();
+            if (window.renderMathInElement) {
+                renderMathInElement(document.body, {
+                    delimiters: [
+                        {left: '$$', right: '$$', display: true},
+                        {left: '\\[', right: '\\]', display: true},
+                        {left: '$', right: '$', display: false},
+                        {left: '\\(', right: '\\)', display: false}
+                    ],
+                    throwOnError: false
+                });
+            }
+        });
+    </script>
+</body>
+</html>

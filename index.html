@@ -3,19 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ing. Angelo Apolo | Portafolio de Ingeniería Química, Gemelos Digitales & Excelencia Operacional</title>
-    <meta name="description" content="Portafolio profesional de Angelo Apolo Chamba: Ingeniero Químico & Máster en Dirección de Proyectos. Casos de estudio en Gemelos Digitales (PINN), SCADA Web, Lean Six Sigma Green Belt y Control Estadístico de Procesos (SPC).">
+    <title>Ing. Angelo Apolo | Portafolio de Ingeniería Química, Operaciones & PTAR</title>
+    <meta name="description" content="Portafolio profesional del Ing. Angelo Apolo: Ingeniero Químico con cerca de 4 años de experiencia en supervisión de PTAR, HSE, control de calidad y proyectos de optimización industrial.">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- KaTeX CSS & JS for Publication-Quality Mathematical Formulas -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
-
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -23,22 +18,6 @@
             darkMode: 'class',
             theme: {
                 extend: {
-                    colors: {
-                        dark: {
-                            950: '#06090F',
-                            900: '#0A0E17',
-                            850: '#0E1422',
-                            800: '#131B2E',
-                            700: '#1E293B',
-                            600: '#334155'
-                        },
-                        accent: {
-                            blue: '#38BDF8',
-                            emerald: '#10B981',
-                            cyan: '#06B6D4',
-                            amber: '#F59E0B'
-                        }
-                    },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
                         mono: ['JetBrains Mono', 'monospace']
@@ -54,190 +33,140 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/custom.css">
 </head>
-<body class="bg-[#0A0E17] text-slate-100 antialiased selection:bg-blue-600 selection:text-white bg-grid-pattern">
+<body class="bg-[#070B14] text-slate-100 antialiased bg-corporate-grid">
+
 
     <!-- TOP NAVIGATION -->
-    <nav class="fixed top-0 left-0 right-0 z-50 glass-panel border-b border-slate-800/80">
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-[#0A0F1D]/95 backdrop-blur-md border-b border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <!-- Brand Identity -->
-                <a href="#" class="flex items-center gap-3.5 group">
-                    <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center font-mono font-extrabold text-white text-base shadow-lg shadow-blue-500/20 group-hover:scale-105 transition-transform">
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-lg bg-blue-600 flex items-center justify-center font-mono font-bold text-white text-base shadow-md group-hover:bg-blue-500 transition-colors">
                         AA
                     </div>
                     <div>
-                        <div class="font-bold text-slate-100 tracking-tight text-base sm:text-lg group-hover:text-cyan-400 transition-colors flex items-center gap-2">
-                            ING. ANGELO APOLO <span class="text-xs font-mono font-medium text-cyan-400 px-2 py-0.5 rounded bg-cyan-950/60 border border-cyan-800">M.Sc.</span>
+                        <div class="font-bold text-slate-100 text-base tracking-tight group-hover:text-blue-400 transition-colors">
+                            ING. ANGELO APOLO
                         </div>
-                        <div class="text-xs font-mono text-slate-400 tracking-wider">
-                            INGENIERO QUÍMICO & DIRECCIÓN DE PROYECTOS
+                        <div class="text-xs font-mono text-slate-400">
+                            INGENIERO QUÍMICO · OPERACIONES & PTAR
                         </div>
                     </div>
                 </a>
 
-                <!-- Navigation Links -->
-                <div class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-300">
-                    <a href="#perfil" class="hover:text-cyan-400 transition-colors">Perfil</a>
-                    <a href="#casos-estudio" class="hover:text-cyan-400 transition-colors flex items-center gap-1.5">
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-300">
+                    <a href="##perfil" class="hover:text-blue-400 transition-colors">Perfil</a>
+                    <a href="##casos-estudio" class="hover:text-blue-400 transition-colors flex items-center gap-1.5">
                         Casos de Estudio
-                        <span class="px-2 py-0.5 text-[10px] font-mono font-semibold bg-emerald-500/20 text-emerald-400 rounded-full border border-emerald-500/30">SCADA Live</span>
+                        <span class="px-2 py-0.5 text-[10px] font-mono bg-blue-500/10 text-blue-400 rounded border border-blue-500/20">3 Casos</span>
                     </a>
-                    <a href="#metodologia" class="hover:text-cyan-400 transition-colors">Metodología & Competencias</a>
-                    <a href="#trayectoria" class="hover:text-cyan-400 transition-colors">Trayectoria Industrial</a>
-                    <a href="#contacto" class="hover:text-cyan-400 transition-colors">Contacto</a>
+                    <a href="##experiencia" class="hover:text-blue-400 transition-colors">Experiencia de Planta</a>
+                    <a href="##competencias" class="hover:text-blue-400 transition-colors">Competencias</a>
+                    <a href="##contacto" class="hover:text-blue-400 transition-colors">Contacto</a>
                 </div>
 
-                <!-- Fast Contact Actions -->
+                <!-- CTA Actions -->
                 <div class="hidden sm:flex items-center gap-3">
-                    <a href="https://wa.me/593969763084?text=Hola%20Ing.%20Angelo%20Apolo,%20revisamos%20su%20portafolio%20y%20nos%20gustar%C3%ADa%20conversar%20sobre%20una%20oportunidad%20laboral." target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-3.5 py-2 text-xs font-mono font-semibold text-emerald-400 bg-emerald-950/40 hover:bg-emerald-900/60 border border-emerald-700/60 rounded-xl transition-all">
+                    <a href="https://wa.me/593969763084?text=Hola%20Ing.%20Angelo%20Apolo,%20revisamos%20su%20portafolio%20y%20nos%20gustar%C3%ADa%20conversar%20sobre%20una%20oportunidad%20laboral." target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-3.5 py-2 text-xs font-mono font-semibold text-emerald-400 bg-emerald-950/40 hover:bg-emerald-900/60 border border-emerald-700/60 rounded-lg transition-all">
                         <i data-lucide="message-circle" class="w-4 h-4"></i>
-                        WHATSAPP DIRECTO
+                        WHATSAPP: 0969763084
                     </a>
-                    <a href="#contacto" class="flex items-center gap-2 px-4 py-2 text-xs font-mono font-semibold text-white bg-blue-600 hover:bg-blue-500 rounded-xl transition-all shadow-lg shadow-blue-600/30">
-                        <i data-lucide="mail" class="w-4 h-4"></i>
-                        CONTACTAR
+                    <a href="https://www.linkedin.com/in/angelo-a-44a9a323b" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-3.5 py-2 text-xs font-mono font-semibold text-white bg-blue-600 hover:bg-blue-500 rounded-lg transition-all shadow-md">
+                        <i data-lucide="linkedin" class="w-4 h-4"></i>
+                        LINKEDIN
                     </a>
                 </div>
-
-                <!-- Mobile Menu Toggle -->
-                <div class="lg:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800">
-                        <i data-lucide="menu" class="w-6 h-6"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Mobile Menu Dropdown -->
-        <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-800 bg-[#0F172A]/98 backdrop-blur-xl px-4 pt-3 pb-6 space-y-3">
-            <a href="#perfil" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-800">Perfil Ejecutivo</a>
-            <a href="#casos-estudio" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-800">Casos de Estudio (STAR)</a>
-            <a href="#metodologia" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-800">Metodología & Competencias</a>
-            <a href="#trayectoria" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-800">Trayectoria de Planta</a>
-            <a href="#contacto" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-800">Contacto Directo</a>
-            <div class="pt-2">
-                <a href="https://wa.me/593969763084" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 w-full py-2.5 text-xs font-mono font-semibold text-emerald-300 bg-emerald-950/60 border border-emerald-800 rounded-lg">
-                    <i data-lucide="message-circle" class="w-4 h-4"></i>
-                    WhatsApp: +593 96 976 3084
-                </a>
             </div>
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
-    <header id="perfil" class="pt-32 pb-16 lg:pt-40 lg:pb-24 relative overflow-hidden">
-        <!-- Ambient Glow Elements -->
-        <div class="absolute top-1/4 left-1/3 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[650px] bg-blue-600/10 blur-[150px] rounded-full pointer-events-none"></div>
-        <div class="absolute top-1/3 right-10 w-[450px] h-[450px] bg-cyan-500/10 blur-[130px] rounded-full pointer-events-none"></div>
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <!-- HERO SECTION -->
+    <header id="perfil" class="pt-32 pb-16 lg:pt-40 lg:pb-24 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 
-                <!-- Left Column: Executive Value Proposition -->
-                <div class="lg:col-span-7 space-y-6 text-left">
+                <!-- Left: Headline & Narrative -->
+                <div class="lg:col-span-8 space-y-6">
                     
-                    <!-- Availability Status Badge -->
-                    <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono font-medium">
-                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-                        <span>DISPONIBLE PARA LIDERAZGO DE OPERACIONES & INGENIERÍA DE PLANTA</span>
+                    <!-- Availability Badge -->
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-slate-900 border border-slate-700 text-slate-300 text-xs font-mono">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        <span>DISPONIBILIDAD PARA JEFATURAS DE TURNO, SUPERVISIÓN PTAR & INGENIERÍA DE PROCESOS</span>
                     </div>
 
-                    <!-- Main Headline -->
-                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.12]">
-                        Ingeniería Química, <br>
-                        <span class="gradient-text-blue">Gemelos Digitales (PINN)</span> & <br>
-                        Excelencia Operacional
+                    <!-- Main Title -->
+                    <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-[1.15]">
+                        Ingeniero Químico especializado en Operaciones de Planta, Supervisión de PTAR & Control de Calidad
                     </h1>
 
-                    <!-- Core Value Narrative -->
-                    <p class="text-base sm:text-lg text-slate-300 leading-relaxed font-normal">
-                        Soy <strong class="text-white font-semibold">Angelo Apolo Chamba</strong>, Ingeniero Químico (UTMACH) y Máster en Dirección de Proyectos (Univ. Europea de Madrid). Especialista en cerrar la brecha entre el piso de planta y la digitalización avanzada: conecto <strong class="text-cyan-300 font-semibold">primeros principios termodinámicos y cinéticos</strong> con <strong class="text-emerald-400 font-semibold">Inteligencia Artificial Informada por la Física (PINN)</strong> y metodologías <strong class="text-blue-400 font-semibold">Lean Six Sigma Green Belt</strong> para reducir costos de producción (OPEX), estabilizar la calidad y blindar el cumplimiento ambiental normativo.
+                    <!-- Executive Bio -->
+                    <p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-3xl">
+                        Soy <strong class="text-white font-semibold">Angelo Omar Apolo Chamba</strong>, Ingeniero Químico por la Universidad Técnica de Machala (UTMACH) con <strong class="text-white font-semibold">cerca de 4 años de experiencia</strong> en piso de planta en los sectores agroindustrial, manufacturero y alimentario. 
+                    </p>
+                    <p class="text-sm sm:text-base text-slate-400 leading-relaxed max-w-3xl">
+                        Mi trayectoria combina la <strong class="text-slate-200">supervisión operativa directa</strong> (gestión de turnos de PTAR, DAF continuo, balances de masa, mantenimiento mecánico y coordinación con SAP PM) con el <strong class="text-slate-200">cumplimiento normativo estricto</strong> (TULSMA, ISO 14001, permisos de alto riesgo y LOTO) y la <strong class="text-slate-200">optimización analítica</strong> (Lean Six Sigma Green Belt, Power BI y Control Estadístico en Minitab).
                     </p>
 
-                    <!-- Quick Recruiter Value Highlights -->
-                    <div class="bg-slate-900/90 rounded-2xl p-4 border border-slate-800 grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs font-mono">
-                        <div class="flex items-center gap-2.5">
-                            <div class="w-2 h-2 rounded-full bg-cyan-400"></div>
-                            <div>
-                                <div class="text-slate-400">Enfoque Operativo</div>
-                                <div class="text-slate-200 font-bold">Plantas de Proceso & PTAR</div>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-2.5">
-                            <div class="w-2 h-2 rounded-full bg-emerald-400"></div>
-                            <div>
-                                <div class="text-slate-400">Ahorro Cuantificado</div>
-                                <div class="text-slate-200 font-bold">$42.6K USD/año OPEX</div>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-2.5">
-                            <div class="w-2 h-2 rounded-full bg-blue-400"></div>
-                            <div>
-                                <div class="text-slate-400">Metodología</div>
-                                <div class="text-slate-200 font-bold">DMAIC Green Belt & SPC</div>
-                            </div>
-                        </div>
+                    <!-- Contact & Action Buttons -->
+                    <div class="flex flex-wrap gap-4 pt-2">
+                        <a href="#casos-estudio" class="flex items-center gap-2 px-5 py-3 text-xs font-mono font-bold text-white bg-blue-600 hover:bg-blue-500 rounded-lg transition-all shadow-lg shadow-blue-600/20">
+                            <i data-lucide="layers" class="w-4 h-4"></i>
+                            VER CASOS DE ESTUDIO TÉCNICOS
+                        </a>
+                        <a href="https://wa.me/593969763084?text=Hola%20Ing.%20Angelo%20Apolo,%20revisamos%20su%20portafolio%20y%20nos%20gustar%C3%ADa%20conversar%20sobre%20una%20oportunidad%20laboral." target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-5 py-3 text-xs font-mono font-semibold text-emerald-300 bg-emerald-950/40 hover:bg-emerald-900/50 border border-emerald-700/60 rounded-lg transition-all">
+                            <i data-lucide="message-circle" class="w-4 h-4"></i>
+                            CONVERSAR POR WHATSAPP
+                        </a>
+                        <a href="mailto:apoloangelo9@gmail.com" class="flex items-center gap-2 px-4 py-3 text-xs font-mono font-semibold text-slate-300 hover:text-white bg-slate-900 border border-slate-700 hover:border-slate-500 rounded-lg transition-all">
+                            <i data-lucide="mail" class="w-4 h-4"></i>
+                            ENVIAR CORREO DIRECTO
+                        </a>
                     </div>
 
-                    <!-- Call To Actions -->
-                    <div class="flex flex-wrap items-center gap-4 pt-2">
-                        <a href="#casos-estudio" class="flex items-center gap-2 px-6 py-3.5 text-sm font-mono font-semibold text-white bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 rounded-xl transition-all shadow-xl shadow-blue-600/30">
-                            <i data-lucide="layers" class="w-4 h-4"></i>
-                            EXPLORAR CASOS DE ESTUDIO (STAR)
-                        </a>
-                        <button onclick="openScadaModal()" class="flex items-center gap-2 px-5 py-3.5 text-sm font-mono font-semibold text-cyan-300 bg-slate-800/90 hover:bg-slate-700/90 border border-slate-700 rounded-xl transition-all">
-                            <i data-lucide="play-circle" class="w-4 h-4 text-emerald-400"></i>
-                            VER SCADA WEB EN VIVO
-                        </button>
-                        <a href="mailto:apoloangelo9@gmail.com?subject=Solicitud%20de%20CV%20Personalizado%20-%20Ing.%20Angelo%20Apolo&body=Hola%20Ing.%20Angelo%20Apolo,%20revisamos%20su%20portafolio%20y%20nos%20gustar%C3%ADa%20solicitar%20su%20CV%20adaptado%20para%20la%20siguiente%20vacante:" class="flex items-center gap-2 px-4 py-3.5 text-sm font-mono font-semibold text-slate-300 hover:text-white bg-slate-900 border border-dashed border-slate-700 hover:border-slate-500 rounded-xl transition-all" title="Solicitar CV adaptado a un perfil específico">
-                            <i data-lucide="file-check" class="w-4 h-4 text-cyan-400"></i>
-                            SOLICITAR CV PERSONALIZADO
-                        </a>
+                    <!-- Fast Facts Strip -->
+                    <div class="pt-4 grid grid-cols-2 sm:grid-cols-4 gap-4 border-t border-slate-800/80 text-xs font-mono text-slate-400">
+                        <div>
+                            <span class="text-slate-500 block text-[10px] uppercase">Ubicación</span>
+                            <span class="text-slate-200 font-semibold">Guayaquil, Ecuador</span>
+                        </div>
+                        <div>
+                            <span class="text-slate-500 block text-[10px] uppercase">Licencia de Conducir</span>
+                            <span class="text-slate-200 font-semibold">Tipo A y B</span>
+                        </div>
+                        <div>
+                            <span class="text-slate-500 block text-[10px] uppercase">Formación Oficial</span>
+                            <span class="text-slate-200 font-semibold">Ingeniero Químico (UTMACH)</span>
+                        </div>
+                        <div>
+                            <span class="text-slate-500 block text-[10px] uppercase">Metodología</span>
+                            <span class="text-slate-200 font-semibold">Green Belt / BPMN 2.0</span>
+                        </div>
                     </div>
 
                 </div>
 
-                <!-- Right Column: Profile Card with Key Plant Metrics -->
-                <div class="lg:col-span-5 flex flex-col items-center">
-                    <div class="relative w-full max-w-sm">
-                        <!-- Card Border Glow -->
-                        <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 via-cyan-500 to-emerald-500 rounded-3xl blur-md opacity-40"></div>
-                        
-                        <div class="relative glass-panel rounded-3xl p-6 overflow-hidden border border-slate-700 shadow-2xl">
-                            <!-- Photograph -->
-                            <div class="relative w-full aspect-square rounded-2xl overflow-hidden mb-5 border border-slate-700 bg-slate-900">
-                                <img src="assets/img/angelo_apolo.jpg" alt="Ing. Angelo Apolo Chamba" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500">
-                                <div class="absolute bottom-3 left-3 right-3 glass-panel px-3 py-2 rounded-xl border border-slate-600/50 flex items-center justify-between">
-                                    <div class="flex items-center gap-2">
-                                        <div class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></div>
-                                        <span class="text-[11px] font-mono text-slate-200">Operaciones Industriales</span>
-                                    </div>
-                                    <span class="text-[10px] font-mono font-bold text-cyan-400 bg-cyan-950/60 px-2 py-0.5 rounded border border-cyan-800">4+ AÑOS</span>
-                                </div>
+                <!-- Right: Profile Card -->
+                <div class="lg:col-span-4 flex justify-center">
+                    <div class="w-full max-w-sm corp-card rounded-2xl p-5 border border-slate-700 shadow-xl">
+                        <div class="aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-700 mb-4">
+                            <img src="assets/img/angelo_apolo.jpg" alt="Ing. Angelo Omar Apolo Chamba" class="w-full h-full object-cover object-top">
+                        </div>
+                        <div class="space-y-2">
+                            <div class="text-base font-bold text-white">Angelo Omar Apolo Chamba</div>
+                            <div class="text-xs font-mono text-blue-400">Ingeniero Químico · UTMACH</div>
+                            <div class="text-xs text-slate-400 leading-relaxed pt-1">
+                                Especialista en supervisión de procesos continuos, plantas de tratamiento de agua residual, sistemas DAF, gestión ambiental y optimización operativa.
                             </div>
-
-                            <!-- Industrial KPI Grid -->
-                            <div class="grid grid-cols-2 gap-2.5 font-mono">
-                                <div class="bg-slate-900/90 p-3 rounded-xl border border-slate-800">
-                                    <div class="text-[10px] text-slate-400 uppercase tracking-wider">Ahorro Químicos</div>
-                                    <div class="text-xl font-bold text-emerald-400 mt-0.5">-32.4%</div>
-                                    <div class="text-[10px] text-slate-500">PAC & Floculantes</div>
-                                </div>
-                                <div class="bg-slate-900/90 p-3 rounded-xl border border-slate-800">
-                                    <div class="text-[10px] text-slate-400 uppercase tracking-wider">TULSMA Tabla 9</div>
-                                    <div class="text-xl font-bold text-cyan-400 mt-0.5">98.4%</div>
-                                    <div class="text-[10px] text-slate-500">Cumplimiento Efluentes</div>
-                                </div>
-                                <div class="bg-slate-900/90 p-3 rounded-xl border border-slate-800">
-                                    <div class="text-[10px] text-slate-400 uppercase tracking-wider">Lean Six Sigma</div>
-                                    <div class="text-xl font-bold text-blue-400 mt-0.5">Green Belt</div>
-                                    <div class="text-[10px] text-slate-500">SSAA Certificado</div>
-                                </div>
-                                <div class="bg-slate-900/90 p-3 rounded-xl border border-slate-800">
-                                    <div class="text-[10px] text-slate-400 uppercase tracking-wider">Capacidad SPC</div>
-                                    <div class="text-xl font-bold text-indigo-400 mt-0.5">Cpk = 1.42</div>
-                                    <div class="text-[10px] text-slate-500">Minitab / Control Calidad</div>
-                                </div>
+                            <div class="pt-3 border-t border-slate-800 flex items-center justify-between text-xs font-mono text-slate-400">
+                                <span>Teléfono:</span>
+                                <span class="text-slate-200 font-semibold">0969763084</span>
+                            </div>
+                            <div class="flex items-center justify-between text-xs font-mono text-slate-400">
+                                <span>Correo:</span>
+                                <span class="text-slate-200 font-semibold">apoloangelo9@gmail.com</span>
                             </div>
                         </div>
                     </div>
@@ -247,630 +176,163 @@
         </div>
     </header>
 
-    <!-- PROVEN IMPACT STATS STRIP -->
-    <section class="border-y border-slate-800 bg-[#0F172A]/70 py-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-                <div class="space-y-1">
-                    <div class="text-3xl lg:text-4xl font-extrabold text-white font-mono">4+ Años</div>
-                    <div class="text-xs text-slate-400 font-mono uppercase tracking-wider">En Plantas Industriales & Tratamiento de Aguas</div>
-                </div>
-                <div class="space-y-1">
-                    <div class="text-3xl lg:text-4xl font-extrabold text-cyan-400 font-mono">$42,600</div>
-                    <div class="text-xs text-slate-400 font-mono uppercase tracking-wider">USD/año Ahorro OPEX Verificado</div>
-                </div>
-                <div class="space-y-1">
-                    <div class="text-3xl lg:text-4xl font-extrabold text-emerald-400 font-mono">&lt; 0.20s</div>
-                    <div class="text-xs text-slate-400 font-mono uppercase tracking-wider">Inferencia Gemelo Digital vs 5 días DBO₅</div>
-                </div>
-                <div class="space-y-1">
-                    <div class="text-3xl lg:text-4xl font-extrabold text-indigo-400 font-mono">100%</div>
-                    <div class="text-xs text-slate-400 font-mono uppercase tracking-wider">Trazabilidad Analítica con DuckDB SQL</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CASE STUDIES SECTION (STRUCTURED STAR/CAR METHODOLOGY) -->
-    <section id="casos-estudio" class="py-24 relative">
+    <!-- CASE STUDIES SECTION (HARVARD FORMAT) -->
+    <section id="casos-estudio" class="py-20 border-b border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <!-- Section Header -->
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
-                <div>
-                    <div class="inline-flex items-center gap-2 text-cyan-400 font-mono text-xs tracking-wider uppercase mb-2">
-                        <i data-lucide="briefcase" class="w-4 h-4"></i>
-                        Metodología STAR: Situación · Reto · Acción · Resultado
-                    </div>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-                        Casos de Estudio de Ingeniería & Planta
-                    </h2>
-                    <p class="text-slate-400 text-sm sm:text-base mt-2 max-w-2xl">
-                        Proyectos reales explicados con rigor técnico, balances de materia, ecuaciones cinéticas y retorno de inversión comprobable.
-                    </p>
+            <div class="mb-12">
+                <div class="text-xs font-mono text-blue-400 font-semibold uppercase tracking-wider mb-2">
+                    Resolución de Problemas Industriales & Retorno de Inversión
                 </div>
-
-                <!-- Filter Buttons -->
-                <div class="flex flex-wrap gap-2">
-                    <button class="filter-btn px-4 py-2 text-xs font-mono font-semibold rounded-lg bg-blue-600 text-white border border-blue-500 transition-all shadow-md" data-filter="all">
-                        Todos los Casos (3)
-                    </button>
-                    <button class="filter-btn px-4 py-2 text-xs font-mono font-semibold rounded-lg bg-slate-800/80 text-slate-400 border border-slate-700 hover:border-slate-500 transition-all" data-filter="pinn">
-                        Gemelo Digital PTAR (PINN)
-                    </button>
-                    <button class="filter-btn px-4 py-2 text-xs font-mono font-semibold rounded-lg bg-slate-800/80 text-slate-400 border border-slate-700 hover:border-slate-500 transition-all" data-filter="lean">
-                        OEE & Lean SMED
-                    </button>
-                    <button class="filter-btn px-4 py-2 text-xs font-mono font-semibold rounded-lg bg-slate-800/80 text-slate-400 border border-slate-700 hover:border-slate-500 transition-all" data-filter="spc">
-                        Calidad & Minitab SPC
-                    </button>
-                </div>
-            </div>
-
-            <!-- ========================================================================= -->
-            <!-- CASO 01: FLAGSHIP PTAR & GEMELO DIGITAL PINN -->
-            <!-- ========================================================================= -->
-            <div class="project-card mb-16" data-category="pinn">
-                <div class="relative glass-panel rounded-3xl border border-blue-500/50 p-6 lg:p-8 overflow-hidden shadow-2xl bg-gradient-to-b from-slate-900/95 to-[#0A0E17]">
-                    
-                    <!-- Header Badges -->
-                    <div class="flex flex-wrap items-center justify-between gap-4 mb-6 border-b border-slate-800 pb-5">
-                        <div class="flex flex-wrap items-center gap-3">
-                            <span class="px-3 py-1 bg-gradient-to-r from-blue-600 to-cyan-500 text-white text-xs font-mono font-bold rounded-lg uppercase tracking-wider shadow-md shadow-blue-500/30">
-                                CASO DE ESTUDIO 01 · PROYECTO INSIGNIA
-                            </span>
-                            <span class="inline-flex items-center gap-2 px-3 py-1 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono font-semibold rounded-lg">
-                                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-                                SCADA WEB DESPLEGADO EN PRODUCCIÓN (RAILWAY CLOUD)
-                            </span>
-                        </div>
-                        <div class="text-xs font-mono text-slate-400 flex items-center gap-2">
-                            <i data-lucide="tag" class="w-3.5 h-3.5 text-cyan-400"></i>
-                            <span>Marco Regulatorio: TULSMA Libro VI Anexo 1 Tabla 9</span>
-                        </div>
-                    </div>
-
-                    <!-- Title & Fast Hook -->
-                    <div class="mb-6">
-                        <h3 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-                            Optimización Predictiva de PTAR Industrial mediante Gemelo Digital Híbrido (PINN) & Telemetría SCADA Web
-                        </h3>
-                        <p class="text-slate-300 text-sm sm:text-base mt-2 max-w-4xl">
-                            Desarrollo e implementación de un gemelo digital de caja gris para una Planta de Tratamiento de Aguas Residuales Industriales (PTAR). Acopla modelos cinéticos bio-químicos (Monod y Arrhenius) con una red neuronal informada por la física (PINN) para resolver el retraso de 5 días en análisis de laboratorio de DBO₅, eliminar sobredosis química y erradicar arrastre de manto por sobrecarga hidráulica.
-                        </p>
-                    </div>
-
-                    <!-- FAST-TRACK RECRUITER SUMMARY (30-SECOND SCAN) -->
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 font-mono text-xs mb-8">
-                        <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
-                            <div class="text-slate-400 text-[11px] uppercase">Ahorro Anual OPEX</div>
-                            <div class="text-2xl font-bold text-emerald-400 mt-1">$42,600 USD</div>
-                            <div class="text-[10px] text-slate-500 mt-1">Coagulante PAC + Energía Sopladores</div>
-                        </div>
-                        <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
-                            <div class="text-slate-400 text-[11px] uppercase">Cumplimiento TULSMA</div>
-                            <div class="text-2xl font-bold text-cyan-400 mt-1">98.4%</div>
-                            <div class="text-[10px] text-slate-500 mt-1">Límite DBO &le; 100 mg/L (Tabla 9)</div>
-                        </div>
-                        <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
-                            <div class="text-slate-400 text-[11px] uppercase">Velocidad de Respuesta</div>
-                            <div class="text-2xl font-bold text-blue-400 mt-1">&lt; 0.20 seg</div>
-                            <div class="text-[10px] text-slate-500 mt-1">Inferencia en vivo vs 120 h de lab</div>
-                        </div>
-                        <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
-                            <div class="text-slate-400 text-[11px] uppercase">Arrastre de Manto</div>
-                            <div class="text-2xl font-bold text-indigo-400 mt-1">0 Eventos</div>
-                            <div class="text-[10px] text-slate-500 mt-1">Control de carga superficial SOR &le; 2.2 m/h</div>
-                        </div>
-                    </div>
-
-                    <!-- INTERACTIVE LIVE DEMO & CONTROLS -->
-                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center bg-slate-950/70 p-5 rounded-2xl border border-slate-800 mb-8">
-                        <div class="lg:col-span-6 space-y-3">
-                            <div class="inline-flex items-center gap-2 text-xs font-mono text-emerald-400">
-                                <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-                                Aplicación Cloud en Tiempo Real Lista para Evaluación
-                            </div>
-                            <h4 class="text-lg font-bold text-white">Prueba el SCADA Web y el Simulador Dinámico</h4>
-                            <p class="text-xs text-slate-300 leading-relaxed">
-                                El sistema está corriendo en vivo con 4 tableros interactivos: <strong class="text-white">Operación SCADA</strong>, <strong class="text-white">Costos OPEX & ESG</strong>, <strong class="text-cyan-300">Gemelo Híbrido con selector de escenarios</strong> y <strong class="text-white">Consola SQL DuckDB</strong>. Puedes simular tormentas, sobrecargas o evaluar el ahorro químico directamente.
-                            </p>
-                            <div class="flex flex-wrap gap-2.5 pt-2">
-                                <a href="https://01optimizacionptarefluentes-production.up.railway.app" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 bg-blue-600 hover:bg-blue-500 text-white text-xs font-mono font-bold rounded-xl flex items-center gap-2 transition-all shadow-lg shadow-blue-600/30">
-                                    <i data-lucide="external-link" class="w-4 h-4"></i> ABRIR EN RAILWAY (LIVE)
-                                </a>
-                                <button onclick="openScadaModal()" class="px-4 py-2.5 bg-cyan-950/50 hover:bg-cyan-900/70 border border-cyan-800 text-cyan-300 text-xs font-mono font-semibold rounded-xl flex items-center gap-2 transition-all">
-                                    <i data-lucide="maximize-2" class="w-4 h-4"></i> VISTA PREVIA A PANTALLA COMPLETA
-                                </button>
-                                <a href="https://github.com/32456344567/01_Optimizacion_PTAR_Efluentes" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-mono font-semibold rounded-xl flex items-center gap-2 border border-slate-700 transition-all">
-                                    <i data-lucide="github" class="w-4 h-4"></i> CÓDIGO FUENTE & TESTS
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="lg:col-span-6">
-                            <div class="relative group rounded-xl overflow-hidden border border-slate-700 shadow-xl bg-slate-900 cursor-pointer" onclick="openScadaModal()">
-                                <img src="assets/img/ptar_scada_railway.png" alt="SCADA Web PTAR Dashboard Live" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500">
-                                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-4">
-                                    <span class="text-xs font-mono text-cyan-400 flex items-center gap-1.5">
-                                        <i data-lucide="zoom-in" class="w-4 h-4"></i> Clic para abrir el panel interactivo en pantalla completa
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- TOGGLE BUTTON TO EXPAND IN-DEPTH CASE STUDY -->
-                    <div class="flex justify-center border-t border-slate-800 pt-6">
-                        <button id="case-btn-ptar" onclick="toggleCaseStudy('ptar')" class="flex items-center gap-2 px-6 py-3 text-xs font-mono font-bold text-cyan-300 bg-slate-800 hover:bg-slate-700 border border-cyan-800/80 rounded-xl transition-all shadow-md">
-                            <span>Explorar Caso de Estudio Completo (STAR)</span>
-                            <i data-lucide="chevron-down" class="w-4 h-4"></i>
-                        </button>
-                    </div>
-
-                    <!-- EXPANDABLE IN-DEPTH CASE STUDY ACCORDION -->
-                    <div id="case-detail-ptar" class="hidden mt-8 space-y-6 pt-6 border-t border-slate-800">
-                        
-                        <!-- Block 1: Situation & Plant Context -->
-                        <div class="case-study-box p-6 rounded-2xl border border-slate-800 space-y-3">
-                            <div class="flex items-center gap-2 text-cyan-400 font-mono text-xs font-bold uppercase tracking-wider">
-                                <i data-lucide="map-pin" class="w-4 h-4"></i>
-                                1. Contexto de Planta & Situación Inicial (Situation)
-                            </div>
-                            <p class="text-sm text-slate-300 leading-relaxed">
-                                La planta de efluentes de alta carga atiende procesos de producción continua con caudales nominales de \(Q_{\text{nom}} = 753\text{ m}^3\text{/h}\) y fluctuaciones de carga orgánica de entrada de \(350\) a \(650\text{ mg/L de DBO}\). El sistema de tratamiento consta de:
-                            </p>
-                            <ul class="list-disc pl-5 space-y-1.5 text-xs font-mono text-slate-300">
-                                <li><strong>Tratamiento Primario Fisicoquímico:</strong> Coagulación con Policloruro de Aluminio (PAC) y floculación con polímero catiónico de alto peso molecular.</li>
-                                <li><strong>Reactor Biológico Aerobio:</strong> Biorreactor de lodos activados con un volumen útil de \(V = 4,050\text{ m}^3\), equipado con difusores de burbuja fina y sopladores de velocidad variable.</li>
-                                <li><strong>Clarificador Secundario C-301:</strong> Sedimentador circular con diámetro \(D = 22\text{ m}\) (\(A = 380.13\text{ m}^2\)) y diseño para velocidad ascensional máxima de \(2.20\text{ m/h}\).</li>
-                            </ul>
-                        </div>
-
-                        <!-- Block 2: The Core Problem -->
-                        <div class="case-study-box p-6 rounded-2xl border border-slate-800 space-y-3">
-                            <div class="flex items-center gap-2 text-amber-400 font-mono text-xs font-bold uppercase tracking-wider">
-                                <i data-lucide="alert-triangle" class="w-4 h-4"></i>
-                                2. El Problema Crítico de Planta (Task & Challenge)
-                            </div>
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs font-mono pt-1">
-                                <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
-                                    <div class="text-amber-400 font-bold mb-1">Retraso Analítico de 5 Días</div>
-                                    <div class="text-slate-400 leading-relaxed">
-                                        El método estándar para medir \(\text{DBO}_5\) requiere 120 horas de incubación a 20°C. Las decisiones de planta se tomaban a ciegas: cuando llegaba el reporte de laboratorio, el efluente ya estaba vertido al cuerpo receptor.
-                                    </div>
-                                </div>
-                                <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
-                                    <div class="text-amber-400 font-bold mb-1">Sobredosis Preventiva (+35%)</div>
-                                    <div class="text-slate-400 leading-relaxed">
-                                        Por temor a sanciones de las autoridades ambientales (MAATE), los operadores dosificaban coagulante PAC en exceso, generando un sobrecosto químico de más de $3,500 USD mensuales y un volumen excesivo de lodos de desecho.
-                                    </div>
-                                </div>
-                                <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
-                                    <div class="text-amber-400 font-bold mb-1">Arrastre de Manto en Lluvias</div>
-                                    <div class="text-slate-400 leading-relaxed">
-                                        En eventos de lluvia o picos hidráulicos (\(Q > 865\text{ m}^3\text{/h}\)), el clarificador superaba su carga superficial admisible (\(\text{SOR} > 2.20\text{ m/h}\)), produciendo lavado de biomasa y fallas de calidad en el vertedero.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Block 3: Engineering Diagnosis & Pure ML Failure -->
-                        <div class="case-study-box p-6 rounded-2xl border border-slate-800 space-y-3">
-                            <div class="flex items-center gap-2 text-rose-400 font-mono text-xs font-bold uppercase tracking-wider">
-                                <i data-lucide="bug" class="w-4 h-4"></i>
-                                3. Diagnóstico de Ingeniería: ¿Por qué falló la Inteligencia Artificial Tradicional?
-                            </div>
-                            <p class="text-sm text-slate-300 leading-relaxed">
-                                La auditoría al modelo preliminar puramente estadístico (XGBoost estándar) demostró por qué los algoritmos de "caja negra" son insuficientes en plantas químicas:
-                            </p>
-                            <ul class="list-disc pl-5 space-y-1 text-xs font-mono text-slate-300">
-                                <li><strong>Target Data Leakage:</strong> El algoritmo había aprendido una columna correlacionada con la variable objetivo y asumía una remoción estática constante del 95.2%.</li>
-                                <li><strong>Falta de Mecánica de Fluidos:</strong> Ante un caudal \(10\times\) superior (\(7,530\text{ m}^3\text{/h}\)), el árbol de decisión predecía falsamente una DBO de \(15\text{ mg/L}\), ignorando por completo que el Tiempo de Retención Hidráulica (\(\text{TRH}\)) colapsaba a solo 32 minutos y que la carga superficial de \(19.8\text{ m/h}\) barría todo el manto de lodos.</li>
-                            </ul>
-                            <div class="text-xs font-mono text-rose-300 bg-rose-950/30 p-3 rounded-xl border border-rose-900/50">
-                                <strong>Conclusión Técnica:</strong> Para ser confiable a nivel gerencial y operativo, el software debía incorporar ecuaciones de primeros principios termodinámicos y biológicos que penalizaran físicamente cualquier violación de conservación de materia.
-                            </div>
-                        </div>
-
-                        <!-- Block 4: The Hybrid Engineering Solution (PINN) -->
-                        <div class="case-study-box p-6 rounded-2xl border border-slate-800 space-y-4">
-                            <div class="flex items-center gap-2 text-emerald-400 font-mono text-xs font-bold uppercase tracking-wider">
-                                <i data-lucide="cpu" class="w-4 h-4"></i>
-                                4. Solución de Ingeniería: Arquitectura del Gemelo Digital Híbrido (PINN)
-                            </div>
-                            <p class="text-sm text-slate-300 leading-relaxed">
-                                Se diseñó una arquitectura de 4 capas desacopladas con Python 3.13, FastAPI y DuckDB:
-                            </p>
-                            
-                            <!-- Math Formulas Block -->
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
-                                    <div class="text-xs font-mono text-cyan-400 font-bold mb-2">Cinética de Monod & Factor Arrhenius</div>
-                                    <div class="math-block">
-                                        $$\mu = \mu_{\max} \left( \frac{S}{K_s + S} \right) \left( \frac{DO}{K_{DO} + DO} \right) \cdot \theta^{(T - 20)}$$
-                                    </div>
-                                    <div class="text-[11px] font-mono text-slate-400 mt-2">
-                                        Modela la tasa de crecimiento bacteriano en función del sustrato \(S\), oxígeno disuelto \(DO\) y temperatura con \(\theta = 1.047\).
-                                    </div>
-                                </div>
-
-                                <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
-                                    <div class="text-xs font-mono text-emerald-400 font-bold mb-2">Carga Hidráulica Superficial (SOR)</div>
-                                    <div class="math-block">
-                                        $$\text{SOR} = \frac{Q}{A_{\text{clarificador}}} \le 2.20\text{ m/h}$$
-                                    </div>
-                                    <div class="text-[11px] font-mono text-slate-400 mt-2">
-                                        Supervisión hidrodinámica del sedimentador C-301 (\(\varnothing 22\text{ m}\)). Si \(\text{SOR} > 2.20\text{ m/h}\), activa penalización exponencial de sólidos en suspensión.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <p class="text-xs font-mono text-slate-300 leading-relaxed">
-                                <strong>La Red Neuronal Compensatoria:</strong> Ajusta en &lt; 0.20 segundos las no-linealidades empíricas de la coagulación química y la interacción de lodos, pero restringida por barreras de penalización que impiden violar las leyes de masa y energía.
-                            </p>
-                        </div>
-
-                        <!-- Block 5: Financial Results & Business Impact -->
-                        <div class="case-study-box p-6 rounded-2xl border border-slate-800 space-y-3">
-                            <div class="flex items-center gap-2 text-cyan-400 font-mono text-xs font-bold uppercase tracking-wider">
-                                <i data-lucide="trending-up" class="w-4 h-4"></i>
-                                5. Retorno de Inversión (ROI) & Resultados Verificados (Result)
-                            </div>
-                            <div class="overflow-x-auto">
-                                <table class="w-full text-xs font-mono text-left border-collapse">
-                                    <thead>
-                                        <tr class="border-b border-slate-800 text-slate-400">
-                                            <th class="py-2 px-3">Línea de Ahorro / Métrica</th>
-                                            <th class="py-2 px-3">Condición Previa</th>
-                                            <th class="py-2 px-3">Con Gemelo Digital PINN</th>
-                                            <th class="py-2 px-3 text-emerald-400">Impacto Económico / Operativo</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="divide-y divide-slate-800/60 text-slate-200">
-                                        <tr>
-                                            <td class="py-2.5 px-3">Coagulante PAC</td>
-                                            <td class="py-2.5 px-3">Dosificación fija 180 ppm</td>
-                                            <td class="py-2.5 px-3">Dosificación predictiva 122 ppm</td>
-                                            <td class="py-2.5 px-3 text-emerald-400 font-bold">-32.4% consumo ($24,800 USD/año)</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="py-2.5 px-3">Polímero Floculante</td>
-                                            <td class="py-2.5 px-3">2.5 ppm constante</td>
-                                            <td class="py-2.5 px-3">Ajuste por carga de sólidos</td>
-                                            <td class="py-2.5 px-3 text-emerald-400 font-bold">$9,600 USD/año ahorrados</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="py-2.5 px-3">Energía en Sopladores</td>
-                                            <td class="py-2.5 px-3">Aireación a 100% permanente</td>
-                                            <td class="py-2.5 px-3">Control DO en rango 2.0-2.4 mg/L</td>
-                                            <td class="py-2.5 px-3 text-emerald-400 font-bold">$8,200 USD/año en electricidad</td>
-                                        </tr>
-                                        <tr class="bg-emerald-950/20 font-bold">
-                                            <td class="py-3 px-3 text-white">TOTAL AHORRO OPEX CONSOLIDADO</td>
-                                            <td class="py-3 px-3">-</td>
-                                            <td class="py-3 px-3">-</td>
-                                            <td class="py-3 px-3 text-emerald-400 text-sm">$42,600 USD / AÑO</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="py-2.5 px-3">Cumplimiento TULSMA Tabla 9</td>
-                                            <td class="py-2.5 px-3">91.2% (Riesgo de sanción)</td>
-                                            <td class="py-2.5 px-3 font-bold text-cyan-400">98.4% de cumplimiento</td>
-                                            <td class="py-2.5 px-3 text-cyan-400">Eliminación de multas ambientales</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- ========================================================================= -->
-            <!-- CASO 02: OEE, PARADAS CRÓNICAS & SMED -->
-            <!-- ========================================================================= -->
-            <div class="project-card mb-16" data-category="lean">
-                <div class="relative glass-card-interactive rounded-3xl border border-slate-700/80 p-6 lg:p-8 overflow-hidden shadow-2xl">
-                    
-                    <!-- Header Badges -->
-                    <div class="flex flex-wrap items-center justify-between gap-4 mb-6 border-b border-slate-800 pb-5">
-                        <div class="flex flex-wrap items-center gap-3">
-                            <span class="px-3 py-1 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono font-bold rounded-lg uppercase tracking-wider">
-                                CASO DE ESTUDIO 02 · LEAN MANUFACTURING & OEE
-                            </span>
-                            <span class="text-xs font-mono text-slate-400">Metodología: DMAIC / SMED / Power BI DAX</span>
-                        </div>
-                        <div class="text-xs font-mono text-cyan-400 flex items-center gap-1.5">
-                            <i data-lucide="check-circle" class="w-3.5 h-3.5"></i>
-                            <span>Implementado con Cero Inversión (CAPEX $0)</span>
-                        </div>
-                    </div>
-
-                    <!-- Title & Summary -->
-                    <div class="mb-6">
-                        <h3 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-                            Optimización de Eficiencia Global de Equipos (OEE) & Reducción de Paradas Crónicas
-                        </h3>
-                        <p class="text-slate-300 text-sm sm:text-base mt-2 max-w-4xl">
-                            Diagnóstico y resolución de pérdidas de disponibilidad en líneas continuas de manufactura y envasado. Aplicación de estratificación Pareto 80/20 sobre bases de datos SQL, análisis de causa raíz (Ishikawa y 5 Porqués), estandarización de cambios de formato bajo metodología SMED y visualización gerencial en Power BI con Modelo Estrella relacional.
-                        </p>
-                    </div>
-
-                    <!-- Key KPIs -->
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 font-mono text-xs mb-6">
-                        <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
-                            <div class="text-slate-400 text-[11px] uppercase">OEE Inicial</div>
-                            <div class="text-2xl font-bold text-rose-400 mt-1">68.5%</div>
-                            <div class="text-[10px] text-slate-500 mt-1">Baja disponibilidad y paradas</div>
-                        </div>
-                        <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
-                            <div class="text-slate-400 text-[11px] uppercase">OEE Final Alcanzado</div>
-                            <div class="text-2xl font-bold text-emerald-400 mt-1">84.2%</div>
-                            <div class="text-[10px] text-slate-500 mt-1">+15.7 puntos porcentuales</div>
-                        </div>
-                        <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
-                            <div class="text-slate-400 text-[11px] uppercase">Tiempo de Setup SMED</div>
-                            <div class="text-2xl font-bold text-cyan-400 mt-1">-40%</div>
-                            <div class="text-[10px] text-slate-500 mt-1">De 75 min a 45 min por cambio</div>
-                        </div>
-                        <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
-                            <div class="text-slate-400 text-[11px] uppercase">Capacidad Liberada</div>
-                            <div class="text-2xl font-bold text-indigo-400 mt-1">+220 Horas</div>
-                            <div class="text-[10px] text-slate-500 mt-1">Producción adicional / año</div>
-                        </div>
-                    </div>
-
-                    <!-- TOGGLE BUTTON -->
-                    <div class="flex justify-center border-t border-slate-800 pt-6">
-                        <button id="case-btn-oee" onclick="toggleCaseStudy('oee')" class="flex items-center gap-2 px-6 py-3 text-xs font-mono font-bold text-emerald-400 bg-slate-800 hover:bg-slate-700 border border-emerald-800/80 rounded-xl transition-all shadow-md">
-                            <span>Explorar Caso de Estudio Completo</span>
-                            <i data-lucide="chevron-down" class="w-4 h-4"></i>
-                        </button>
-                    </div>
-
-                    <!-- EXPANDABLE IN-DEPTH CASE STUDY -->
-                    <div id="case-detail-oee" class="hidden mt-8 space-y-6 pt-6 border-t border-slate-800">
-                        
-                        <div class="case-study-box p-6 rounded-2xl border border-slate-800 space-y-3">
-                            <div class="text-emerald-400 font-mono text-xs font-bold uppercase tracking-wider flex items-center gap-2">
-                                <i data-lucide="alert-circle" class="w-4 h-4"></i>
-                                1. Contexto & El Problema Operativo
-                            </div>
-                            <p class="text-sm text-slate-300 leading-relaxed">
-                                La planta operaba con 3 turnos rotativos. A pesar de cumplir con los programas mensuales, el cálculo real de la Eficiencia Global de Equipos revelaba un OEE de apenas 68.5%, muy por debajo del estándar mundial de manufactura (85%). Los operadores atribuían las pérdidas a "fallas de máquina generales", pero no existía un registro estructurado que discriminara entre averías electromecánicas, falta de material o demoras de preparación.
-                            </p>
-                        </div>
-
-                        <div class="case-study-box p-6 rounded-2xl border border-slate-800 space-y-3">
-                            <div class="text-emerald-400 font-mono text-xs font-bold uppercase tracking-wider flex items-center gap-2">
-                                <i data-lucide="wrench" class="w-4 h-4"></i>
-                                2. Solución Metodológica Paso a Paso
-                            </div>
-                            <ul class="space-y-2 text-xs font-mono text-slate-300">
-                                <li class="p-3 bg-slate-900 rounded-xl border border-slate-800">
-                                    <strong class="text-cyan-400">Paso 1: Estratificación Pareto 80/20:</strong> Se procesaron 1,400 registros históricos de paradas. El 78% de las pérdidas provenían de dos causas: descalibración de guías de arrastre y tiempos excesivos de cambio de formato entre referencias de envase.
-                                </li>
-                                <li class="p-3 bg-slate-900 rounded-xl border border-slate-800">
-                                    <strong class="text-cyan-400">Paso 2: Taller SMED (Single-Minute Exchange of Die):</strong> Se filmó el cambio de formato. Se segregaron las actividades en <em>internas</em> (con máquina detenida) y <em>externas</em> (con máquina en marcha). Se implementaron carros de pre-montaje y calibradores de ajuste rápido con código de colores. El tiempo cayó de 75 a 45 minutos.
-                                </li>
-                                <li class="p-3 bg-slate-900 rounded-xl border border-slate-800">
-                                    <strong class="text-cyan-400">Paso 3: Tablero Ejecutivo Power BI (Modelo Estrella + DAX):</strong> Se construyó un modelo relacional conectando la tabla de hechos de paradas con dimensiones de Máquina, Turno y Motivo. Se implementaron medidas DAX para los 3 pilares del OEE:
-                                    <div class="math-block mt-2">
-                                        $$\text{OEE} = \text{Disponibilidad} \times \text{Rendimiento} \times \text{Calidad}$$
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="case-study-box p-6 rounded-2xl border border-slate-800 space-y-2">
-                            <div class="text-emerald-400 font-mono text-xs font-bold uppercase tracking-wider flex items-center gap-2">
-                                <i data-lucide="award" class="w-4 h-4"></i>
-                                3. Impacto Financiero para la Gerencia
-                            </div>
-                            <p class="text-sm text-slate-300 leading-relaxed">
-                                El incremento de 15.7 puntos en el OEE permitió absorber un incremento del 20% en la demanda comercial sin necesidad de contratar turnos extraordinarios en fines de semana ni comprar nuevas líneas de envasado, logrando un ahorro operacional sustancial con inversión de capital nula (CAPEX $0).
-                            </p>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- ========================================================================= -->
-            <!-- CASO 03: SPC, MINITAB & REDUCCIÓN DE GIVEAWAY -->
-            <!-- ========================================================================= -->
-            <div class="project-card mb-12" data-category="spc">
-                <div class="relative glass-card-interactive rounded-3xl border border-slate-700/80 p-6 lg:p-8 overflow-hidden shadow-2xl">
-                    
-                    <!-- Header Badges -->
-                    <div class="flex flex-wrap items-center justify-between gap-4 mb-6 border-b border-slate-800 pb-5">
-                        <div class="flex flex-wrap items-center gap-3">
-                            <span class="px-3 py-1 bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-xs font-mono font-bold rounded-lg uppercase tracking-wider">
-                                CASO DE ESTUDIO 03 · CONTROL ESTADÍSTICO DE PROCESOS (SPC)
-                            </span>
-                            <span class="text-xs font-mono text-slate-400">Software: Minitab 21 · Cartas Shewhart & Capacidad</span>
-                        </div>
-                        <div class="text-xs font-mono text-emerald-400 flex items-center gap-1.5">
-                            <i data-lucide="shield-check" class="w-3.5 h-3.5"></i>
-                            <span>Cumplimiento Estricto Norma Metrológica INEN</span>
-                        </div>
-                    </div>
-
-                    <!-- Title & Summary -->
-                    <div class="mb-6">
-                        <h3 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-                            Control Estadístico de Procesos (SPC) & Reducción de Pérdidas por Giveaway
-                        </h3>
-                        <p class="text-slate-300 text-sm sm:text-base mt-2 max-w-4xl">
-                            Estabilización y centrado de variables críticas de calidad (CTQ) en líneas de llenado de formulaciones líquidas. Erradicación de pérdidas por sobrellenado intencional (*giveaway*) y aseguramiento de no-conformidades mediante cartas Shewhart y elevación de índices de capacidad \(C_{pk}\).
-                        </p>
-                    </div>
-
-                    <!-- Key KPIs -->
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 font-mono text-xs mb-6">
-                        <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
-                            <div class="text-slate-400 text-[11px] uppercase">Cpk Inicial</div>
-                            <div class="text-2xl font-bold text-rose-400 mt-1">0.89</div>
-                            <div class="text-[10px] text-slate-500 mt-1">Proceso Incapaz (&lt; 1.00)</div>
-                        </div>
-                        <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
-                            <div class="text-slate-400 text-[11px] uppercase">Cpk Final Alcanzado</div>
-                            <div class="text-2xl font-bold text-emerald-400 mt-1">1.42</div>
-                            <div class="text-[10px] text-slate-500 mt-1">Proceso de Clase Mundial (&gt; 1.33)</div>
-                        </div>
-                        <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
-                            <div class="text-slate-400 text-[11px] uppercase">Ahorro por Giveaway</div>
-                            <div class="text-2xl font-bold text-cyan-400 mt-1">$28,000 USD</div>
-                            <div class="text-[10px] text-slate-500 mt-1">Materia prima recuperada / año</div>
-                        </div>
-                        <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
-                            <div class="text-slate-400 text-[11px] uppercase">Reclamos Legales</div>
-                            <div class="text-2xl font-bold text-indigo-400 mt-1">0 Infracciones</div>
-                            <div class="text-[10px] text-slate-500 mt-1">Cumplimiento metrología de peso</div>
-                        </div>
-                    </div>
-
-                    <!-- TOGGLE BUTTON -->
-                    <div class="flex justify-center border-t border-slate-800 pt-6">
-                        <button id="case-btn-spc" onclick="toggleCaseStudy('spc')" class="flex items-center gap-2 px-6 py-3 text-xs font-mono font-bold text-indigo-400 bg-slate-800 hover:bg-slate-700 border border-indigo-800/80 rounded-xl transition-all shadow-md">
-                            <span>Explorar Caso de Estudio Completo</span>
-                            <i data-lucide="chevron-down" class="w-4 h-4"></i>
-                        </button>
-                    </div>
-
-                    <!-- EXPANDABLE IN-DEPTH CASE STUDY -->
-                    <div id="case-detail-spc" class="hidden mt-8 space-y-6 pt-6 border-t border-slate-800">
-                        
-                        <div class="case-study-box p-6 rounded-2xl border border-slate-800 space-y-3">
-                            <div class="text-indigo-400 font-mono text-xs font-bold uppercase tracking-wider flex items-center gap-2">
-                                <i data-lucide="scale" class="w-4 h-4"></i>
-                                1. El Dilema del Giveaway (Costo Oculto de Calidad)
-                            </div>
-                            <p class="text-sm text-slate-300 leading-relaxed">
-                                En la línea de envasado automático, los operadores observaban que las botellas salían con dispersión de peso. Para evitar caer bajo el Límite Inferior de Especificación (\(\text{LSL}\)) y ser sancionados por producto con menor contenido neto al declarado en etiqueta, la supervisión había calibrado la máquina intencionalmente desplazada hacia la derecha (\(+4.8\text{ g}\) por encima del target nominal). Esto representaba un sobrecosto silencioso de $\$28,000$ USD al año en materia prima activa regalada.
-                            </p>
-                        </div>
-
-                        <div class="case-study-box p-6 rounded-2xl border border-slate-800 space-y-3">
-                            <div class="text-indigo-400 font-mono text-xs font-bold uppercase tracking-wider flex items-center gap-2">
-                                <i data-lucide="activity" class="w-4 h-4"></i>
-                                2. Intervención con Control Estadístico en Minitab
-                            </div>
-                            <ul class="space-y-2 text-xs font-mono text-slate-300">
-                                <li class="p-3 bg-slate-900 rounded-xl border border-slate-800">
-                                    <strong>Prueba de Normalidad de Anderson-Darling:</strong> Se verificó la distribución de los datos (\(p\text{-value} > 0.05\)) para asegurar la validez de los estimadores paramétricos.
-                                </li>
-                                <li class="p-3 bg-slate-900 rounded-xl border border-slate-800">
-                                    <strong>Cartas Shewhart \(\bar{X}-R\):</strong> Se tomaron 25 subgrupos racionales de tamaño \(n=5\). Se identificaron causas especiales (fluctuación en la presión del cabezal de llenado y desgaste en los sellos de émbolo de las boquillas 2 y 4).
-                                </li>
-                                <li class="p-3 bg-slate-900 rounded-xl border border-slate-800">
-                                    <strong>Cálculo de Capacidad:</strong>
-                                    <div class="math-block mt-2">
-                                        $$C_{pk} = \min\left( \frac{\text{USL} - \mu}{3\sigma}, \frac{\mu - \text{LSL}}{3\sigma} \right)$$
-                                    </div>
-                                    Con el reemplazo de sellos y estabilización de presión, la dispersión (\(6\sigma\)) se redujo drásticamente, permitiendo centrar el target de la máquina exactamente en el valor nominal con \(C_{pk} = 1.42\).
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="case-study-box p-6 rounded-2xl border border-slate-800 space-y-2">
-                            <div class="text-indigo-400 font-mono text-xs font-bold uppercase tracking-wider flex items-center gap-2">
-                                <i data-lucide="check-circle-2" class="w-4 h-4"></i>
-                                3. Resultado Financiero Verificado
-                            </div>
-                            <p class="text-sm text-slate-300 leading-relaxed">
-                                El sobrellenado promedio cayó de \(+4.8\text{ g}\) a solo \(+0.7\text{ g}\) por unidad sin generar una sola botella fuera de norma legal, ahorrando $\$28,000$ USD anuales y garantizando auditorías de calidad superadas con 100% de conformidad.
-                            </p>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- TECHNICAL METHODOLOGY & SKILLS MATRIX -->
-    <section id="metodologia" class="py-24 bg-[#0F172A]/50 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <div class="inline-flex items-center gap-2 text-cyan-400 font-mono text-xs tracking-wider uppercase mb-2">
-                    <i data-lucide="cpu" class="w-4 h-4"></i>
-                    Matriz de Competencias Profesionales
-                </div>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-                    Convergencia de Disciplinas Técnicas
+                <h2 class="text-3xl font-extrabold text-white tracking-tight">
+                    Estudios de Caso de Ingeniería & Planta
                 </h2>
-                <p class="text-slate-400 text-sm sm:text-base mt-2">
-                    La combinación de experiencia experimental de planta química con modelado matemático y metodologías de clase mundial.
+                <p class="text-slate-400 text-sm sm:text-base mt-2 max-w-3xl">
+                    Cada caso presenta el dilema gerencial, el diagnóstico de fallas en piso de producción, la metodología técnica de ingeniería aplicada y los resultados financieros y operativos cuantificados.
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- GRID OF 3 HARVARD-STYLE CASE STUDIES -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 
-                <!-- Pillar 1: Procesos Químicos & PTAR -->
-                <div class="glass-panel p-6 rounded-2xl border border-slate-800 space-y-4">
-                    <div class="w-12 h-12 rounded-xl bg-blue-600/20 border border-blue-500/30 flex items-center justify-center text-blue-400">
-                        <i data-lucide="flask-conical" class="w-6 h-6"></i>
+                <!-- CASE 01: PTAR & DIGITAL TWIN -->
+                <div class="corp-card rounded-2xl p-6 flex flex-col justify-between border border-slate-700/80">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between text-xs font-mono">
+                            <span class="px-2.5 py-1 bg-blue-500/10 text-blue-400 rounded border border-blue-500/20 font-bold">CASO 01 · PTAR & SIMULACIÓN</span>
+                            <span class="text-emerald-400 flex items-center gap-1">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> SCADA Live
+                            </span>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-white tracking-tight leading-snug">
+                            Optimización Predictiva de PTAR Industrial mediante Gemelo Digital Híbrido & SCADA Web
+                        </h3>
+
+                        <!-- 30-Second Selling Pitch -->
+                        <div class="space-y-2.5 text-xs text-slate-300 pt-1">
+                            <div>
+                                <strong class="text-slate-100 block font-mono text-[11px] uppercase text-slate-400">El Problema de Negocio:</strong>
+                                La prueba de DBO₅ en laboratorio tarda 5 días (120 horas). Operadores dosificaban coagulante PAC en exceso (+35%) por temor a multas del TULSMA, con sobrecosto químico de $42,600 USD/año y riesgo de arrastre de lodos en lluvias.
+                            </div>
+                            <div>
+                                <strong class="text-slate-100 block font-mono text-[11px] uppercase text-slate-400">La Solución de Ingeniería:</strong>
+                                Modelo híbrido acoplando cinética de Monod y sedimentación con red neuronal informada por la física (PINN), motor SQL DuckDB y SCADA Web bajo norma ISA-5.1 en la nube.
+                            </div>
+                            <div>
+                                <strong class="text-slate-100 block font-mono text-[11px] uppercase text-slate-400">Impacto Cuantificado:</strong>
+                                -32.4% en consumo de coagulante, 98.4% de cumplimiento de vertidos y predicción inmediata (&lt; 0.20 seg) para control preventivo.
+                            </div>
+                        </div>
+
+                        <!-- Tags -->
+                        <div class="flex flex-wrap gap-1.5 pt-2 text-[11px] font-mono text-slate-400">
+                            <span class="px-2 py-0.5 bg-slate-900 rounded border border-slate-800">TULSMA Tabla 9</span>
+                            <span class="px-2 py-0.5 bg-slate-900 rounded border border-slate-800">Cinética Monod</span>
+                            <span class="px-2 py-0.5 bg-slate-900 rounded border border-slate-800">Python / FastAPI</span>
+                            <span class="px-2 py-0.5 bg-slate-900 rounded border border-slate-800">SCADA Web</span>
+                        </div>
                     </div>
-                    <h3 class="text-lg font-bold text-white">Ingeniería de Procesos & PTAR</h3>
-                    <ul class="space-y-2 text-xs font-mono text-slate-300">
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Operación PTAR Fisicoquímico & Biológico</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Balances de Materia & Energía en Planta</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Optimización de Coagulantes (PAC / Polímero)</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Normativa Ambiental TULSMA Tabla 9</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Simbología & Lazos ISA-5.1</li>
-                    </ul>
+
+                    <div class="pt-6 border-t border-slate-800/80 mt-6 space-y-2">
+                        <a href="proyecto_01_ptar.html" class="flex items-center justify-between w-full px-4 py-2.5 bg-blue-600 hover:bg-blue-500 text-white text-xs font-mono font-bold rounded-lg transition-colors">
+                            <span>LEER CASO DE ESTUDIO COMPLETO</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                        <a href="https://01optimizacionptarefluentes-production.up.railway.app" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 w-full px-4 py-2 bg-slate-900 hover:bg-slate-800 text-cyan-300 text-xs font-mono font-semibold rounded-lg border border-slate-700 transition-colors">
+                            <i data-lucide="external-link" class="w-3.5 h-3.5"></i> PROBAR SCADA WEB EN VIVO
+                        </a>
+                    </div>
                 </div>
 
-                <!-- Pillar 2: Lean Six Sigma -->
-                <div class="glass-panel p-6 rounded-2xl border border-slate-800 space-y-4">
-                    <div class="w-12 h-12 rounded-xl bg-emerald-600/20 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
-                        <i data-lucide="trending-up" class="w-6 h-6"></i>
+                <!-- CASE 02: OEE & SMED -->
+                <div class="corp-card rounded-2xl p-6 flex flex-col justify-between border border-slate-700/80">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between text-xs font-mono">
+                            <span class="px-2.5 py-1 bg-emerald-500/10 text-emerald-400 rounded border border-emerald-500/20 font-bold">CASO 02 · LEAN & OEE</span>
+                            <span class="text-slate-400 font-semibold">CAPEX $0</span>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-white tracking-tight leading-snug">
+                            Optimización de Eficiencia Global de Equipos (OEE) & Reducción de Tiempos Muertos (SMED)
+                        </h3>
+
+                        <!-- 30-Second Selling Pitch -->
+                        <div class="space-y-2.5 text-xs text-slate-300 pt-1">
+                            <div>
+                                <strong class="text-slate-100 block font-mono text-[11px] uppercase text-slate-400">El Problema de Negocio:</strong>
+                                Línea continua de envasado operando con un OEE deficiente del 68.5% (meta: 85%), castigada por cambios de formato desorganizados de 75 minutos y microparadas mecánicas no registradas.
+                            </div>
+                            <div>
+                                <strong class="text-slate-100 block font-mono text-[11px] uppercase text-slate-400">La Solución de Ingeniería:</strong>
+                                Estratificación Pareto 80/20 en base SQL, matriz Ishikawa + 5 Porqués, estandarización de tareas externas bajo SMED y tablero gerencial en Power BI (Modelo Estrella + DAX).
+                            </div>
+                            <div>
+                                <strong class="text-slate-100 block font-mono text-[11px] uppercase text-slate-400">Impacto Cuantificado:</strong>
+                                OEE elevado al 84.2% (+15.7 puntos porcentuales), reducción del 40% en tiempos de cambio (de 75 a 45 min) y ganancia neta de +220 horas productivas anuales con cero inversión.
+                            </div>
+                        </div>
+
+                        <!-- Tags -->
+                        <div class="flex flex-wrap gap-1.5 pt-2 text-[11px] font-mono text-slate-400">
+                            <span class="px-2 py-0.5 bg-slate-900 rounded border border-slate-800">Lean Manufacturing</span>
+                            <span class="px-2 py-0.5 bg-slate-900 rounded border border-slate-800">SMED</span>
+                            <span class="px-2 py-0.5 bg-slate-900 rounded border border-slate-800">Power BI DAX</span>
+                            <span class="px-2 py-0.5 bg-slate-900 rounded border border-slate-800">Pareto 80/20</span>
+                        </div>
                     </div>
-                    <h3 class="text-lg font-bold text-white">Lean Six Sigma & Mejora Continua</h3>
-                    <ul class="space-y-2 text-xs font-mono text-slate-300">
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Green Belt SSAA (Metodología DMAIC)</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Análisis de Eficiencia OEE & Cuellos de Botella</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> SMED (Reducción de Tiempos de Cambio)</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Análisis Causa Raíz (Ishikawa, 5 Porqués, A3)</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Estandarización 5S & Gestión Visual</li>
-                    </ul>
+
+                    <div class="pt-6 border-t border-slate-800/80 mt-6">
+                        <a href="proyecto_02_oee.html" class="flex items-center justify-between w-full px-4 py-2.5 bg-blue-600 hover:bg-blue-500 text-white text-xs font-mono font-bold rounded-lg transition-colors">
+                            <span>LEER CASO DE ESTUDIO COMPLETO</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
                 </div>
 
-                <!-- Pillar 3: Data Analytics & SPC -->
-                <div class="glass-panel p-6 rounded-2xl border border-slate-800 space-y-4">
-                    <div class="w-12 h-12 rounded-xl bg-indigo-600/20 border border-indigo-500/30 flex items-center justify-center text-indigo-400">
-                        <i data-lucide="bar-chart-3" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-white">Data Analytics & SPC Industrial</h3>
-                    <ul class="space-y-2 text-xs font-mono text-slate-300">
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Minitab 21: Cartas Shewhart & Capacidad Cpk</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Power BI Avanzado: Modelado Estrella & DAX</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Motor Analítico SQL DuckDB In-Memory</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Certificación Google Data Analytics</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Análisis ANOVA & Pruebas de Hipótesis</li>
-                    </ul>
-                </div>
+                <!-- CASE 03: SPC & GIVEAWAY -->
+                <div class="corp-card rounded-2xl p-6 flex flex-col justify-between border border-slate-700/80">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between text-xs font-mono">
+                            <span class="px-2.5 py-1 bg-indigo-500/10 text-indigo-400 rounded border border-indigo-500/20 font-bold">CASO 03 · CALIDAD & MINITAB</span>
+                            <span class="text-emerald-400 font-semibold">$28K Ahorro</span>
+                        </div>
 
-                <!-- Pillar 4: Software & Gemelos Digitales -->
-                <div class="glass-panel p-6 rounded-2xl border border-slate-800 space-y-4">
-                    <div class="w-12 h-12 rounded-xl bg-cyan-600/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400">
-                        <i data-lucide="binary" class="w-6 h-6"></i>
+                        <h3 class="text-xl font-bold text-white tracking-tight leading-snug">
+                            Control Estadístico de Procesos (SPC) & Eliminación de Pérdidas por Sobrellenado (Giveaway)
+                        </h3>
+
+                        <!-- 30-Second Selling Pitch -->
+                        <div class="space-y-2.5 text-xs text-slate-300 pt-1">
+                            <div>
+                                <strong class="text-slate-100 block font-mono text-[11px] uppercase text-slate-400">El Problema de Negocio:</strong>
+                                Dispersión de llenado obligaba a la planta a sobrellenar los envases con +4.8 g extra para evitar sanciones de metrología legal por bajo peso, regalando $28,000 USD/año en materia prima.
+                            </div>
+                            <div>
+                                <strong class="text-slate-100 block font-mono text-[11px] uppercase text-slate-400">La Solución de Ingeniería:</strong>
+                                Análisis de capacidad de proceso en Minitab, cartas de control Shewhart X-bar R en 25 subgrupos racionales, corrección de desgaste en boquillas y recentrado de consigna.
+                            </div>
+                            <div>
+                                <strong class="text-slate-100 block font-mono text-[11px] uppercase text-slate-400">Impacto Cuantificado:</strong>
+                                Elevación del índice Cpk de 0.89 a 1.42 (de incapaz a clase mundial), erradicación de sobrepeso y ahorro neto de $28,000 USD/año con cero riesgo legal.
+                            </div>
+                        </div>
+
+                        <!-- Tags -->
+                        <div class="flex flex-wrap gap-1.5 pt-2 text-[11px] font-mono text-slate-400">
+                            <span class="px-2 py-0.5 bg-slate-900 rounded border border-slate-800">Minitab 21</span>
+                            <span class="px-2 py-0.5 bg-slate-900 rounded border border-slate-800">Cartas X-bar R</span>
+                            <span class="px-2 py-0.5 bg-slate-900 rounded border border-slate-800">Capacidad Cp/Cpk</span>
+                            <span class="px-2 py-0.5 bg-slate-900 rounded border border-slate-800">Norma INEN</span>
+                        </div>
                     </div>
-                    <h3 class="text-lg font-bold text-white">Gemelos Digitales & Software</h3>
-                    <ul class="space-y-2 text-xs font-mono text-slate-300">
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Redes Informadas por la Física (PINN)</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Backend FastAPI / Python 3.13</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> SCADA Web Telemetría en Tiempo Real</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Git CI/CD & Despliegues Cloud (Railway)</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Modelado de Procesos BPMN 2.0 (Bizagi)</li>
-                    </ul>
+
+                    <div class="pt-6 border-t border-slate-800/80 mt-6">
+                        <a href="proyecto_03_spc.html" class="flex items-center justify-between w-full px-4 py-2.5 bg-blue-600 hover:bg-blue-500 text-white text-xs font-mono font-bold rounded-lg transition-colors">
+                            <span>LEER CASO DE ESTUDIO COMPLETO</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
                 </div>
 
             </div>
@@ -878,130 +340,130 @@
         </div>
     </section>
 
-    <!-- PROVEN INDUSTRIAL EXPERIENCE TIMELINE -->
-    <section id="trayectoria" class="py-24 relative">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- PROVEN INDUSTRIAL EXPERIENCE (MATCHING PERFIL.MD EXACTLY) -->
+    <section id="experiencia" class="py-20 border-b border-slate-800 bg-[#0A0F1D]/40">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <div class="inline-flex items-center gap-2 text-cyan-400 font-mono text-xs tracking-wider uppercase mb-2">
-                    <i data-lucide="history" class="w-4 h-4"></i>
-                    Experiencia Comprobada
+            <div class="mb-12 text-left">
+                <div class="text-xs font-mono text-blue-400 font-semibold uppercase tracking-wider mb-2">
+                    Trayectoria Laboral Comprobada
                 </div>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-                    Trayectoria en Plantas Industriales
+                <h2 class="text-3xl font-extrabold text-white tracking-tight">
+                    Experiencia Profesional en Plantas Industriales
                 </h2>
-                <p class="text-slate-400 text-sm sm:text-base mt-2">
-                    Historial de responsabilidades de supervisión y optimización con impacto en productividad, seguridad y costos.
+                <p class="text-slate-400 text-sm mt-1">
+                    Cerca de 4 años de responsabilidades operativas en los sectores agroindustrial, manufactura, alimentos y regulación ambiental.
                 </p>
             </div>
 
-            <!-- Timeline -->
-            <div class="relative border-l-2 border-slate-800 ml-4 md:ml-32 space-y-12">
+            <div class="space-y-8">
                 
                 <!-- Role 1: Incarpalm -->
-                <div class="relative pl-8 md:pl-10">
-                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-blue-500 border-4 border-[#0A0E17]"></div>
-                    <div class="md:absolute md:-left-32 md:top-1 text-xs font-mono text-cyan-400 md:text-right md:w-24 mb-2 md:mb-0">
-                        2023 - 2024
-                    </div>
-                    <div class="glass-panel p-6 rounded-2xl border border-slate-800">
-                        <div class="flex flex-wrap items-center justify-between gap-2 mb-1">
-                            <h3 class="text-lg font-bold text-white">Técnico de Tratamiento de Aguas / Supervisor de Turno</h3>
-                            <span class="text-xs font-mono text-cyan-400 font-semibold">INCARPALM</span>
+                <div class="corp-card rounded-xl p-6 border border-slate-800">
+                    <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                        <div>
+                            <h3 class="text-lg font-bold text-white">Técnico de PTAR / Supervisor de Turno</h3>
+                            <div class="text-xs font-mono text-blue-400">INCARPALM · El Cambio, Ecuador</div>
                         </div>
-                        <div class="text-xs font-mono text-slate-400 mb-3">Guayaquil, Ecuador · Sector Industrial Alimentos & Envases</div>
-                        <p class="text-slate-300 text-sm leading-relaxed mb-3">
-                            Supervisión y control continuo de la Planta de Tratamiento de Aguas Residuales Industriales (PTAR). Responsable de la estabilización del proceso fisicoquímico (floculación/coagulación) y biológico de lodos activados.
-                        </p>
-                        <ul class="space-y-1.5 text-xs font-mono text-slate-300">
-                            <li class="flex items-start gap-2">
-                                <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-cyan-400 mt-0.5"></i>
-                                <span>Reducción del 32.4% en el consumo mensual de coagulantes mediante pruebas de jarras estandarizadas y control de pH.</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-cyan-400 mt-0.5"></i>
-                                <span>Garantía de 98.4% de cumplimiento de los límites máximos permisibles (DQO, DBO, SST) según norma TULSMA Tabla 9.</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-cyan-400 mt-0.5"></i>
-                                <span>Liderazgo de cuadrilla de 4 operadores por turno bajo protocolos de seguridad industrial y 5S.</span>
-                            </li>
-                        </ul>
+                        <span class="text-xs font-mono px-3 py-1 bg-slate-900 text-slate-300 rounded border border-slate-800">
+                            Dic. 2024 — Presente
+                        </span>
                     </div>
+                    <div class="text-xs text-slate-400 mb-3">Industria de Alimentos y Envases Agroindustriales</div>
+                    <ul class="space-y-2 text-xs text-slate-300">
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check" class="w-4 h-4 text-blue-400 shrink-0 mt-0.5"></i>
+                            <span><strong>Gestión de Mantenimiento (SAP PM):</strong> Coordinación diaria con Mantenimiento para la programación y ejecución de órdenes preventivas y correctivas en bombas centrífugas/dosificadoras, sopladores y deshidratador de lodos.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check" class="w-4 h-4 text-blue-400 shrink-0 mt-0.5"></i>
+                            <span><strong>Liderazgo de Turno & Planes Diarios:</strong> Elaboración y supervisión de planes de trabajo para cuadrillas operativas en el área de tratamiento de efluentes.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check" class="w-4 h-4 text-blue-400 shrink-0 mt-0.5"></i>
+                            <span><strong>Estandarización & BPMN 2.0:</strong> Modelado de flujos de proceso en Bizagi Modeler y estandarización de 8 Procedimientos Operativos Estandarizados (POEs).</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check" class="w-4 h-4 text-blue-400 shrink-0 mt-0.5"></i>
+                            <span><strong>Balances de Masa & Reactor Biológico:</strong> Control fino de caudales, dosificación de coagulante/floculante en sistema DAF continuo y optimización de arreglos de bombeo en reactor biológico.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check" class="w-4 h-4 text-blue-400 shrink-0 mt-0.5"></i>
+                            <span><strong>Cumplimiento TULSMA & SCADA:</strong> Monitoreo diario de DBO, DQO, SST, pH y oxígeno disuelto. Operación de interfaces SCADA / HMI (Weintek) y tableros en Power BI.</span>
+                        </li>
+                    </ul>
                 </div>
 
                 <!-- Role 2: Symrise AG -->
-                <div class="relative pl-8 md:pl-10">
-                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-emerald-500 border-4 border-[#0A0E17]"></div>
-                    <div class="md:absolute md:-left-32 md:top-1 text-xs font-mono text-emerald-400 md:text-right md:w-24 mb-2 md:mb-0">
-                        2022 - 2023
-                    </div>
-                    <div class="glass-panel p-6 rounded-2xl border border-slate-800">
-                        <div class="flex flex-wrap items-center justify-between gap-2 mb-1">
-                            <h3 class="text-lg font-bold text-white">Auxiliar HSE / Operaciones Industriales</h3>
-                            <span class="text-xs font-mono text-emerald-400 font-semibold">SYMRISE AG</span>
+                <div class="corp-card rounded-xl p-6 border border-slate-800">
+                    <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                        <div>
+                            <h3 class="text-lg font-bold text-white">Auxiliar de Seguridad, Salud y Medio Ambiente (HSE) / Soporte Operativo</h3>
+                            <div class="text-xs font-mono text-emerald-400">SYMRISE AG – DIANA FOOD · La Peaña, Ecuador</div>
                         </div>
-                        <div class="text-xs font-mono text-slate-400 mb-3">Guayaquil, Ecuador · Multinacional Química & Aromas</div>
-                        <p class="text-slate-300 text-sm leading-relaxed mb-3">
-                            Control operativo de estándares de Seguridad, Higiene y Medio Ambiente (HSE) e inspección de procesos de manufactura bajo normas ISO 14001 e ISO 45001.
-                        </p>
-                        <ul class="space-y-1.5 text-xs font-mono text-slate-300">
-                            <li class="flex items-start gap-2">
-                                <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-emerald-400 mt-0.5"></i>
-                                <span>Auditoría e inventario de sustancias químicas peligrosas, hojas de seguridad MSDS/SGA y matriz de riesgos de planta.</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-emerald-400 mt-0.5"></i>
-                                <span>Ejecución de simulacros de contingencia ambiental y monitoreo de emisiones y efluentes.</span>
-                            </li>
-                        </ul>
+                        <span class="text-xs font-mono px-3 py-1 bg-slate-900 text-slate-300 rounded border border-slate-800">
+                            May. 2024 — Nov. 2024
+                        </span>
                     </div>
+                    <div class="text-xs text-slate-400 mb-3">Multinacional de Ingredientes Alimentarios & Químicos</div>
+                    <ul class="space-y-2 text-xs text-slate-300">
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+                            <span><strong>Proyecto Machine Security:</strong> Liderazgo en el levantamiento y diagnóstico técnico de resguardos mecánicos y paradas de emergencia en toda la maquinaria de planta.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+                            <span><strong>Permisos de Alto Riesgo & LOTO:</strong> Inspección en campo de trabajos en altura, izaje y espacios confinados. Implementación del programa de bloqueo y etiquetado (LOTO).</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+                            <span><strong>Gestión Ambiental ISO 14001:</strong> Gestión integral de residuos peligrosos (rotulado SGA, trazabilidad MAATE), monitoreo de PTAR y tableros automatizados en Excel VBA para KPIs HSE.</span>
+                        </li>
+                    </ul>
                 </div>
 
-                <!-- Role 3: Agua Azul Ecuador -->
-                <div class="relative pl-8 md:pl-10">
-                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-cyan-500 border-4 border-[#0A0E17]"></div>
-                    <div class="md:absolute md:-left-32 md:top-1 text-xs font-mono text-cyan-400 md:text-right md:w-24 mb-2 md:mb-0">
-                        2021 - 2022
-                    </div>
-                    <div class="glass-panel p-6 rounded-2xl border border-slate-800">
-                        <div class="flex flex-wrap items-center justify-between gap-2 mb-1">
-                            <h3 class="text-lg font-bold text-white">Analista de Calidad & Procesos</h3>
-                            <span class="text-xs font-mono text-cyan-400 font-semibold">AGUA AZUL ECUADOR</span>
+                <!-- Role 3: Agua Azul Ec. -->
+                <div class="corp-card rounded-xl p-6 border border-slate-800">
+                    <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                        <div>
+                            <h3 class="text-lg font-bold text-white">Analista de Control de Calidad</h3>
+                            <div class="text-xs font-mono text-cyan-400">AGUA AZUL EC. · Puerto Bolívar, Ecuador</div>
                         </div>
-                        <div class="text-xs font-mono text-slate-400 mb-3">Ecuador · Planta Purificadora & Envasado de Agua</div>
-                        <p class="text-slate-300 text-sm leading-relaxed mb-3">
-                            Control de calidad de líneas de purificación (ósmosis inversa, filtración multimedia, desinfección UV/ozono) y control de producto terminado bajo especificaciones INEN.
-                        </p>
-                        <ul class="space-y-1.5 text-xs font-mono text-slate-300">
-                            <li class="flex items-start gap-2">
-                                <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-cyan-400 mt-0.5"></i>
-                                <span>Implementación de cartas de control de proceso para conductividad, turbidez y cloro residual libre.</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-cyan-400 mt-0.5"></i>
-                                <span>Reducción de rechazos de línea en un 18% mediante calibración sistemática de equipos de medición.</span>
-                            </li>
-                        </ul>
+                        <span class="text-xs font-mono px-3 py-1 bg-slate-900 text-slate-300 rounded border border-slate-800">
+                            May. 2023 — Ene. 2024
+                        </span>
                     </div>
+                    <div class="text-xs text-slate-400 mb-3">Planta Purificadora & Envasado de Agua</div>
+                    <ul class="space-y-2 text-xs text-slate-300">
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i>
+                            <span><strong>Ensayos Fisicoquímicos (NTE INEN):</strong> Liberación de lotes de producto terminado y materia prima con trazabilidad analítica completa.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i>
+                            <span><strong>Análisis Causa Raíz & Automatización:</strong> Aplicación de Ishikawa y 5 Porqués para planes CAPA. Automatización de reportes en Excel Macros (-20% tiempo de emisión).</span>
+                        </li>
+                    </ul>
                 </div>
 
                 <!-- Role 4: MAATE -->
-                <div class="relative pl-8 md:pl-10">
-                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-600 border-4 border-[#0A0E17]"></div>
-                    <div class="md:absolute md:-left-32 md:top-1 text-xs font-mono text-slate-400 md:text-right md:w-24 mb-2 md:mb-0">
-                        2020 - 2021
-                    </div>
-                    <div class="glass-panel p-6 rounded-2xl border border-slate-800">
-                        <div class="flex flex-wrap items-center justify-between gap-2 mb-1">
-                            <h3 class="text-lg font-bold text-white">Pasante en Calidad de Agua & Normativa Ambiental</h3>
-                            <span class="text-xs font-mono text-slate-400 font-semibold">MINISTERIO DEL AMBIENTE (MAATE)</span>
+                <div class="corp-card rounded-xl p-6 border border-slate-800">
+                    <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                        <div>
+                            <h3 class="text-lg font-bold text-white">Pasante de Calidad Ambiental</h3>
+                            <div class="text-xs font-mono text-slate-400">MINISTERIO DEL AMBIENTE, AGUA Y TRANSICIÓN ECOLÓGICA (MAATE) · Machala, Ecuador</div>
                         </div>
-                        <div class="text-xs font-mono text-slate-400 mb-3">Ecuador · Sector Público / Regulación Ambiental</div>
-                        <p class="text-slate-300 text-sm leading-relaxed">
-                            Apoyo técnico en la revisión de informes de monitoreo ambiental de descargas industriales y verificación de cumplimiento del Libro VI del TULSMA.
-                        </p>
+                        <span class="text-xs font-mono px-3 py-1 bg-slate-900 text-slate-300 rounded border border-slate-800">
+                            Nov. 2022 — Mar. 2023
+                        </span>
                     </div>
+                    <div class="text-xs text-slate-400 mb-3">Ente Regulador Ambiental de Ecuador</div>
+                    <ul class="space-y-2 text-xs text-slate-300">
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check" class="w-4 h-4 text-slate-400 shrink-0 mt-0.5"></i>
+                            <span><strong>Inspecciones Industriales:</strong> Verificación en campo del cumplimiento de la norma TULSMA en descargas líquidas de plantas industriales y elaboración de informes técnicos.</span>
+                        </li>
+                    </ul>
                 </div>
 
             </div>
@@ -1010,215 +472,129 @@
     </section>
 
     <!-- FORMATION & ACCREDITATIONS -->
-    <section class="py-24 bg-[#0F172A]/50 border-t border-slate-800">
+    <section id="competencias" class="py-20 border-b border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <div class="inline-flex items-center gap-2 text-cyan-400 font-mono text-xs tracking-wider uppercase mb-2">
-                    <i data-lucide="graduation-cap" class="w-4 h-4"></i>
+            <div class="mb-12">
+                <div class="text-xs font-mono text-blue-400 font-semibold uppercase tracking-wider mb-2">
+                    Respaldo Técnico & Formación
+                </div>
+                <h2 class="text-3xl font-extrabold text-white tracking-tight">
                     Formación Académica & Certificaciones
-                </div>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-                    Títulos Universitarios & Acreditaciones
                 </h2>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <!-- Academic Formation -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
                 
-                <div class="glass-panel p-6 rounded-3xl border border-slate-700/80 flex items-start gap-4">
-                    <div class="w-12 h-12 rounded-2xl bg-blue-600/20 border border-blue-500/30 flex items-center justify-center text-blue-400 shrink-0">
-                        <i data-lucide="award" class="w-6 h-6"></i>
-                    </div>
-                    <div>
-                        <div class="text-xs font-mono text-cyan-400 font-semibold">TÍTULO DE CUARTO NIVEL</div>
-                        <h3 class="text-lg font-bold text-white mt-1">Máster Universitario en Dirección de Proyectos</h3>
-                        <div class="text-xs font-mono text-slate-400 mt-0.5">Universidad Europea de Madrid (España)</div>
-                        <p class="text-xs text-slate-300 mt-2 leading-relaxed">
-                            Gestión estratégica bajo estándar PMBOK, metodologías ágiles (Scrum), evaluación financiera de CAPEX/OPEX y mitigación de riesgos operacionales.
-                        </p>
-                    </div>
+                <div class="corp-card rounded-xl p-6 border border-slate-800">
+                    <div class="text-xs font-mono text-blue-400 font-bold mb-1">TÍTULO PROFESIONAL UNIVERSITARIO</div>
+                    <h3 class="text-lg font-bold text-white">Ingeniero Químico</h3>
+                    <div class="text-xs font-mono text-slate-400 mt-0.5">Universidad Técnica de Machala (UTMACH) · 2018 — 2024</div>
+                    <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+                        Formación completa en balances de materia y energía, operaciones unitarias, termodinámica, reactores químicos, tratamiento de aguas y control de procesos industriales.
+                    </p>
                 </div>
 
-                <div class="glass-panel p-6 rounded-3xl border border-slate-700/80 flex items-start gap-4">
-                    <div class="w-12 h-12 rounded-2xl bg-cyan-600/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400 shrink-0">
-                        <i data-lucide="book-marked" class="w-6 h-6"></i>
-                    </div>
-                    <div>
-                        <div class="text-xs font-mono text-cyan-400 font-semibold">TÍTULO DE TERCER NIVEL</div>
-                        <h3 class="text-lg font-bold text-white mt-1">Ingeniero Químico</h3>
-                        <div class="text-xs font-mono text-slate-400 mt-0.5">Universidad Técnica de Machala (UTMACH - Ecuador)</div>
-                        <p class="text-xs text-slate-300 mt-2 leading-relaxed">
-                            Fundamentos de termodinámica, cinética química, operaciones unitarias, diseño de reactores, tratamiento de efluentes y control de calidad.
-                        </p>
-                    </div>
+                <div class="corp-card rounded-xl p-6 border border-slate-800">
+                    <div class="text-xs font-mono text-cyan-400 font-bold mb-1">PROGRAMA DE POSGRADO</div>
+                    <h3 class="text-lg font-bold text-white">Máster en Ingeniería de la Organización y Dirección de Proyectos</h3>
+                    <div class="text-xs font-mono text-slate-400 mt-0.5">Universidad Europea de Madrid · Inicio: Octubre 2026</div>
+                    <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+                        Especialización en dirección estratégica de operaciones, gestión de proyectos industriales bajo estándar PMBOK, finanzas corporativas y metodologías ágiles.
+                    </p>
                 </div>
 
             </div>
 
-            <!-- Certifications Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                
-                <div class="glass-panel p-4 rounded-xl border border-slate-800 hover:border-emerald-500/50 transition-colors">
-                    <div class="text-xs font-mono text-emerald-400 font-bold mb-1">SIX SIGMA ACADEMY</div>
-                    <div class="text-sm font-bold text-white">Lean Six Sigma Green Belt</div>
-                    <div class="text-[11px] text-slate-400 mt-1">DMAIC, Cartas de Control, Pruebas de Hipótesis y Proyectos de Ahorro.</div>
+            <!-- Certifications List -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+                <div class="corp-card p-4 rounded-xl border border-slate-800">
+                    <div class="font-bold text-emerald-400 font-mono mb-1">Six Sigma Academy Amsterdam</div>
+                    <div class="font-bold text-white">Lean Six Sigma Green Belt</div>
+                    <div class="text-slate-400 mt-1">Metodología DMAIC, análisis estadístico y proyectos de reducción de mermas.</div>
                 </div>
-
-                <div class="glass-panel p-4 rounded-xl border border-slate-800 hover:border-blue-500/50 transition-colors">
-                    <div class="text-xs font-mono text-blue-400 font-bold mb-1">UNIV. DE MÍCHIGAN</div>
-                    <div class="text-sm font-bold text-white">Applied AI & Machine Learning</div>
-                    <div class="text-[11px] text-slate-400 mt-1">Modelos predictivos, redes neuronales y optimización matemática.</div>
+                <div class="corp-card p-4 rounded-xl border border-slate-800">
+                    <div class="font-bold text-blue-400 font-mono mb-1">Universidad de Míchigan</div>
+                    <div class="font-bold text-white">Inteligencia Artificial Aplicada</div>
+                    <div class="text-slate-400 mt-1">Toma de decisiones, análisis de datos y flujos predictivos de ingeniería.</div>
                 </div>
-
-                <div class="glass-panel p-4 rounded-xl border border-slate-800 hover:border-cyan-500/50 transition-colors">
-                    <div class="text-xs font-mono text-cyan-400 font-bold mb-1">GOOGLE PROFESSIONAL</div>
-                    <div class="text-sm font-bold text-white">Google Data Analytics</div>
-                    <div class="text-[11px] text-slate-400 mt-1">Procesamiento SQL, R/Python, modelado y tableros de control.</div>
+                <div class="corp-card p-4 rounded-xl border border-slate-800">
+                    <div class="font-bold text-cyan-400 font-mono mb-1">iSE Training</div>
+                    <div class="font-bold text-white">Control Estadístico en Minitab</div>
+                    <div class="text-slate-400 mt-1">Cartas de control Shewhart, capacidad de proceso (Cp/Cpk) y análisis R&R.</div>
                 </div>
-
-                <div class="glass-panel p-4 rounded-xl border border-slate-800 hover:border-indigo-500/50 transition-colors">
-                    <div class="text-xs font-mono text-indigo-400 font-bold mb-1">MINITAB SPC</div>
-                    <div class="text-sm font-bold text-white">Control Estadístico de Calidad</div>
-                    <div class="text-[11px] text-slate-400 mt-1">Estudio R&R, Cartas Shewhart, Capacidad de Proceso Cp/Cpk.</div>
+                <div class="corp-card p-4 rounded-xl border border-slate-800">
+                    <div class="font-bold text-indigo-400 font-mono mb-1">Certiprof / iSE</div>
+                    <div class="font-bold text-white">Gestión ISO 14001 & BPMN 2.0</div>
+                    <div class="text-slate-400 mt-1">Auditoría ambiental, modelado de procesos en Bizagi y POEs de planta.</div>
                 </div>
-
             </div>
 
         </div>
     </section>
 
-    <!-- CONTACT & DIRECT RECRUITMENT SECTION -->
-    <section id="contacto" class="py-24 relative overflow-hidden">
-        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 w-[750px] h-[400px] bg-blue-600/10 blur-[160px] rounded-full pointer-events-none"></div>
-
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <!-- DIRECT CONTACT -->
+    <section id="contacto" class="py-20 bg-[#0A0F1D]/80">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             
-            <div class="glass-panel rounded-3xl p-8 sm:p-12 border border-blue-500/40 text-center shadow-2xl bg-gradient-to-b from-[#0F172A] to-[#0A0E17]">
-                
-                <div class="w-16 h-16 rounded-2xl bg-blue-600/20 border border-blue-500/40 flex items-center justify-center text-cyan-400 mx-auto mb-6">
-                    <i data-lucide="mail-check" class="w-8 h-8"></i>
-                </div>
+            <div class="text-xs font-mono text-blue-400 font-semibold uppercase tracking-wider mb-2">
+                Contacto Directo
+            </div>
+            <h2 class="text-3xl font-extrabold text-white tracking-tight">
+                ¿Interesado en conversar sobre una oportunidad en planta?
+            </h2>
+            <p class="text-slate-400 text-sm mt-2 max-w-xl mx-auto">
+                Disponible para entrevistas presenciales o virtuales para roles de Supervisión de Turno, Jefatura de PTAR, Ingeniería de Procesos o Control de Calidad.
+            </p>
 
-                <div class="inline-flex items-center gap-2 text-cyan-400 font-mono text-xs tracking-wider uppercase mb-2">
-                    Canal Directo de Contratación & Gerencias
-                </div>
-
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-                    ¿Listo para incorporar un Ingeniero que une Planta y Datos?
-                </h2>
-
-                <p class="text-slate-300 text-sm sm:text-base mt-3 max-w-2xl mx-auto leading-relaxed">
-                    Estoy disponible de forma inmediata para liderar operaciones de planta, optimizar efluentes industriales o implementar metodologías Lean Six Sigma y gemelos digitales con impacto financiero medible.
-                </p>
-
-                <!-- Contact Channels Grid -->
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-10 text-left font-mono">
-                    
-                    <!-- WhatsApp -->
-                    <div class="bg-slate-900/90 p-5 rounded-2xl border border-slate-800 flex flex-col justify-between group">
-                        <div>
-                            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
-                                <span class="flex items-center gap-1.5"><i data-lucide="message-circle" class="w-4 h-4 text-emerald-400"></i> WhatsApp Directo</span>
-                                <button onclick="copyToClipboard('+593969763084', 'phone-copy-lbl')" class="text-[10px] text-emerald-400 hover:underline" id="phone-copy-lbl">Copiar</button>
-                            </div>
-                            <a href="https://wa.me/593969763084?text=Hola%20Ing.%20Angelo%20Apolo,%20revisamos%20su%20portafolio%20y%20nos%20gustar%C3%ADa%20conversar%20sobre%20una%20oportunidad%20laboral." target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-white group-hover:text-emerald-400 transition-colors">
-                                +593 96 976 3084
-                            </a>
-                        </div>
-                        <div class="text-[10px] text-slate-500 mt-3">Llamadas o mensajes de texto</div>
-                    </div>
-
-                    <!-- Email -->
-                    <div class="bg-slate-900/90 p-5 rounded-2xl border border-slate-800 flex flex-col justify-between group">
-                        <div>
-                            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
-                                <span class="flex items-center gap-1.5"><i data-lucide="mail" class="w-4 h-4 text-cyan-400"></i> Correo Electrónico</span>
-                                <button onclick="copyToClipboard('apoloangelo9@gmail.com', 'email-copy-lbl')" class="text-[10px] text-cyan-400 hover:underline" id="email-copy-lbl">Copiar</button>
-                            </div>
-                            <a href="mailto:apoloangelo9@gmail.com" class="text-sm font-semibold text-white group-hover:text-cyan-400 transition-colors break-all">
-                                apoloangelo9@gmail.com
-                            </a>
-                        </div>
-                        <div class="text-[10px] text-slate-500 mt-3">Respuesta garantizada en &lt; 12 horas</div>
-                    </div>
-
-                    <!-- LinkedIn -->
-                    <div class="bg-slate-900/90 p-5 rounded-2xl border border-slate-800 flex flex-col justify-between group">
-                        <div>
-                            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
-                                <span class="flex items-center gap-1.5"><i data-lucide="linkedin" class="w-4 h-4 text-blue-400"></i> LinkedIn</span>
-                                <i data-lucide="external-link" class="w-3 h-3 text-slate-500"></i>
-                            </div>
-                            <a href="https://www.linkedin.com/in/angelo-a-44a9a323b" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-white group-hover:text-blue-400 transition-colors">
-                                in/angelo-a-44a9a323b
-                            </a>
-                        </div>
-                        <div class="text-[10px] text-slate-500 mt-3">Perfil profesional verificado</div>
-                    </div>
-
-                </div>
-
-                <!-- Personalized CV Request Banner -->
-                <div class="mt-10 p-5 bg-slate-900/80 rounded-2xl border border-dashed border-slate-700 flex flex-col sm:flex-row items-center justify-between gap-4 text-left">
-                    <div>
-                        <div class="text-sm font-bold text-white flex items-center gap-2">
-                            <i data-lucide="file-text" class="w-4 h-4 text-cyan-400"></i>
-                            ¿Requieres un currículum adaptado a los requisitos de tu vacante?
-                        </div>
-                        <div class="text-xs text-slate-400 mt-0.5">
-                            Envío mi CV personalizado enfocado en la posición requerida (Operaciones, PTAR, Calidad o Mejora Continua).
-                        </div>
-                    </div>
-                    <a href="mailto:apoloangelo9@gmail.com?subject=Solicitud%20de%20CV%20Personalizado%20-%20Ing.%20Angelo%20Apolo&body=Hola%20Ing.%20Angelo%20Apolo,%20revisamos%20su%20portafolio%20y%20nos%20gustar%C3%ADa%20solicitar%20su%20CV%20adaptado%20para%20la%20vacante%20de:" class="px-5 py-2.5 bg-blue-600 hover:bg-blue-500 text-white text-xs font-mono font-bold rounded-xl whitespace-nowrap transition-all shadow-md shadow-blue-600/30">
-                        SOLICITAR CV PERSONALIZADO
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8 text-left font-mono">
+                <div class="corp-card p-5 rounded-xl border border-slate-800">
+                    <div class="text-xs text-slate-500 mb-1">TELÉFONO / WHATSAPP</div>
+                    <a href="https://wa.me/593969763084" target="_blank" rel="noopener noreferrer" class="text-sm font-bold text-emerald-400 hover:underline">
+                        0969763084
                     </a>
+                    <div class="text-[10px] text-slate-500 mt-2">+593 96 976 3084 (Ecuador)</div>
                 </div>
-
+                <div class="corp-card p-5 rounded-xl border border-slate-800">
+                    <div class="text-xs text-slate-500 mb-1">CORREO ELECTRÓNICO</div>
+                    <a href="mailto:apoloangelo9@gmail.com" class="text-sm font-bold text-white hover:text-blue-400 transition-colors">
+                        apoloangelo9@gmail.com
+                    </a>
+                    <div class="text-[10px] text-slate-500 mt-2">Respuesta en el día</div>
+                </div>
+                <div class="corp-card p-5 rounded-xl border border-slate-800">
+                    <div class="text-xs text-slate-500 mb-1">PERFIL PROFESIONAL</div>
+                    <a href="https://www.linkedin.com/in/angelo-a-44a9a323b" target="_blank" rel="noopener noreferrer" class="text-sm font-bold text-blue-400 hover:underline">
+                        in/angelo-a-44a9a323b
+                    </a>
+                    <div class="text-[10px] text-slate-500 mt-2">LinkedIn Verificado</div>
+                </div>
             </div>
 
         </div>
     </section>
+
 
     <!-- FOOTER -->
-    <footer class="border-t border-slate-800 bg-[#0A0E17] py-10 text-center text-xs font-mono text-slate-500">
-        <div class="max-w-7xl mx-auto px-4 space-y-2">
+    <footer class="border-t border-slate-800 bg-[#070B14] py-12 text-center text-xs font-mono text-slate-500">
+        <div class="max-w-7xl mx-auto px-4 space-y-3">
             <div class="flex items-center justify-center gap-2 text-slate-400">
                 <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-                <span>Ing. Angelo Apolo Chamba, M.Sc. · Guayaquil, Ecuador</span>
+                <span>Ing. Angelo Omar Apolo Chamba · Guayaquil, Ecuador</span>
             </div>
-            <div>
-                Ingeniería Química · Gemelos Digitales Híbridos (PINN) · Lean Six Sigma Green Belt
+            <div class="text-slate-400">
+                Ingeniero Químico (UTMACH) · Experiencia en PTAR, Operaciones Industriales, HSE y Control de Calidad
+            </div>
+            <div class="text-[11px] text-slate-600">
+                Portafolio Profesional & Casos de Estudio Técnicos © 2026
             </div>
         </div>
     </footer>
 
-    <!-- MODAL: LIVE SCADA EMBED (FULLSCREEN DESK VIEW) -->
-    <div id="scada-modal" class="fixed inset-0 z-50 hidden bg-black/90 backdrop-blur-md flex flex-col p-2 sm:p-4">
-        <div class="flex items-center justify-between bg-slate-900 border border-slate-800 rounded-t-2xl px-4 py-3">
-            <div class="flex items-center gap-3">
-                <span class="w-3 h-3 rounded-full bg-emerald-400 animate-pulse"></span>
-                <span class="font-mono text-xs font-bold text-white">SCADA Web PTAR Live Cloud Monitor · Railway</span>
-                <span class="hidden sm:inline-block px-2 py-0.5 text-[10px] font-mono bg-blue-500/20 text-cyan-400 rounded border border-blue-500/30">FastAPI + DuckDB + PINN</span>
-            </div>
-            <div class="flex items-center gap-2">
-                <a href="https://01optimizacionptarefluentes-production.up.railway.app" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 text-xs font-mono bg-blue-600 hover:bg-blue-500 text-white rounded-lg flex items-center gap-1.5 transition-colors shadow-sm">
-                    <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-                    Abrir en pestaña nueva
-                </a>
-                <button onclick="closeScadaModal()" class="p-1.5 text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg transition-colors">
-                    <i data-lucide="x" class="w-5 h-5"></i>
-                </button>
-            </div>
-        </div>
-        <div class="flex-1 bg-slate-950 rounded-b-2xl overflow-hidden border-x border-b border-slate-800 relative">
-            <iframe id="scada-iframe" class="w-full h-full border-0" title="SCADA Web PTAR"></iframe>
-        </div>
-    </div>
 
-    <!-- Initialize Scripts -->
     <script>
         lucide.createIcons();
     </script>
-    <script src="assets/js/main.js"></script>
 </body>
 </html>
