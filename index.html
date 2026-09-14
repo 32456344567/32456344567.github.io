@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ing. Angelo Apolo | Portafolio de Ingeniería, Gemelos Digitales & Excelencia Operacional</title>
+    <meta name="description" content="Portafolio profesional de Angelo Apolo Chamba: Ingeniero Químico & Máster en Dirección de Proyectos. Especialista en Automatización de Procesos, Gemelos Digitales Híbridos (PINN), SCADA Web y Lean Six Sigma.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        dark: {
+                            900: '#0A0E17',
+                            800: '#0F172A',
+                            700: '#1E293B',
+                            600: '#334155'
+                        },
+                        accent: {
+                            blue: '#38BDF8',
+                            emerald: '#10B981',
+                            indigo: '#6366F1'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body class="bg-[#0A0E17] text-slate-100 antialiased selection:bg-blue-500 selection:text-white bg-grid-pattern">
+
+    <!-- TOP NAVIGATION -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-panel border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo / Brand -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-cyan-500 flex items-center justify-center font-mono font-bold text-white shadow-lg shadow-blue-500/20 group-hover:scale-105 transition-transform">
+                        AA
+                    </div>
+                    <div>
+                        <div class="font-bold text-slate-100 tracking-tight text-base group-hover:text-cyan-400 transition-colors">
+                            ING. ANGELO APOLO
+                        </div>
+                        <div class="text-xs font-mono text-cyan-400 tracking-wider">
+                            ING. QUÍMICO & M.SC. PROYECTOS
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                    <a href="#perfil" class="hover:text-cyan-400 transition-colors">Perfil</a>
+                    <a href="#proyectos" class="hover:text-cyan-400 transition-colors flex items-center gap-1.5">
+                        Proyectos
+                        <span class="px-1.5 py-0.5 text-[10px] font-mono font-semibold bg-blue-500/20 text-blue-400 rounded-full border border-blue-500/30">SCADA Live</span>
+                    </a>
+                    <a href="#competencias" class="hover:text-cyan-400 transition-colors">Competencias</a>
+                    <a href="#trayectoria" class="hover:text-cyan-400 transition-colors">Trayectoria</a>
+                    <a href="#certificaciones" class="hover:text-cyan-400 transition-colors">Certificaciones</a>
+                    <a href="#contacto" class="hover:text-cyan-400 transition-colors">Contacto</a>
+                </div>
+
+                <!-- CTA Actions -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="assets/CV_Angelo_Apolo.pdf" download="CV_Angelo_Apolo_Ingeniero_Quimico.pdf" class="flex items-center gap-2 px-4 py-2 text-xs font-mono font-semibold text-slate-200 bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-slate-600 rounded-lg transition-all shadow-sm">
+                        <i data-lucide="file-text" class="w-4 h-4 text-cyan-400"></i>
+                        DESCARGAR CV
+                    </a>
+                    <a href="#contacto" class="flex items-center gap-2 px-4 py-2 text-xs font-mono font-semibold text-white bg-blue-600 hover:bg-blue-500 rounded-lg transition-all shadow-lg shadow-blue-600/30">
+                        <i data-lucide="mail" class="w-4 h-4"></i>
+                        CONTACTAR
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-slate-800 bg-[#0F172A]/95 backdrop-blur-xl px-4 pt-2 pb-6 space-y-3">
+            <a href="#perfil" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-800/60">Perfil</a>
+            <a href="#proyectos" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-800/60">Proyectos (SCADA Live)</a>
+            <a href="#competencias" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-800/60">Competencias</a>
+            <a href="#trayectoria" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-800/60">Trayectoria</a>
+            <a href="#certificaciones" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-800/60">Certificaciones</a>
+            <a href="#contacto" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-800/60">Contacto</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <a href="assets/CV_Angelo_Apolo.pdf" download="CV_Angelo_Apolo_Ingeniero_Quimico.pdf" class="flex items-center justify-center gap-2 w-full py-2.5 text-xs font-mono font-semibold text-slate-200 bg-slate-800 rounded-lg">
+                    <i data-lucide="file-text" class="w-4 h-4 text-cyan-400"></i>
+                    DESCARGAR CV PDF
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header id="perfil" class="pt-32 pb-20 lg:pt-40 lg:pb-28 relative overflow-hidden">
+        <!-- Background Ambient Glow -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-600/10 blur-[140px] rounded-full pointer-events-none"></div>
+        <div class="absolute top-1/3 right-10 w-[400px] h-[400px] bg-cyan-500/10 blur-[120px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left: Headline & Bio -->
+                <div class="lg:col-span-7 space-y-6 text-left">
+                    
+                    <!-- Availability Badge -->
+                    <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono font-medium">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                        <span>DISPONIBLE PARA LIDERAZGO OPERATIVO & INGENIERÍA DE PLANTA</span>
+                    </div>
+
+                    <!-- Title -->
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15]">
+                        Ingeniería Química, <br>
+                        <span class="gradient-text-blue">Gemelos Digitales</span> & <br>
+                        Excelencia Operacional
+                    </h1>
+
+                    <!-- Description -->
+                    <p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl font-normal">
+                        Soy <strong class="text-white font-semibold">Angelo Apolo Chamba</strong>, Ingeniero Químico (UTMACH) y Máster en Dirección de Proyectos (Univ. Europea). Integro la ingeniería clásica de procesos industriales con <strong class="text-cyan-400 font-semibold">Inteligencia Artificial Informada por la Física (PINN)</strong>, telemetría SCADA Web y metodologías <strong class="text-emerald-400 font-semibold">Lean Six Sigma Green Belt</strong> para reducir costos operativos (OPEX), eliminar paradas crónicas y garantizar estricto cumplimiento ambiental.
+                    </p>
+
+                    <!-- Location & Tagline -->
+                    <div class="flex flex-wrap items-center gap-4 text-xs font-mono text-slate-400 pt-1">
+                        <div class="flex items-center gap-1.5">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-cyan-400"></i>
+                            Guayaquil, Ecuador (Abierto a relocalización)
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <i data-lucide="award" class="w-4 h-4 text-emerald-400"></i>
+                            Lean Six Sigma Green Belt (SSAA)
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <i data-lucide="shield-check" class="w-4 h-4 text-blue-400"></i>
+                            Cumplimiento TULSMA / ISO 14001 / ISO 9001
+                        </div>
+                    </div>
+
+                    <!-- Call To Actions -->
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="#proyectos" class="flex items-center gap-2 px-6 py-3.5 text-sm font-mono font-semibold text-white bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 rounded-xl transition-all shadow-xl shadow-blue-600/25">
+                            <i data-lucide="activity" class="w-4 h-4"></i>
+                            VER SCADA WEB & GEMELO DIGITAL
+                        </a>
+                        <a href="assets/CV_Angelo_Apolo.pdf" download="CV_Angelo_Apolo_Ingeniero_Quimico.pdf" class="flex items-center gap-2 px-6 py-3.5 text-sm font-mono font-semibold text-slate-200 bg-slate-800/80 hover:bg-slate-700/80 border border-slate-700 hover:border-slate-600 rounded-xl transition-all">
+                            <i data-lucide="download" class="w-4 h-4 text-cyan-400"></i>
+                            DESCARGAR CV EJECUTIVO (PDF)
+                        </a>
+                        <a href="https://www.linkedin.com/in/angelo-a-44a9a323b" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center p-3.5 text-slate-300 hover:text-white bg-slate-800/80 hover:bg-blue-600/20 border border-slate-700 hover:border-blue-500/50 rounded-xl transition-all" title="LinkedIn">
+                            <i data-lucide="linkedin" class="w-5 h-5 text-cyan-400"></i>
+                        </a>
+                        <a href="https://github.com/32456344567" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center p-3.5 text-slate-300 hover:text-white bg-slate-800/80 hover:bg-slate-700 border border-slate-700 rounded-xl transition-all" title="GitHub">
+                            <i data-lucide="github" class="w-5 h-5 text-slate-300"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Right: Profile Card & Key Metrics -->
+                <div class="lg:col-span-5 flex flex-col items-center">
+                    <div class="relative w-full max-w-sm">
+                        <!-- Glow behind profile -->
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-blue-600 via-cyan-500 to-emerald-500 rounded-3xl blur-lg opacity-40 group-hover:opacity-70 transition duration-1000"></div>
+                        
+                        <div class="relative glass-panel rounded-3xl p-6 overflow-hidden border border-slate-700/80 shadow-2xl">
+                            <!-- Photo -->
+                            <div class="relative w-full aspect-square rounded-2xl overflow-hidden mb-6 border border-slate-700 bg-slate-900">
+                                <img src="assets/img/angelo_apolo.jpg" alt="Ing. Angelo Apolo Chamba" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500">
+                                <div class="absolute bottom-3 left-3 right-3 glass-panel px-3 py-2 rounded-xl border border-slate-600/50 flex items-center justify-between">
+                                    <div class="flex items-center gap-2">
+                                        <div class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></div>
+                                        <span class="text-[11px] font-mono text-slate-200">Planta & Operaciones</span>
+                                    </div>
+                                    <span class="text-[10px] font-mono font-bold text-cyan-400 bg-cyan-950/60 px-2 py-0.5 rounded border border-cyan-800">4+ AÑOS</span>
+                                </div>
+                            </div>
+
+                            <!-- Metrics Grid in Profile Card -->
+                            <div class="grid grid-cols-2 gap-3 font-mono">
+                                <div class="bg-slate-900/80 p-3 rounded-xl border border-slate-800">
+                                    <div class="text-[10px] text-slate-400 uppercase tracking-wider">Ahorro OPEX</div>
+                                    <div class="text-xl font-bold text-emerald-400 mt-0.5">-32.4%</div>
+                                    <div class="text-[10px] text-slate-500 mt-0.5">Optimización Químicos</div>
+                                </div>
+                                <div class="bg-slate-900/80 p-3 rounded-xl border border-slate-800">
+                                    <div class="text-[10px] text-slate-400 uppercase tracking-wider">Cumplimiento</div>
+                                    <div class="text-xl font-bold text-cyan-400 mt-0.5">98.4%</div>
+                                    <div class="text-[10px] text-slate-500 mt-0.5">TULSMA Efluentes</div>
+                                </div>
+                                <div class="bg-slate-900/80 p-3 rounded-xl border border-slate-800">
+                                    <div class="text-[10px] text-slate-400 uppercase tracking-wider">Lean Six Sigma</div>
+                                    <div class="text-xl font-bold text-blue-400 mt-0.5">Green Belt</div>
+                                    <div class="text-[10px] text-slate-500 mt-0.5">SSAA Certificado</div>
+                                </div>
+                                <div class="bg-slate-900/80 p-3 rounded-xl border border-slate-800">
+                                    <div class="text-[10px] text-slate-400 uppercase tracking-wider">Capacidad SPC</div>
+                                    <div class="text-xl font-bold text-indigo-400 mt-0.5">Cpk &gt; 1.33</div>
+                                    <div class="text-[10px] text-slate-500 mt-0.5">Minitab / Control Calidad</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- STATS STRIP -->
+    <section class="border-y border-slate-800 bg-[#0F172A]/60 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="space-y-1">
+                    <div class="text-3xl lg:text-4xl font-extrabold text-white font-mono">4+ Años</div>
+                    <div class="text-xs text-slate-400 font-mono uppercase tracking-wider">Experiencia Industrial en Planta</div>
+                </div>
+                <div class="space-y-1">
+                    <div class="text-3xl lg:text-4xl font-extrabold text-cyan-400 font-mono">$42.6K</div>
+                    <div class="text-xs text-slate-400 font-mono uppercase tracking-wider">Ahorro Anual Proyectado / Planta</div>
+                </div>
+                <div class="space-y-1">
+                    <div class="text-3xl lg:text-4xl font-extrabold text-emerald-400 font-mono">&lt; 0.20s</div>
+                    <div class="text-xs text-slate-400 font-mono uppercase tracking-wider">Latencia Gemelo Digital (PINN)</div>
+                </div>
+                <div class="space-y-1">
+                    <div class="text-3xl lg:text-4xl font-extrabold text-indigo-400 font-mono">100%</div>
+                    <div class="text-xs text-slate-400 font-mono uppercase tracking-wider">Auditoría & Trazabilidad SQL</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="proyectos" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                <div>
+                    <div class="inline-flex items-center gap-2 text-cyan-400 font-mono text-xs tracking-wider uppercase mb-2">
+                        <i data-lucide="layers" class="w-4 h-4"></i>
+                        Portafolio Técnico Aplicado
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                        Proyectos de Planta & Gemelos Digitales
+                    </h2>
+                    <p class="text-slate-400 text-sm sm:text-base mt-2 max-w-2xl">
+                        Casos de estudio reales implementados con ingeniería química, modelos matemáticos, telemetría SCADA interactiva y metodologías de clase mundial.
+                    </p>
+                </div>
+
+                <!-- Filter Buttons -->
+                <div class="flex flex-wrap gap-2">
+                    <button class="filter-btn px-4 py-2 text-xs font-mono font-semibold rounded-lg bg-blue-600 text-white border border-blue-500 transition-all shadow-md" data-filter="all">
+                        Todos (3)
+                    </button>
+                    <button class="filter-btn px-4 py-2 text-xs font-mono font-semibold rounded-lg bg-slate-800/80 text-slate-400 border border-slate-700 hover:border-slate-500 transition-all" data-filter="pinn">
+                        Gemelos Digitales & PTAR
+                    </button>
+                    <button class="filter-btn px-4 py-2 text-xs font-mono font-semibold rounded-lg bg-slate-800/80 text-slate-400 border border-slate-700 hover:border-slate-500 transition-all" data-filter="lean">
+                        OEE & Lean Six Sigma
+                    </button>
+                    <button class="filter-btn px-4 py-2 text-xs font-mono font-semibold rounded-lg bg-slate-800/80 text-slate-400 border border-slate-700 hover:border-slate-500 transition-all" data-filter="spc">
+                        Calidad & SPC
+                    </button>
+                </div>
+            </div>
+
+            <!-- FLAGSHIP PROJECT 01 (HERO CARD) -->
+            <div class="project-card mb-12" data-category="pinn">
+                <div class="relative glass-panel rounded-3xl border border-blue-500/40 p-6 lg:p-8 overflow-hidden shadow-2xl bg-gradient-to-b from-slate-900/90 to-[#0A0E17]">
+                    
+                    <!-- Decorative Badge Banner -->
+                    <div class="flex flex-wrap items-center justify-between gap-4 mb-6 border-b border-slate-800 pb-5">
+                        <div class="flex flex-wrap items-center gap-3">
+                            <span class="px-3 py-1 bg-gradient-to-r from-blue-600 to-cyan-500 text-white text-xs font-mono font-bold rounded-lg uppercase tracking-wider shadow-md shadow-blue-500/30">
+                                PROYECTO INSIGNIA (FLAGSHIP)
+                            </span>
+                            <span class="inline-flex items-center gap-2 px-3 py-1 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono font-semibold rounded-lg">
+                                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                                APLICACIÓN SCADA WEB ACTIVA EN CLOUD (RAILWAY)
+                            </span>
+                        </div>
+                        <div class="text-xs font-mono text-slate-400 flex items-center gap-2">
+                            <i data-lucide="tag" class="w-3.5 h-3.5 text-cyan-400"></i>
+                            <span>Norma Ambiental: TULSMA Libro VI Anexo 1 Tabla 9</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                        <!-- Left: Details & Features -->
+                        <div class="lg:col-span-6 space-y-5">
+                            <h3 class="text-2xl sm:text-3xl font-bold text-white tracking-tight leading-snug">
+                                Optimización de PTAR Industrial, Gemelo Digital Híbrido (PINN) & SCADA Web
+                            </h3>
+
+                            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                                Sistema de supervisión y control predictivo para Estaciones Depuradoras de Aguas Residuales Industriales (PTAR). Combina un <strong class="text-cyan-300 font-semibold">Gemelo Digital Híbrido</strong> basado en ecuaciones bio-cinéticas de Monod, Arrhenius y transferencia de oxígeno (\(K_L a\)), compensado por una Red Neuronal Informada por la Física (PINN). Integra telemetría SCADA en tiempo real y motor SQL DuckDB para trazabilidad total de efluentes.
+                            </p>
+
+                            <!-- Key Technical Pillars -->
+                            <div class="grid grid-cols-2 gap-3 text-xs font-mono">
+                                <div class="bg-slate-900/90 p-3 rounded-xl border border-slate-800">
+                                    <div class="text-cyan-400 font-bold mb-1 flex items-center gap-1.5">
+                                        <i data-lucide="cpu" class="w-4 h-4"></i>
+                                        Gemelo Híbrido PINN
+                                    </div>
+                                    <div class="text-slate-400 text-[11px]">Cinética Monod + Arrhenius acoplada con penalización por violación termodinámica.</div>
+                                </div>
+                                <div class="bg-slate-900/90 p-3 rounded-xl border border-slate-800">
+                                    <div class="text-emerald-400 font-bold mb-1 flex items-center gap-1.5">
+                                        <i data-lucide="dollar-sign" class="w-4 h-4"></i>
+                                        -32.4% OPEX Químicos
+                                    </div>
+                                    <div class="text-slate-400 text-[11px]">Dosificación adaptativa de coagulante PAC, polímero catiónico y aireación.</div>
+                                </div>
+                                <div class="bg-slate-900/90 p-3 rounded-xl border border-slate-800">
+                                    <div class="text-blue-400 font-bold mb-1 flex items-center gap-1.5">
+                                        <i data-lucide="gauge" class="w-4 h-4"></i>
+                                        SCADA Web ISA-5.1
+                                    </div>
+                                    <div class="text-slate-400 text-[11px]">Telemetría en tiempo real con 4 tableros: Operación, OPEX/ESG, Gemelo y SQL.</div>
+                                </div>
+                                <div class="bg-slate-900/90 p-3 rounded-xl border border-slate-800">
+                                    <div class="text-indigo-400 font-bold mb-1 flex items-center gap-1.5">
+                                        <i data-lucide="database" class="w-4 h-4"></i>
+                                        DuckDB In-Memory
+                                    </div>
+                                    <div class="text-slate-400 text-[11px]">Auditoría de cumplimiento ambiental con consultas analíticas SQL en &lt; 5ms.</div>
+                                </div>
+                            </div>
+
+                            <!-- Tech Stack Pills -->
+                            <div class="flex flex-wrap gap-2 pt-1">
+                                <span class="px-2.5 py-1 text-xs font-mono bg-slate-800 text-slate-300 rounded-md border border-slate-700">Python 3.13</span>
+                                <span class="px-2.5 py-1 text-xs font-mono bg-slate-800 text-slate-300 rounded-md border border-slate-700">FastAPI</span>
+                                <span class="px-2.5 py-1 text-xs font-mono bg-slate-800 text-slate-300 rounded-md border border-slate-700">DuckDB SQL</span>
+                                <span class="px-2.5 py-1 text-xs font-mono bg-slate-800 text-slate-300 rounded-md border border-slate-700">Chart.js SCADA</span>
+                                <span class="px-2.5 py-1 text-xs font-mono bg-slate-800 text-slate-300 rounded-md border border-slate-700">Physics-Informed ML</span>
+                                <span class="px-2.5 py-1 text-xs font-mono bg-slate-800 text-slate-300 rounded-md border border-slate-700">Railway PaaS</span>
+                            </div>
+
+                            <!-- Action Buttons -->
+                            <div class="flex flex-wrap gap-3 pt-3">
+                                <a href="https://01optimizacionptarefluentes-production.up.railway.app" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-5 py-2.5 text-xs font-mono font-bold text-white bg-blue-600 hover:bg-blue-500 rounded-xl transition-all shadow-lg shadow-blue-600/30">
+                                    <i data-lucide="external-link" class="w-4 h-4"></i>
+                                    ABRIR SCADA EN RAILWAY (LIVE)
+                                </a>
+                                <button onclick="openScadaModal()" class="flex items-center gap-2 px-4 py-2.5 text-xs font-mono font-semibold text-cyan-300 bg-cyan-950/40 hover:bg-cyan-900/60 border border-cyan-800/80 rounded-xl transition-all">
+                                    <i data-lucide="maximize-2" class="w-4 h-4"></i>
+                                    VISTA PREVIA INTERACTIVA
+                                </button>
+                                <a href="https://github.com/32456344567/01_Optimizacion_PTAR_Efluentes" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-4 py-2.5 text-xs font-mono font-semibold text-slate-300 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded-xl transition-all">
+                                    <i data-lucide="github" class="w-4 h-4"></i>
+                                    CÓDIGO FUENTE
+                                </a>
+                                <button onclick="openProjectModal('ptar')" class="flex items-center gap-2 px-4 py-2.5 text-xs font-mono font-semibold text-slate-400 hover:text-white border border-dashed border-slate-700 hover:border-slate-500 rounded-xl transition-all">
+                                    <i data-lucide="book-open" class="w-4 h-4"></i>
+                                    MEMORIA TÉCNICA
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Right: Interactive Screenshot Showcase -->
+                        <div class="lg:col-span-6">
+                            <div class="relative group rounded-2xl overflow-hidden border border-slate-700 shadow-2xl bg-slate-900">
+                                <img src="assets/img/ptar_scada_railway.png" alt="SCADA Web PTAR Dashboard Live" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700">
+                                
+                                <!-- Overlay Controls -->
+                                <div class="absolute inset-0 bg-gradient-to-t from-[#0A0E17]/95 via-[#0A0E17]/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+                                    <div class="text-xs font-mono text-cyan-400 mb-1">SCADA Web v2.4 Activo</div>
+                                    <div class="text-base font-bold text-white mb-3">Tablero de Operación en Tiempo Real, OPEX & Gemelo Digital</div>
+                                    <div class="flex gap-3">
+                                        <a href="https://01optimizacionptarefluentes-production.up.railway.app" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-blue-600 text-white text-xs font-mono font-semibold rounded-lg flex items-center gap-2">
+                                            <i data-lucide="play" class="w-3.5 h-3.5"></i> Probar Simulador
+                                        </a>
+                                        <button onclick="openScadaModal()" class="px-4 py-2 bg-slate-800 text-slate-200 text-xs font-mono font-semibold rounded-lg border border-slate-700 flex items-center gap-2">
+                                            <i data-lucide="zoom-in" class="w-3.5 h-3.5"></i> Pantalla Completa
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- PROJECTS 02 & 03 GRID -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- PROJECT 02: OEE & LEAN SIX SIGMA -->
+                <div class="project-card glass-card-interactive rounded-3xl p-6 sm:p-8 flex flex-col justify-between" data-category="lean">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="px-3 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-mono font-semibold rounded-lg border border-emerald-500/30">
+                                LEAN MANUFACTURING & OEE
+                            </span>
+                            <span class="text-xs font-mono text-slate-500">PROYECTO 02</span>
+                        </div>
+
+                        <h3 class="text-xl sm:text-2xl font-bold text-white tracking-tight">
+                            Optimización de Eficiencia Global de Equipos (OEE) & Reducción de Paradas Crónicas
+                        </h3>
+
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            Implementación de análisis de causas raíz (RCA, Diagrama de Ishikawa y 5 Porqués) sobre paradas crónicas en líneas continuas. Rediseño del flujo de cambios de formato bajo metodología <strong class="text-emerald-400 font-semibold">SMED</strong> y desarrollo de un modelo analítico estrella en <strong class="text-white font-semibold">Power BI con DAX avanzado</strong>.
+                        </p>
+
+                        <!-- Key Results -->
+                        <div class="grid grid-cols-3 gap-2 font-mono py-2">
+                            <div class="bg-slate-900 p-2.5 rounded-xl border border-slate-800 text-center">
+                                <div class="text-[10px] text-slate-400">OEE Inicial</div>
+                                <div class="text-lg font-bold text-red-400">68.5%</div>
+                            </div>
+                            <div class="bg-slate-900 p-2.5 rounded-xl border border-slate-800 text-center">
+                                <div class="text-[10px] text-slate-400">OEE Logrado</div>
+                                <div class="text-lg font-bold text-emerald-400">84.2%</div>
+                            </div>
+                            <div class="bg-slate-900 p-2.5 rounded-xl border border-slate-800 text-center">
+                                <div class="text-[10px] text-slate-400">Tiempo Setup</div>
+                                <div class="text-lg font-bold text-cyan-400">-40% SMED</div>
+                            </div>
+                        </div>
+
+                        <!-- Tech Stack Tags -->
+                        <div class="flex flex-wrap gap-2 text-xs font-mono">
+                            <span class="px-2 py-0.5 bg-slate-800 text-slate-300 rounded border border-slate-700">Power BI (DAX)</span>
+                            <span class="px-2 py-0.5 bg-slate-800 text-slate-300 rounded border border-slate-700">Star Schema</span>
+                            <span class="px-2 py-0.5 bg-slate-800 text-slate-300 rounded border border-slate-700">Lean SMED</span>
+                            <span class="px-2 py-0.5 bg-slate-800 text-slate-300 rounded border border-slate-700">Pareto 80/20</span>
+                            <span class="px-2 py-0.5 bg-slate-800 text-slate-300 rounded border border-slate-700">Informe A3</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 border-t border-slate-800 flex items-center justify-between">
+                        <button onclick="openProjectModal('oee')" class="flex items-center gap-2 text-xs font-mono font-semibold text-cyan-400 hover:text-cyan-300 transition-colors">
+                            VER CASO DE ESTUDIO TÉCNICO
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PROJECT 03: SPC & CALIDAD -->
+                <div class="project-card glass-card-interactive rounded-3xl p-6 sm:p-8 flex flex-col justify-between" data-category="spc">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="px-3 py-1 bg-indigo-500/10 text-indigo-400 text-xs font-mono font-semibold rounded-lg border border-indigo-500/30">
+                                CONTROL ESTADÍSTICO (SPC) & CALIDAD
+                            </span>
+                            <span class="text-xs font-mono text-slate-500">PROYECTO 03</span>
+                        </div>
+
+                        <h3 class="text-xl sm:text-2xl font-bold text-white tracking-tight">
+                            Control Estadístico de Procesos (SPC) & Reducción de Scrap / Giveaway
+                        </h3>
+
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            Estabilización de variables críticas de calidad (CTQ) mediante cartas de control Shewhart (\(ar{X}-R\)) y análisis de capacidad de proceso (\(C_p, C_{pk}, P_p, P_{pk}\)) en <strong class="text-indigo-400 font-semibold">Minitab</strong>. Eliminación sistemática de causas especiales y ajuste de tolerancias de llenado para erradicar pérdidas por sobrepeso y producto no conforme.
+                        </p>
+
+                        <!-- Key Results -->
+                        <div class="grid grid-cols-3 gap-2 font-mono py-2">
+                            <div class="bg-slate-900 p-2.5 rounded-xl border border-slate-800 text-center">
+                                <div class="text-[10px] text-slate-400">Cpk Inicial</div>
+                                <div class="text-lg font-bold text-red-400">0.89</div>
+                            </div>
+                            <div class="bg-slate-900 p-2.5 rounded-xl border border-slate-800 text-center">
+                                <div class="text-[10px] text-slate-400">Cpk Logrado</div>
+                                <div class="text-lg font-bold text-emerald-400">1.42</div>
+                            </div>
+                            <div class="bg-slate-900 p-2.5 rounded-xl border border-slate-800 text-center">
+                                <div class="text-[10px] text-slate-400">Ahorro Giveaway</div>
+                                <div class="text-lg font-bold text-cyan-400">$28K/año</div>
+                            </div>
+                        </div>
+
+                        <!-- Tech Stack Tags -->
+                        <div class="flex flex-wrap gap-2 text-xs font-mono">
+                            <span class="px-2 py-0.5 bg-slate-800 text-slate-300 rounded border border-slate-700">Minitab 21</span>
+                            <span class="px-2 py-0.5 bg-slate-800 text-slate-300 rounded border border-slate-700">Cartas X-bar R</span>
+                            <span class="px-2 py-0.5 bg-slate-800 text-slate-300 rounded border border-slate-700">Capacidad Cp/Cpk</span>
+                            <span class="px-2 py-0.5 bg-slate-800 text-slate-300 rounded border border-slate-700">ANOVA & Normalidad</span>
+                            <span class="px-2 py-0.5 bg-slate-800 text-slate-300 rounded border border-slate-700">ISO 9001</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 border-t border-slate-800 flex items-center justify-between">
+                        <button onclick="openProjectModal('spc')" class="flex items-center gap-2 text-xs font-mono font-semibold text-cyan-400 hover:text-cyan-300 transition-colors">
+                            VER CASO DE ESTUDIO TÉCNICO
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS MATRIX -->
+    <section id="competencias" class="py-24 bg-[#0F172A]/40 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 text-cyan-400 font-mono text-xs tracking-wider uppercase mb-2">
+                    <i data-lucide="cpu" class="w-4 h-4"></i>
+                    Matriz de Competencias de Ingeniería
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                    Habilidades Técnicas & Metodológicas
+                </h2>
+                <p class="text-slate-400 text-sm sm:text-base mt-2">
+                    Convergencia entre rigor químico experimental, optimización matemática y tecnologías de software industrial.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Category 1: Procesos & PTAR -->
+                <div class="glass-panel p-6 rounded-2xl border border-slate-800 space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-blue-600/20 border border-blue-500/30 flex items-center justify-center text-blue-400">
+                        <i data-lucide="flask-conical" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Ingeniería de Procesos & PTAR</h3>
+                    <ul class="space-y-2 text-xs font-mono text-slate-300">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Operación de PTAR Fisicoquímico & Biológico</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Balances de Materia & Energía</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Dosificación Óptima Coagulante/Polímero</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Normativa Ambiental TULSMA Tabla 9</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Instrumentación Industrial (ISA-5.1)</li>
+                    </ul>
+                </div>
+
+                <!-- Category 2: Lean Six Sigma -->
+                <div class="glass-panel p-6 rounded-2xl border border-slate-800 space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-600/20 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
+                        <i data-lucide="trending-up" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Lean Six Sigma & Mejora Continua</h3>
+                    <ul class="space-y-2 text-xs font-mono text-slate-300">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Metodología DMAIC & Green Belt SSAA</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Análisis OEE & Eliminación de Cuellos de Botella</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> SMED (Single-Minute Exchange of Die)</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Análisis Causa Raíz (Ishikawa, 5 Porqués, A3)</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Gestión Visual & 5S Industrial</li>
+                    </ul>
+                </div>
+
+                <!-- Category 3: Data Analytics & SPC -->
+                <div class="glass-panel p-6 rounded-2xl border border-slate-800 space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-600/20 border border-indigo-500/30 flex items-center justify-center text-indigo-400">
+                        <i data-lucide="bar-chart-3" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Data Analytics & SPC Industrial</h3>
+                    <ul class="space-y-2 text-xs font-mono text-slate-300">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Minitab 21: Cartas Shewhart & Capacidad Cp/Cpk</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Power BI Avanzado: DAX & Star Schema</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> DuckDB & PostgreSQL / SQL Analytics</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Google Data Analytics Certified</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Modelado Predictivo con Python / SciPy</li>
+                    </ul>
+                </div>
+
+                <!-- Category 4: Software & Gemelos Digitales -->
+                <div class="glass-panel p-6 rounded-2xl border border-slate-800 space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-600/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400">
+                        <i data-lucide="binary" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Gemelos Digitales & Software</h3>
+                    <ul class="space-y-2 text-xs font-mono text-slate-300">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Redes Informadas por la Física (PINN)</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Python 3.13 / FastAPI Backend</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> SCADA Web Telemetría en Tiempo Real</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Git / GitHub CI/CD & Railway Deploy</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Modelado BPMN 2.0 (Bizagi Process Modeler)</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- INDUSTRIAL EXPERIENCE TIMELINE -->
+    <section id="trayectoria" class="py-24 relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 text-cyan-400 font-mono text-xs tracking-wider uppercase mb-2">
+                    <i data-lucide="briefcase" class="w-4 h-4"></i>
+                    Experiencia Comprobada
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                    Trayectoria en Plantas Industriales
+                </h2>
+                <p class="text-slate-400 text-sm sm:text-base mt-2">
+                    Historial de roles operativos y de supervisión con impacto directo en productividad, seguridad y calidad.
+                </p>
+            </div>
+
+            <!-- Timeline Container -->
+            <div class="relative border-l-2 border-slate-800 ml-4 md:ml-32 space-y-12">
+                
+                <!-- Role 1: Incarpalm -->
+                <div class="relative pl-8 md:pl-10">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-blue-500 border-4 border-[#0A0E17]"></div>
+                    <div class="md:absolute md:-left-32 md:top-1 text-xs font-mono text-cyan-400 md:text-right md:w-24 mb-2 md:mb-0">
+                        2023 - 2024
+                    </div>
+                    <div class="glass-panel p-6 rounded-2xl border border-slate-800">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-1">
+                            <h3 class="text-lg font-bold text-white">Técnico de Tratamiento de Aguas / Supervisor de Turno</h3>
+                            <span class="text-xs font-mono text-cyan-400 font-semibold">INCARPALM</span>
+                        </div>
+                        <div class="text-xs font-mono text-slate-400 mb-3">Guayaquil, Ecuador | Industria de Alimentos & Envases</div>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-3">
+                            Supervisión y operación continua de la Planta de Tratamiento de Aguas Residuales Industriales (PTAR). Responsable de la estabilización del proceso fisicoquímico (floculación/coagulación) y biológico de lodos activados.
+                        </p>
+                        <ul class="space-y-1.5 text-xs font-mono text-slate-300">
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-cyan-400 mt-0.5"></i>
+                                <span>Reducción del 32.4% en el consumo mensual de coagulantes (PAC) mediante pruebas de jarras estandarizadas y control de pH.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-cyan-400 mt-0.5"></i>
+                                <span>Garantía de 98.4% de cumplimiento de los límites máximos permisibles (DQO, DBO, SST) según norma TULSMA Tabla 9.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-cyan-400 mt-0.5"></i>
+                                <span>Liderazgo de cuadrilla de 4 operadores por turno bajo estrictos protocolos de seguridad industrial y 5S.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Role 2: Symrise AG -->
+                <div class="relative pl-8 md:pl-10">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-emerald-500 border-4 border-[#0A0E17]"></div>
+                    <div class="md:absolute md:-left-32 md:top-1 text-xs font-mono text-emerald-400 md:text-right md:w-24 mb-2 md:mb-0">
+                        2022 - 2023
+                    </div>
+                    <div class="glass-panel p-6 rounded-2xl border border-slate-800">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-1">
+                            <h3 class="text-lg font-bold text-white">Auxiliar HSE / Operaciones Industriales</h3>
+                            <span class="text-xs font-mono text-emerald-400 font-semibold">SYMRISE AG</span>
+                        </div>
+                        <div class="text-xs font-mono text-slate-400 mb-3">Guayaquil, Ecuador | Multinacional Química & Aromas</div>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-3">
+                            Control operativo de estándares de Seguridad, Higiene y Medio Ambiente (HSE) e inspección de procesos de manufactura bajo normas ISO 14001 e ISO 45001.
+                        </p>
+                        <ul class="space-y-1.5 text-xs font-mono text-slate-300">
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-emerald-400 mt-0.5"></i>
+                                <span>Auditoría e inventario de sustancias químicas peligrosas, hojas de seguridad MSDS/SGA y matriz de riesgos de planta.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-emerald-400 mt-0.5"></i>
+                                <span>Ejecución de simulacros de contingencia ambiental y monitoreo de emisiones y efluentes según lineamientos corporativos globales.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Role 3: Agua Azul Ecuador -->
+                <div class="relative pl-8 md:pl-10">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-cyan-500 border-4 border-[#0A0E17]"></div>
+                    <div class="md:absolute md:-left-32 md:top-1 text-xs font-mono text-cyan-400 md:text-right md:w-24 mb-2 md:mb-0">
+                        2021 - 2022
+                    </div>
+                    <div class="glass-panel p-6 rounded-2xl border border-slate-800">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-1">
+                            <h3 class="text-lg font-bold text-white">Analista de Calidad & Procesos</h3>
+                            <span class="text-xs font-mono text-cyan-400 font-semibold">AGUA AZUL ECUADOR</span>
+                        </div>
+                        <div class="text-xs font-mono text-slate-400 mb-3">Ecuador | Planta Purificadora & Envasado de Agua</div>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-3">
+                            Control de calidad de líneas de purificación (ósmosis inversa, filtración multimedia, desinfección UV/ozono) y control de especificaciones en producto terminado bajo normativa INEN.
+                        </p>
+                        <ul class="space-y-1.5 text-xs font-mono text-slate-300">
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-cyan-400 mt-0.5"></i>
+                                <span>Implementación de cartas de control de proceso para conductividad, turbidez y cloro residual libre.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-cyan-400 mt-0.5"></i>
+                                <span>Reducción de rechazos de línea en un 18% mediante calibración sistemática de equipos analíticos y control de sellado.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Role 4: MAATE -->
+                <div class="relative pl-8 md:pl-10">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-600 border-4 border-[#0A0E17]"></div>
+                    <div class="md:absolute md:-left-32 md:top-1 text-xs font-mono text-slate-400 md:text-right md:w-24 mb-2 md:mb-0">
+                        2020 - 2021
+                    </div>
+                    <div class="glass-panel p-6 rounded-2xl border border-slate-800">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-1">
+                            <h3 class="text-lg font-bold text-white">Pasante en Calidad de Agua & Normativa Ambiental</h3>
+                            <span class="text-xs font-mono text-slate-400 font-semibold">MINISTERIO DEL AMBIENTE (MAATE)</span>
+                        </div>
+                        <div class="text-xs font-mono text-slate-400 mb-3">Ecuador | Sector Público / Regulación Ambiental</div>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            Apoyo técnico en la revisión de informes de monitoreo ambiental de descargas industriales y verificación de cumplimiento del Libro VI del TULSMA.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- EDUCATION & CERTIFICATIONS -->
+    <section id="certificaciones" class="py-24 bg-[#0F172A]/40 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 text-cyan-400 font-mono text-xs tracking-wider uppercase mb-2">
+                    <i data-lucide="graduation-cap" class="w-4 h-4"></i>
+                    Formación & Acreditaciones
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                    Educación & Certificaciones Globales
+                </h2>
+                <p class="text-slate-400 text-sm sm:text-base mt-2">
+                    Respaldo académico formal complementado con certificaciones internacionales de alta exigencia.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                
+                <!-- Education Card 1 -->
+                <div class="glass-panel p-6 rounded-3xl border border-slate-700/80 flex items-start gap-4">
+                    <div class="w-12 h-12 rounded-2xl bg-blue-600/20 border border-blue-500/30 flex items-center justify-center text-blue-400 shrink-0">
+                        <i data-lucide="award" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <div class="text-xs font-mono text-cyan-400 font-semibold">TÍTULO DE CUARTO NIVEL</div>
+                        <h3 class="text-lg font-bold text-white mt-1">Máster Universitario en Dirección de Proyectos</h3>
+                        <div class="text-xs font-mono text-slate-400 mt-0.5">Universidad Europea de Madrid (España)</div>
+                        <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+                            Especialización en gestión estratégica bajo estándar PMBOK, metodologías ágiles (Scrum), evaluación financiera de CAPEX/OPEX y mitigación de riesgos operacionales en proyectos industriales.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Education Card 2 -->
+                <div class="glass-panel p-6 rounded-3xl border border-slate-700/80 flex items-start gap-4">
+                    <div class="w-12 h-12 rounded-2xl bg-cyan-600/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400 shrink-0">
+                        <i data-lucide="book-marked" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <div class="text-xs font-mono text-cyan-400 font-semibold">TÍTULO DE TERCER NIVEL</div>
+                        <h3 class="text-lg font-bold text-white mt-1">Ingeniero Químico</h3>
+                        <div class="text-xs font-mono text-slate-400 mt-0.5">Universidad Técnica de Machala (UTMACH - Ecuador)</div>
+                        <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+                            Fundamentos de termodinámica, cinético-química, operaciones unitarias de transferencia de masa y calor, diseño de reactores, tratamiento de efluentes y control de calidad industrial.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Certifications List Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                
+                <div class="glass-panel p-4 rounded-xl border border-slate-800 hover:border-emerald-500/50 transition-colors">
+                    <div class="text-xs font-mono text-emerald-400 font-bold mb-1">SIX SIGMA ACADEMY</div>
+                    <div class="text-sm font-bold text-white">Lean Six Sigma Green Belt</div>
+                    <div class="text-[11px] text-slate-400 mt-1">DMAIC, Cartas de Control, Pruebas de Hipótesis y Proyectos de Ahorro.</div>
+                </div>
+
+                <div class="glass-panel p-4 rounded-xl border border-slate-800 hover:border-blue-500/50 transition-colors">
+                    <div class="text-xs font-mono text-blue-400 font-bold mb-1">UNIV. DE MÍCHIGAN</div>
+                    <div class="text-sm font-bold text-white">Applied AI & Machine Learning</div>
+                    <div class="text-[11px] text-slate-400 mt-1">Modelos predictivos, redes neuronales y optimización matemática.</div>
+                </div>
+
+                <div class="glass-panel p-4 rounded-xl border border-slate-800 hover:border-cyan-500/50 transition-colors">
+                    <div class="text-xs font-mono text-cyan-400 font-bold mb-1">GOOGLE PROFESSIONAL</div>
+                    <div class="text-sm font-bold text-white">Google Data Analytics</div>
+                    <div class="text-[11px] text-slate-400 mt-1">Procesamiento SQL, R/Python, Tableau, modelado y visualización.</div>
+                </div>
+
+                <div class="glass-panel p-4 rounded-xl border border-slate-800 hover:border-indigo-500/50 transition-colors">
+                    <div class="text-xs font-mono text-indigo-400 font-bold mb-1">MINITAB SPC</div>
+                    <div class="text-sm font-bold text-white">Control Estadístico de Calidad</div>
+                    <div class="text-[11px] text-slate-400 mt-1">Estudio R&R, Cartas Shewhart, Capacidad de Proceso Cp/Cpk.</div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT & DIRECT RECRUITMENT SECTION -->
+    <section id="contacto" class="py-24 relative overflow-hidden">
+        <!-- Ambient Glow -->
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-blue-600/10 blur-[150px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <div class="glass-panel rounded-3xl p-8 sm:p-12 border border-blue-500/30 text-center shadow-2xl bg-gradient-to-b from-[#0F172A] to-[#0A0E17]">
+                
+                <div class="w-16 h-16 rounded-2xl bg-blue-600/20 border border-blue-500/40 flex items-center justify-center text-cyan-400 mx-auto mb-6">
+                    <i data-lucide="mail-check" class="w-8 h-8"></i>
+                </div>
+
+                <div class="inline-flex items-center gap-2 text-cyan-400 font-mono text-xs tracking-wider uppercase mb-2">
+                    Contacto Directo para Reclutadores & Gerencias
+                </div>
+
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                    ¿Buscas un Ingeniero que una Planta Física y Tecnología?
+                </h2>
+
+                <p class="text-slate-300 text-sm sm:text-base mt-3 max-w-2xl mx-auto leading-relaxed">
+                    Estoy disponible para incorporarme de manera inmediata a empresas que busquen optimizar sus operaciones industriales, digitalizar sus plantas mediante gemelos digitales o liderar áreas de calidad y mejora continua.
+                </p>
+
+                <!-- Contact Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-10 text-left font-mono">
+                    
+                    <!-- Email Card -->
+                    <div class="bg-slate-900/90 p-5 rounded-2xl border border-slate-800 flex flex-col justify-between group">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+                                <span class="flex items-center gap-1.5"><i data-lucide="mail" class="w-4 h-4 text-cyan-400"></i> Correo Directo</span>
+                                <button onclick="copyToClipboard('apoloangelo9@gmail.com', 'email-copy-lbl')" class="text-[10px] text-cyan-400 hover:underline" id="email-copy-lbl">Copiar</button>
+                            </div>
+                            <a href="mailto:apoloangelo9@gmail.com" class="text-sm font-semibold text-white group-hover:text-cyan-400 transition-colors break-all">
+                                apoloangelo9@gmail.com
+                            </a>
+                        </div>
+                        <div class="text-[10px] text-slate-500 mt-3">Respuesta en &lt; 12 horas</div>
+                    </div>
+
+                    <!-- WhatsApp / Phone Card -->
+                    <div class="bg-slate-900/90 p-5 rounded-2xl border border-slate-800 flex flex-col justify-between group">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+                                <span class="flex items-center gap-1.5"><i data-lucide="phone" class="w-4 h-4 text-emerald-400"></i> Teléfono / WhatsApp</span>
+                                <button onclick="copyToClipboard('+593969763084', 'phone-copy-lbl')" class="text-[10px] text-emerald-400 hover:underline" id="phone-copy-lbl">Copiar</button>
+                            </div>
+                            <a href="https://wa.me/593969763084" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-white group-hover:text-emerald-400 transition-colors">
+                                +593 96 976 3084
+                            </a>
+                        </div>
+                        <div class="text-[10px] text-slate-500 mt-3">Llamadas & WhatsApp directo</div>
+                    </div>
+
+                    <!-- LinkedIn Card -->
+                    <div class="bg-slate-900/90 p-5 rounded-2xl border border-slate-800 flex flex-col justify-between group">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+                                <span class="flex items-center gap-1.5"><i data-lucide="linkedin" class="w-4 h-4 text-blue-400"></i> Red Profesional</span>
+                                <i data-lucide="external-link" class="w-3 h-3 text-slate-500"></i>
+                            </div>
+                            <a href="https://www.linkedin.com/in/angelo-a-44a9a323b" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-white group-hover:text-blue-400 transition-colors">
+                                in/angelo-a-44a9a323b
+                            </a>
+                        </div>
+                        <div class="text-[10px] text-slate-500 mt-3">Perfil Verificado en LinkedIn</div>
+                    </div>
+
+                </div>
+
+                <!-- Bottom Download Action -->
+                <div class="mt-10 flex flex-wrap items-center justify-center gap-4">
+                    <a href="assets/CV_Angelo_Apolo.pdf" download="CV_Angelo_Apolo_Ingeniero_Quimico.pdf" class="flex items-center gap-2 px-8 py-4 text-sm font-mono font-bold text-white bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 rounded-xl transition-all shadow-xl shadow-blue-600/30">
+                        <i data-lucide="file-down" class="w-5 h-5"></i>
+                        DESCARGAR CURRÍCULUM VITAE COMPLETO (PDF)
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-800/80 bg-[#0A0E17] py-12 text-center text-xs font-mono text-slate-500">
+        <div class="max-w-7xl mx-auto px-4 space-y-3">
+            <div class="flex items-center justify-center gap-2 text-slate-400">
+                <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                <span>Portafolio Profesional de Ingeniería & Gemelos Digitales</span>
+            </div>
+            <div>
+                © 2026 Ing. Angelo Apolo Chamba, M.Sc. | Guayaquil, Ecuador.
+            </div>
+            <div class="text-[11px] text-slate-600">
+                Construido con HTML5, Tailwind CSS, Vanilla JS y alojado con arquitectura Cloud.
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL: LIVE SCADA EMBED -->
+    <div id="scada-modal" class="fixed inset-0 z-50 hidden bg-black/90 backdrop-blur-md flex flex-col p-2 sm:p-4">
+        <div class="flex items-center justify-between bg-slate-900 border border-slate-800 rounded-t-2xl px-4 py-3">
+            <div class="flex items-center gap-3">
+                <span class="w-3 h-3 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span class="font-mono text-xs font-bold text-white">SCADA Web PTAR Live Cloud Monitor</span>
+                <span class="hidden sm:inline-block px-2 py-0.5 text-[10px] font-mono bg-blue-500/20 text-cyan-400 rounded border border-blue-500/30">FastAPI + DuckDB + PINN</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <a href="https://01optimizacionptarefluentes-production.up.railway.app" target="_blank" rel="noopener noreferrer" class="px-3 py-1 text-xs font-mono bg-blue-600 hover:bg-blue-500 text-white rounded-lg flex items-center gap-1.5 transition-colors">
+                    <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                    Abrir en pestaña nueva
+                </a>
+                <button onclick="closeScadaModal()" class="p-1.5 text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg transition-colors">
+                    <i data-lucide="x" class="w-5 h-5"></i>
+                </button>
+            </div>
+        </div>
+        <div class="flex-1 bg-slate-950 rounded-b-2xl overflow-hidden border-x border-b border-slate-800 relative">
+            <iframe id="scada-iframe" class="w-full h-full border-0" title="SCADA Web PTAR"></iframe>
+        </div>
+    </div>
+
+    <!-- MODAL: PROYECTO PTAR MEMORIA TECNICA -->
+    <div id="modal-ptar" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="glass-panel max-w-3xl w-full max-h-[90vh] overflow-y-auto rounded-3xl border border-blue-500/40 p-6 sm:p-8 bg-[#0F172A]">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-4 mb-6">
+                <div>
+                    <span class="text-xs font-mono text-cyan-400 font-bold uppercase">Memoria de Ingeniería</span>
+                    <h3 class="text-xl font-bold text-white">Gemelo Digital Híbrido & SCADA Web PTAR</h3>
+                </div>
+                <button onclick="closeProjectModal('ptar')" class="p-2 text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg">
+                    <i data-lucide="x" class="w-5 h-5"></i>
+                </button>
+            </div>
+            <div class="space-y-4 text-sm text-slate-300 font-sans leading-relaxed">
+                <p>
+                    <strong class="text-white">1. Problema Industrial:</strong> Las PTAR convencionales sufren sobrecostos de hasta un 40% en floculantes y energía eléctrica por dosificación reactiva o empírica, provocando además episodios de arrastre de lodos y multas por incumplimiento de DBO/DQO en vertidos.
+                </p>
+                <p>
+                    <strong class="text-white">2. Solución de Ingeniería:</strong> Se desarrolló un Gemelo Digital Grey-Box que acopla:
+                </p>
+                <ul class="list-disc pl-5 space-y-1 font-mono text-xs text-slate-300">
+                    <li><strong>Cinética Biológica de Monod:</strong> \(\mu = \mu_{max} rac{S}{K_s + S} \cdot rac{DO}{K_{DO} + DO}\) para tasa de crecimiento de biomasa.</li>
+                    <li><strong>Corrección Térmica de Arrhenius:</strong> \(	heta^{(T - 20)}\) con factor \(	heta = 1.047\) para simular variaciones estacionales.</li>
+                    <li><strong>Dinámica de Oxígeno Disuelto:</strong> Transferencia \(K_L a\) en función de la potencia de sopladores.</li>
+                    <li><strong>Red Neuronal Compensatoria:</strong> Ajusta en &lt; 0.20s la no-linealidad fisicoquímica garantizando conservación de masa.</li>
+                </ul>
+                <p>
+                    <strong class="text-white">3. Resultados Verificados:</strong> Disminución del 32.4% en OPEX mensual de coagulante (PAC), reducción de consumo en sopladores en 18% y 98.4% de tasa de cumplimiento bajo norma TULSMA Tabla 9.
+                </p>
+                <div class="pt-4 flex gap-3">
+                    <a href="https://01optimizacionptarefluentes-production.up.railway.app" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-blue-600 text-white font-mono text-xs font-bold rounded-lg flex items-center gap-2">
+                        <i data-lucide="external-link" class="w-4 h-4"></i> Probar SCADA en Vivo
+                    </a>
+                    <a href="https://github.com/32456344567/01_Optimizacion_PTAR_Efluentes" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-slate-800 text-slate-200 font-mono text-xs font-semibold rounded-lg border border-slate-700 flex items-center gap-2">
+                        <i data-lucide="github" class="w-4 h-4"></i> Ver en GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: PROYECTO OEE LEAN SIX SIGMA -->
+    <div id="modal-oee" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="glass-panel max-w-3xl w-full max-h-[90vh] overflow-y-auto rounded-3xl border border-emerald-500/40 p-6 sm:p-8 bg-[#0F172A]">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-4 mb-6">
+                <div>
+                    <span class="text-xs font-mono text-emerald-400 font-bold uppercase">Caso de Estudio Operacional</span>
+                    <h3 class="text-xl font-bold text-white">Análisis OEE, SMED & Eliminación de Paradas Crónicas</h3>
+                </div>
+                <button onclick="closeProjectModal('oee')" class="p-2 text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg">
+                    <i data-lucide="x" class="w-5 h-5"></i>
+                </button>
+            </div>
+            <div class="space-y-4 text-sm text-slate-300 font-sans leading-relaxed">
+                <p>
+                    <strong class="text-white">1. Situación Inicial:</strong> La línea operaba con un OEE del 68.5%, castigada principalmente por disponibilidad (paradas imprevistas en bombas y selladoras) y largos tiempos de cambio de formato (setup de 75 minutos).
+                </p>
+                <p>
+                    <strong class="text-white">2. Intervención Metodológica:</strong>
+                </p>
+                <ul class="list-disc pl-5 space-y-1 font-mono text-xs text-slate-300">
+                    <li>Estratificación Pareto 80/20 sobre 1,400 horas de registros de paradas en base SQL.</li>
+                    <li>Aplicación de la metodología SMED: Conversión de tareas internas a externas y estandarización de utillajes, reduciendo el setup a 45 minutos (-40%).</li>
+                    <li>Diseño de Tablero Ejecutivo en Power BI con Modelo Estrella (Tablas Hechos de Producción + Dimensiones de Turno, Línea y Defecto) y medidas DAX dinámicas para Disponibilidad, Rendimiento y Calidad.</li>
+                </ul>
+                <p>
+                    <strong class="text-white">3. Impacto Económico:</strong> Incremento sostenido del OEE a 84.2% (+15.7 puntos porcentuales), habilitando un aumento de capacidad disponible equivalente a 220 horas de producción anuales sin inversión de capital (CAPEX $0).
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: PROYECTO SPC CALIDAD -->
+    <div id="modal-spc" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="glass-panel max-w-3xl w-full max-h-[90vh] overflow-y-auto rounded-3xl border border-indigo-500/40 p-6 sm:p-8 bg-[#0F172A]">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-4 mb-6">
+                <div>
+                    <span class="text-xs font-mono text-indigo-400 font-bold uppercase">Caso de Control Estadístico</span>
+                    <h3 class="text-xl font-bold text-white">SPC en Minitab & Reducción de Pérdidas por Giveaway</h3>
+                </div>
+                <button onclick="closeProjectModal('spc')" class="p-2 text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg">
+                    <i data-lucide="x" class="w-5 h-5"></i>
+                </button>
+            </div>
+            <div class="space-y-4 text-sm text-slate-300 font-sans leading-relaxed">
+                <p>
+                    <strong class="text-white">1. Problema de Calidad:</strong> Alta variabilidad en la dosificadora automática provocaba que los operadores sobrellenaran los envases para no incurrir en producto bajo peso según normativa legal, generando pérdidas de materia prima por sobrellenado (giveaway).
+                </p>
+                <p>
+                    <strong class="text-white">2. Análisis Estadístico:</strong>
+                </p>
+                <ul class="list-disc pl-5 space-y-1 font-mono text-xs text-slate-300">
+                    <li>Prueba de normalidad de Anderson-Darling en Minitab y Cartas Shewhart \(ar{X}-R\) para monitorear subgrupos racionales.</li>
+                    <li>Identificación y remoción de causas asignables (desgaste de boquillas y fluctuaciones de presión de cabezal).</li>
+                    <li>Estudio de Capacidad: Elevación del índice \(C_{pk}\) de 0.89 (proceso incapaz) a 1.42 (proceso de clase mundial).</li>
+                </ul>
+                <p>
+                    <strong class="text-white">3. Impacto Financiero:</strong> Ahorro neto estimado en $28,000 USD al año al centrar la media del proceso más cerca del límite nominal sin generar envases no conformes.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
