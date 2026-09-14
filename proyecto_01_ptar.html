@@ -258,22 +258,76 @@
         <section>
             <h2 class="case-section-title">
                 <i data-lucide="play-circle" class="w-5 h-5 text-cyan-400"></i>
-                5. Demostración Interactiva en Railway Cloud
+                5. Demostración Interactiva en Railway Cloud & Módulos SCADA
             </h2>
-            <div class="corp-card rounded-2xl p-6 border border-slate-700">
-                <p class="text-xs text-slate-300 mb-4 font-mono leading-relaxed">
-                    Plataforma SCADA Web interactiva desplegada en producción en Railway con simulación en tiempo real, selector de escenarios de caudal y consola analítica DuckDB SQL:
-                </p>
-                <div class="aspect-video w-full rounded-xl overflow-hidden border border-slate-700 bg-slate-950 mb-4">
-                    <iframe src="https://01optimizacionptarefluentes-production.up.railway.app" class="w-full h-full border-0" title="SCADA Web PTAR Live"></iframe>
+            <div class="corp-card rounded-2xl p-6 border border-slate-700 space-y-6">
+                <div>
+                    <p class="text-xs text-slate-300 font-mono leading-relaxed mb-4">
+                        El sistema SCADA industrial integra supervisión en tiempo real, monitoreo de consignas de aireación, control de variadores VFD y una consola analítica de datos:
+                    </p>
+
+                    <!-- Galería de 4 Vistas SCADA -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                        <div class="rounded-xl overflow-hidden border border-slate-700/80 bg-slate-950/60 p-2 group hover:border-blue-500/60 transition-all">
+                            <div class="aspect-video rounded-lg overflow-hidden mb-2 border border-slate-800">
+                                <img src="assets/img/scada_tab1_operaciones.png" alt="SCADA Vista 01 - Operaciones y Calidad" class="w-full h-full object-cover">
+                            </div>
+                            <div class="px-1 text-xs">
+                                <span class="text-cyan-400 font-mono font-bold block">Vista 01: Operación & Calidad TULSMA</span>
+                                <span class="text-slate-400 text-[11px]">Monitoreo de oxígeno disuelto (DO), pH, DBO calculada vs norma ambiental.</span>
+                            </div>
+                        </div>
+                        <div class="rounded-xl overflow-hidden border border-slate-700/80 bg-slate-950/60 p-2 group hover:border-emerald-500/60 transition-all">
+                            <div class="aspect-video rounded-lg overflow-hidden mb-2 border border-slate-800">
+                                <img src="assets/img/scada_tab2_energia_opex.png" alt="SCADA Vista 02 - Energía OPEX y Sostenibilidad" class="w-full h-full object-cover">
+                            </div>
+                            <div class="px-1 text-xs">
+                                <span class="text-emerald-400 font-mono font-bold block">Vista 02: Energía Sopladores, OPEX & ESG</span>
+                                <span class="text-slate-400 text-[11px]">Potencia sopladores (kW), kWh consumidos, costo acumulado y emisiones CO₂ eq.</span>
+                            </div>
+                        </div>
+                        <div class="rounded-xl overflow-hidden border border-slate-700/80 bg-slate-950/60 p-2 group hover:border-blue-500/60 transition-all">
+                            <div class="aspect-video rounded-lg overflow-hidden mb-2 border border-slate-800">
+                                <img src="assets/img/scada_tab3_gemelo_digital.png" alt="SCADA Vista 03 - Gemelo Digital y PFD Dinámico" class="w-full h-full object-cover">
+                            </div>
+                            <div class="px-1 text-xs">
+                                <span class="text-blue-400 font-mono font-bold block">Vista 03: Gemelo Digital & PFD Dinámico</span>
+                                <span class="text-slate-400 text-[11px]">Diagrama de flujo de proceso con animación SVG y simulador de escenarios What-If.</span>
+                            </div>
+                        </div>
+                        <div class="rounded-xl overflow-hidden border border-slate-700/80 bg-slate-950/60 p-2 group hover:border-indigo-500/60 transition-all">
+                            <div class="aspect-video rounded-lg overflow-hidden mb-2 border border-slate-800">
+                                <img src="assets/img/scada_tab4_sql_duckdb.png" alt="SCADA Vista 04 - Consola DuckDB SQL" class="w-full h-full object-cover">
+                            </div>
+                            <div class="px-1 text-xs">
+                                <span class="text-indigo-400 font-mono font-bold block">Vista 04: Consola Analítica DuckDB SQL</span>
+                                <span class="text-slate-400 text-[11px]">Consultas SQL de alta velocidad en memoria sobre 80,000 registros operativos.</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="flex flex-wrap gap-3 pt-2">
-                    <a href="https://01optimizacionptarefluentes-production.up.railway.app" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 bg-blue-600 hover:bg-blue-500 text-white text-xs font-mono font-bold rounded-lg flex items-center gap-2">
-                        <i data-lucide="external-link" class="w-4 h-4"></i> ABRIR SCADA EN PESTAÑA COMPLETA
-                    </a>
-                    <a href="https://github.com/32456344567/01_Optimizacion_PTAR_Efluentes" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 bg-slate-900 hover:bg-slate-800 text-slate-300 text-xs font-mono font-semibold rounded-lg border border-slate-700 flex items-center gap-2">
-                        <i data-lucide="github" class="w-4 h-4"></i> REPOSITORIO GITHUB
-                    </a>
+
+                <div class="pt-2 border-t border-slate-800">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-xs font-mono font-bold text-white uppercase flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                            Simulador SCADA Web en Vivo (Railway Cloud)
+                        </span>
+                        <a href="https://01optimizacionptarefluentes-production.up.railway.app" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-blue-400 hover:underline flex items-center gap-1">
+                            Abrir pantalla completa <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                        </a>
+                    </div>
+                    <div class="aspect-video w-full rounded-xl overflow-hidden border border-slate-700 bg-slate-950 mb-4">
+                        <iframe src="https://01optimizacionptarefluentes-production.up.railway.app" class="w-full h-full border-0" title="SCADA Web PTAR Live"></iframe>
+                    </div>
+                    <div class="flex flex-wrap gap-3 pt-2">
+                        <a href="https://01optimizacionptarefluentes-production.up.railway.app" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 bg-blue-600 hover:bg-blue-500 text-white text-xs font-mono font-bold rounded-lg flex items-center gap-2">
+                            <i data-lucide="external-link" class="w-4 h-4"></i> ABRIR SCADA EN PESTAÑA COMPLETA
+                        </a>
+                        <a href="https://github.com/32456344567/01_Optimizacion_PTAR_Efluentes" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 bg-slate-900 hover:bg-slate-800 text-slate-300 text-xs font-mono font-semibold rounded-lg border border-slate-700 flex items-center gap-2">
+                            <i data-lucide="github" class="w-4 h-4"></i> REPOSITORIO GITHUB
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>

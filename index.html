@@ -187,6 +187,67 @@
                             </span>
                         </div>
 
+                        
+                        <!-- SCADA SCREENSHOTS SLIDER (ROTATING CAPTURES) -->
+                        <div class="relative w-full aspect-[16/9] rounded-xl overflow-hidden border border-slate-700 bg-slate-950 group my-2 cursor-pointer shadow-md" id="scada-carousel-p1" onclick="window.location.href='proyecto_01_ptar.html'">
+                            <!-- Slide 1 -->
+                            <div class="scada-slide relative w-full h-full transition-all duration-300" data-index="0">
+                                <img src="assets/img/scada_tab1_operaciones.png" alt="SCADA Vista 01 - Operaciones y Calidad TULSMA" class="w-full h-full object-cover">
+                                <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-2 flex items-center justify-between text-[11px] font-mono">
+                                    <span class="text-cyan-300 font-bold flex items-center gap-1.5">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span> 01. Operación & Cumplimiento TULSMA
+                                    </span>
+                                    <span class="text-slate-400 text-[10px] bg-slate-900/80 px-1.5 py-0.5 rounded border border-slate-700">1 / 4</span>
+                                </div>
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="scada-slide hidden relative w-full h-full transition-all duration-300" data-index="1">
+                                <img src="assets/img/scada_tab2_energia_opex.png" alt="SCADA Vista 02 - Energía OPEX y Sostenibilidad ESG" class="w-full h-full object-cover">
+                                <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-2 flex items-center justify-between text-[11px] font-mono">
+                                    <span class="text-emerald-400 font-bold flex items-center gap-1.5">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> 02. Energía Sopladores, OPEX & ESG
+                                    </span>
+                                    <span class="text-slate-400 text-[10px] bg-slate-900/80 px-1.5 py-0.5 rounded border border-slate-700">2 / 4</span>
+                                </div>
+                            </div>
+                            <!-- Slide 3 -->
+                            <div class="scada-slide hidden relative w-full h-full transition-all duration-300" data-index="2">
+                                <img src="assets/img/scada_tab3_gemelo_digital.png" alt="SCADA Vista 03 - Gemelo Digital y Simulador What-If" class="w-full h-full object-cover">
+                                <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-2 flex items-center justify-between text-[11px] font-mono">
+                                    <span class="text-blue-400 font-bold flex items-center gap-1.5">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-blue-400"></span> 03. Gemelo Digital & PFD Dinámico
+                                    </span>
+                                    <span class="text-slate-400 text-[10px] bg-slate-900/80 px-1.5 py-0.5 rounded border border-slate-700">3 / 4</span>
+                                </div>
+                            </div>
+                            <!-- Slide 4 -->
+                            <div class="scada-slide hidden relative w-full h-full transition-all duration-300" data-index="3">
+                                <img src="assets/img/scada_tab4_sql_duckdb.png" alt="SCADA Vista 04 - Consola Analítica SQL DuckDB" class="w-full h-full object-cover">
+                                <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-2 flex items-center justify-between text-[11px] font-mono">
+                                    <span class="text-indigo-400 font-bold flex items-center gap-1.5">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-indigo-400"></span> 04. Consola SQL DuckDB In-Memory
+                                    </span>
+                                    <span class="text-slate-400 text-[10px] bg-slate-900/80 px-1.5 py-0.5 rounded border border-slate-700">4 / 4</span>
+                                </div>
+                            </div>
+
+                            <!-- Manual Arrow Controls -->
+                            <button onclick="prevScadaSlide(event)" class="absolute left-1.5 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-black/70 hover:bg-black/90 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity z-20">
+                                <i data-lucide="chevron-left" class="w-3.5 h-3.5"></i>
+                            </button>
+                            <button onclick="nextScadaSlide(event)" class="absolute right-1.5 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-black/70 hover:bg-black/90 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity z-20">
+                                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+                            </button>
+
+                            <!-- Navigation Dots -->
+                            <div class="absolute top-2 right-2 flex items-center gap-1 bg-black/70 px-2 py-0.5 rounded-full z-20">
+                                <span class="scada-dot w-1.5 h-1.5 rounded-full bg-blue-500 cursor-pointer" onclick="goToScadaSlide(0, event)"></span>
+                                <span class="scada-dot w-1.5 h-1.5 rounded-full bg-slate-600 cursor-pointer" onclick="goToScadaSlide(1, event)"></span>
+                                <span class="scada-dot w-1.5 h-1.5 rounded-full bg-slate-600 cursor-pointer" onclick="goToScadaSlide(2, event)"></span>
+                                <span class="scada-dot w-1.5 h-1.5 rounded-full bg-slate-600 cursor-pointer" onclick="goToScadaSlide(3, event)"></span>
+                            </div>
+                        </div>
+
                         <h3 class="text-xl font-bold text-white tracking-tight leading-snug">
                             Optimización Operativa de PTAR y Eficiencia Energética en Sistemas de Aireación
                         </h3>
@@ -570,5 +631,6 @@
     <script>
         lucide.createIcons();
     </script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

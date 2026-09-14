@@ -143,3 +143,66 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+// SCADA Carousel Logic
+let currentScadaSlide = 0;
+let scadaInterval = null;
+
+window.showScadaSlide = function(idx) {
+    const container = document.getElementById('scada-carousel-p1');
+    if (!container) return;
+    const slides = container.querySelectorAll('.scada-slide');
+    const dots = container.querySelectorAll('.scada-dot');
+    if (!slides.length) return;
+    
+    currentScadaSlide = (idx + slides.length) % slides.length;
+    
+    slides.forEach((s, i) => {
+        if (i === currentScadaSlide) {
+            s.classList.remove('hidden');
+        } else {
+            s.classList.add('hidden');
+        }
+    });
+    
+    dots.forEach((d, i) => {
+        if (i === currentScadaSlide) {
+            d.classList.remove('bg-slate-600');
+            d.classList.add('bg-blue-500');
+        } else {
+            d.classList.remove('bg-blue-500');
+            d.classList.add('bg-slate-600');
+        }
+    });
+};
+
+window.nextScadaSlide = function(e) {
+    if (e) e.stopPropagation();
+    showScadaSlide(currentScadaSlide + 1);
+};
+
+window.prevScadaSlide = function(e) {
+    if (e) e.stopPropagation();
+    showScadaSlide(currentScadaSlide - 1);
+};
+
+window.goToScadaSlide = function(idx, e) {
+    if (e) e.stopPropagation();
+    showScadaSlide(idx);
+};
+
+function startScadaCarousel() {
+    if (scadaInterval) clearInterval(scadaInterval);
+    scadaInterval = setInterval(() => {
+        showScadaSlide(currentScadaSlide + 1);
+    }, 3500);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const container = document.getElementById('scada-carousel-p1');
+    if (container) {
+        container.addEventListener('mouseenter', () => clearInterval(scadaInterval));
+        container.addEventListener('mouseleave', () => startScadaCarousel());
+        startScadaCarousel();
+    }
+});
