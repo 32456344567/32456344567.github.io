@@ -3,26 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caso 02: Análisis OEE & Metodología SMED | Ing. Angelo Apolo</title>
+    <title>Caso 02: Optimización OEE, Cuello de Botella & Lean SMED | Ing. Angelo Apolo</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
-
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="assets/css/custom.css">
 </head>
-<body class="bg-[#F8FAFC] text-slate-800 antialiased selection:bg-blue-600 selection:text-slate-900 relative">
+<body class="bg-[#F8FAFC] text-slate-800 antialiased selection:bg-blue-600 selection:text-white relative">
 
-
-            <!-- Ambient Glow Top -->
     <div class="ambient-glow-top"></div>
-<!-- TOP NAVIGATION -->
+
+    <!-- TOP NAVIGATION -->
     <nav class="fixed top-0 left-0 right-0 z-50 bg-white/85 backdrop-blur-xl border-b border-slate-200/80">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20 gap-4">
@@ -42,7 +37,7 @@
                     </div>
                 </a>
 
-                <!-- Enlaces Centrales de Navegación -->
+                <!-- Enlaces Centrales -->
                 <div class="hidden lg:flex items-center gap-6 xl:gap-8 text-xs xl:text-sm font-medium text-slate-600 shrink-0">
                     <a href="index.html#perfil" class="hover:text-slate-900 transition-colors whitespace-nowrap">Perfil</a>
                     <a href="index.html#proyectos" class="text-blue-600 font-semibold flex items-center gap-1.5 whitespace-nowrap">
@@ -51,186 +46,253 @@
                     </a>
                     <a href="index.html#stack-tecnico" class="hover:text-slate-900 transition-colors whitespace-nowrap">Datos & IA</a>
                     <a href="index.html#experiencia" class="hover:text-slate-900 transition-colors whitespace-nowrap">Experiencia de Planta</a>
-                    <a href="index.html#competencias" class="hover:text-slate-900 transition-colors whitespace-nowrap">Competencias</a>
                     <a href="index.html#contacto" class="hover:text-slate-900 transition-colors whitespace-nowrap">Contacto</a>
                 </div>
 
-                <!-- Botones de Acción Directa -->
+                <!-- Botones Contacto -->
                 <div class="hidden sm:flex items-center gap-2.5 shrink-0">
-                    <a href="https://wa.me/593969763084?text=Hola%20Ing.%20Angelo%20Apolo,%20revisamos%20su%20portafolio%20y%20nos%20gustar%C3%ADa%20conversar%20sobre%20una%20oportunidad%20laboral." 
-                       target="_blank" rel="noopener noreferrer" 
-                       class="flex items-center gap-2 px-3.5 py-2 text-xs font-mono font-semibold text-emerald-700 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 rounded-lg transition-all shrink-0 whitespace-nowrap shadow-sm">
-                        <svg class="w-4 h-4 fill-current text-emerald-600 shrink-0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.25-1.49-1.4-1.74-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.32-.02-.45-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.54.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.28z"/></svg>
+                    <a href="https://wa.me/593969763084" target="_blank" rel="noopener noreferrer" 
+                       class="flex items-center gap-2 px-3.5 py-2 text-xs font-mono font-semibold text-emerald-700 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 rounded-lg transition-all shadow-sm">
                         <span>WhatsApp: 0969763084</span>
                     </a>
-                    <a href="https://www.linkedin.com/in/angelo-a-44a9a323b" 
-                       target="_blank" rel="noopener noreferrer" 
-                       class="flex items-center gap-2 px-3.5 py-2 text-xs font-mono font-semibold text-white bg-[#0A66C2] hover:bg-[#004182] rounded-lg transition-all shadow-sm shrink-0 whitespace-nowrap">
-                        <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.66 1.66 0 0 0-1.66 1.66c0 .92.74 1.67 1.66 1.67a1.67 1.67 0 0 0 0-3.33z"/></svg>
+                    <a href="https://www.linkedin.com/in/angelo-a-44a9a323b" target="_blank" rel="noopener noreferrer" 
+                       class="flex items-center gap-2 px-3.5 py-2 text-xs font-mono font-semibold text-white bg-[#0A66C2] hover:bg-[#004182] rounded-lg transition-all shadow-sm">
                         <span>LinkedIn</span>
                     </a>
                 </div>
-
-                <!-- Botón Hamburguesa Móvil -->
-                <button id="mobile-menu-btn" class="lg:hidden p-2 text-slate-600 hover:text-slate-900 rounded-lg focus:outline-none" aria-label="Abrir menú">
-                    <i data-lucide="menu" class="w-6 h-6"></i>
-                </button>
-            </div>
-        </div>
-
-        <!-- Menú Desplegable Móvil -->
-        <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 bg-white px-4 pt-4 pb-6 space-y-3 font-mono text-sm shadow-lg">
-            <a href="index.html#perfil" class="block text-slate-700 hover:text-blue-600 py-1">Perfil</a>
-            <a href="index.html#proyectos" class="block text-slate-700 hover:text-blue-600 py-1">Proyectos (3 Reales)</a>
-            <a href="index.html#stack-tecnico" class="block text-slate-700 hover:text-blue-600 py-1">Datos & IA</a>
-            <a href="index.html#experiencia" class="block text-slate-700 hover:text-blue-600 py-1">Experiencia de Planta</a>
-            <a href="index.html#competencias" class="block text-slate-700 hover:text-blue-600 py-1">Competencias</a>
-            <a href="index.html#contacto" class="block text-slate-700 hover:text-blue-600 py-1">Contacto</a>
-            <div class="pt-3 border-t border-slate-200 flex flex-col gap-2">
-                <a href="https://wa.me/593969763084?text=Hola%20Ing.%20Angelo%20Apolo,%20revisamos%20su%20portafolio%20y%20nos%20gustar%C3%ADa%20conversar%20sobre%20una%20oportunidad%20laboral." 
-                   target="_blank" rel="noopener noreferrer" 
-                   class="flex items-center justify-center gap-2 px-3 py-2 text-xs font-semibold text-emerald-700 bg-emerald-50 border border-emerald-200 rounded-lg">
-                    <svg class="w-4 h-4 fill-current text-emerald-600 shrink-0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.25-1.49-1.4-1.74-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.32-.02-.45-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.54.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.28z"/></svg>
-                    <span>WhatsApp: 0969763084</span>
-                </a>
-                <a href="https://www.linkedin.com/in/angelo-a-44a9a323b" 
-                   target="_blank" rel="noopener noreferrer" 
-                   class="flex items-center justify-center gap-2 px-3 py-2 text-xs font-semibold text-white bg-[#0A66C2] rounded-lg">
-                    <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.66 1.66 0 0 0-1.66 1.66c0 .92.74 1.67 1.66 1.67a1.67 1.67 0 0 0 0-3.33z"/></svg>
-                    <span>LinkedIn</span>
-                </a>
             </div>
         </div>
     </nav>
 
-
-    <!-- HEADER -->
+    <!-- HEADER DEL CASO -->
     <div class="pt-28 pb-10 border-b border-slate-200 bg-white">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center gap-2 text-xs font-mono text-slate-500 mb-4">
                 <a href="index.html" class="hover:text-blue-700">Inicio</a>
                 <span>/</span>
-                <a href="index.html#proyectos" class="hover:text-emerald-600 transition-colors">Proyectos</a>
+                <a href="index.html#proyectos" class="hover:text-blue-600 transition-colors">Proyectos</a>
                 <span>/</span>
-                <span class="text-emerald-700 font-semibold">Caso 02: Analítica OEE & Reducción de Tiempos SMED</span>
+                <span class="text-blue-700 font-semibold">Caso 02: Optimización OEE & Lean SMED</span>
             </div>
 
-            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-mono font-bold uppercase mb-3 border border-emerald-200">
-                PROYECTO 02 · LEAN MANUFACTURING & ANALÍTICA DE PLANTA
+            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-mono font-bold uppercase mb-3 border border-blue-200">
+                PROYECTO 02 · LEAN MANUFACTURING, TEORÍA DE RESTRICCIONES & ANALÍTICA DE DATOS
             </div>
 
             <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-                Análisis y Optimización de OEE, Paradas Crónicas y Reducción de Tiempos de Cambio (SMED)
+                Optimización de OEE de Planta, Cuello de Botella & Reducción de Tiempos de Cambio (SMED)
             </h1>
 
             <div class="flex flex-wrap items-center gap-6 mt-6 text-xs font-mono text-slate-600 border-t border-slate-200 pt-4">
-                <div><span class="text-slate-900 font-semibold">PROCESO:</span> Línea Continua de Galletería (Horno & Envasado)</div>
-                <div><span class="text-slate-900 font-semibold">DATASET:</span> 8,044 Eventos de Parada de Máquina</div>
-                <div><span class="text-slate-900 font-semibold">HERRAMIENTAS:</span> Power BI (Star Schema DAX), SMED, Pareto 80/20</div>
-                <div><span class="text-slate-900 font-semibold">META:</span> Reducción del 40% en Changeover Cleaning (CC)</div>
+                <div><span class="text-slate-900 font-semibold">PLANTA:</span> Grandma EDNA's Biscuits (Manufactura Continua)</div>
+                <div><span class="text-slate-900 font-semibold">TELEMETRÍA:</span> 8,044 Eventos (Base: 744 h de Planta)</div>
+                <div><span class="text-slate-900 font-semibold">RESTRICCIÓN:</span> Llenadora de Galletas (OEE 37.90%)</div>
+                <div><span class="text-slate-900 font-semibold">STACK:</span> Python · DuckDB In-Memory · FastAPI · Lean SMED</div>
             </div>
         </div>
     </div>
 
     <!-- MAIN BODY -->
-    <main class="py-12 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+    <main class="py-12 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         
-        <!-- RESUMEN EJECUTIVO -->
-        <div class="framer-card rounded-2xl p-6 border-l-4 border-l-emerald-600 shadow-sm">
-            <h3 class="text-xs font-mono font-bold uppercase text-emerald-700 tracking-wider mb-2">Resumen de Mejora Continua & Analítica</h3>
+        <!-- RESUMEN EJECUTIVO (ELEVATOR PITCH PARA RRHH & GERENCIA) -->
+        <div class="framer-card rounded-2xl p-6 border-l-4 border-l-blue-600 shadow-sm bg-white">
+            <h3 class="text-xs font-mono font-bold uppercase text-blue-700 tracking-wider mb-2">Resumen Ejecutivo de Negocio</h3>
             <p class="text-sm text-slate-700 leading-relaxed">
-                Este proyecto aborda la optimización de líneas de envasado y horneado continuo mediante análisis riguroso de paradas crónicas y tiempos de cambio. A través del procesamiento de <strong class="text-slate-900">8,044 eventos de máquina</strong> en un modelo relacional estrella en <strong class="text-slate-900">Power BI (medidas DAX avanzadas)</strong>, se descompuso matemáticamente el OEE en <strong class="text-slate-900">Disponibilidad, Rendimiento y Calidad</strong>. El diagnóstico estratificado reveló que el 70% de la indisponibilidad provenía de limpiezas de cambio de formato (Changeover Cleaning). Mediante la metodología <strong class="text-slate-900">SMED</strong> (separación de tareas internas y externas), se diseñó un protocolo operativo para comprimir el tiempo de cambio en un <strong class="text-emerald-700 font-bold">40%</strong>, recuperando horas efectivas de empaque y estandarizando las operaciones con un <strong class="text-slate-900">Reporte A3 de Mejora Continua</strong>.
+                Este proyecto demuestra cómo recuperar capacidad instalada oculta sin incurrir en compras innecesarias de maquinaria (Capex cero). Mediante el análisis de <strong>8,044 eventos operativos</strong> en Python y DuckDB In-Memory, se descompuso el OEE de la fábrica (58.21% vs 85.0% meta mundial) y se identificó que la <strong>Llenadora de Galletas (`Biscuit Filling Machine`)</strong> frena el 70% de la facturación con un OEE de apenas <strong>37.90%</strong>. Al aplicar la metodología <strong>Lean SMED</strong>, se estandarizó el cambio de formato de <strong>45 min a 15 min (-66.7%)</strong>, liberando <strong>+49.4 h/mes</strong> y generando un caso de negocio de <strong>+$581,391 USD anuales</strong> con un Payback de <strong>14.9 días</strong> frente al Capex evitado de <strong>$250,000 USD</strong> de comprar una máquina nueva.
             </p>
         </div>
 
-        <!-- 1. OBJETIVO ESTRATÉGICO -->
-        <section>
-            <h2 class="case-section-title">
-                <i data-lucide="target" class="w-5 h-5 text-emerald-700"></i>
-                1. Descomposición Analítica del OEE & Árbol de Pérdidas
+        <!-- TARJETAS DE IMPACTO CUANTIFICADO -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-xs">
+                <span class="text-[10px] font-mono text-slate-400 font-bold block uppercase">Beneficio Anual</span>
+                <span class="text-2xl font-black font-mono text-emerald-600">+$581k</span>
+                <span class="text-[11px] text-slate-500 block mt-0.5">USD / año en EBITDA</span>
+            </div>
+            <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-xs">
+                <span class="text-[10px] font-mono text-slate-400 font-bold block uppercase">Tiempo Ahorrado</span>
+                <span class="text-2xl font-black font-mono text-blue-600">+49.4 h</span>
+                <span class="text-[11px] text-slate-500 block mt-0.5">Al mes en cuello botella</span>
+            </div>
+            <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-xs">
+                <span class="text-[10px] font-mono text-slate-400 font-bold block uppercase">Reducción SMED</span>
+                <span class="text-2xl font-black font-mono text-indigo-600">-66.7%</span>
+                <span class="text-[11px] text-slate-500 block mt-0.5">De 45 min a 15 min</span>
+            </div>
+            <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-xs">
+                <span class="text-[10px] font-mono text-slate-400 font-bold block uppercase">Retorno Inversión</span>
+                <span class="text-2xl font-black font-mono text-teal-600">14.9 Días</span>
+                <span class="text-[11px] text-slate-500 block mt-0.5">Capex $23.8k vs $250k</span>
+            </div>
+        </div>
+
+        <!-- SECCIÓN 1: SITUACIÓN & DIAGNÓSTICO OEE -->
+        <section class="space-y-4">
+            <h2 class="text-xl font-bold text-slate-900 tracking-tight flex items-center gap-2">
+                <i data-lucide="target" class="w-5 h-5 text-blue-600"></i>
+                <span>1. Diagnóstico Canónico del OEE & Árbol de Pérdidas</span>
             </h2>
             <div class="text-sm text-slate-600 space-y-3 leading-relaxed">
                 <p>
-                    A partir de los datos registrados en planta, se modelaron con medidas DAX avanzadas las 3 dimensiones del estándar mundial:
+                    Siguiendo la norma <strong>ANSI/ISA-95</strong>, se modelaron matemáticamente los 3 componentes del OEE sobre 744 horas de planta:
                 </p>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs font-mono pt-2">
-                    <div class="framer-card p-4 rounded-xl">
-                        <strong class="text-slate-900 block mb-1">Disponibilidad (A)</strong>
-                        <p class="text-slate-600 leading-relaxed">Run Time / Plan Time. Afectada directamente por paradas de mantenimiento (PM) y cambios de formato (CC).</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs font-mono pt-1">
+                    <div class="bg-white p-4 rounded-xl border border-slate-200">
+                        <strong class="text-slate-900 block mb-1">Disponibilidad (A) = 80.12%</strong>
+                        <p class="text-slate-600 leading-relaxed">Tiempo en Marcha / Tiempo Planificado. 147.9 h de paradas en el mes gobernadas por cambios de producto (CC) y averías mecánicas.</p>
                     </div>
-                    <div class="framer-card p-4 rounded-xl">
-                        <strong class="text-slate-900 block mb-1">Rendimiento (P)</strong>
-                        <p class="text-slate-600 leading-relaxed">Producción Real / (Target Speed x Run Time). Identificación de marcha lenta y cuellos de botella.</p>
+                    <div class="bg-white p-4 rounded-xl border border-slate-200">
+                        <strong class="text-slate-900 block mb-1">Rendimiento (P) = 74.05%</strong>
+                        <p class="text-slate-600 leading-relaxed">Producción Real / Capacidad Nominal. Velocidad observada en la restricción: 38,506 u/h vs diseño de 51,840 u/h (-25.7%).</p>
                     </div>
-                    <div class="framer-card p-4 rounded-xl">
-                        <strong class="text-slate-900 block mb-1">Calidad (Q)</strong>
-                        <p class="text-slate-600 leading-relaxed">Good Biscuits / Total Biscuits. Cuantificación de scrap y merma en línea de empaque.</p>
+                    <div class="bg-white p-4 rounded-xl border border-slate-200">
+                        <strong class="text-slate-900 block mb-1">Calidad (Q) = 98.24%</strong>
+                        <p class="text-slate-600 leading-relaxed">Galletas Conformes / Total Producido. 458.3 M unidades vendibles con merma controlada en 1.76%.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 2. DIAGNÓSTICO PARETO & SMED -->
-        <section>
-            <h2 class="case-section-title">
-                <i data-lucide="wrench" class="w-5 h-5 text-blue-700"></i>
-                2. Diagnóstico Pareto & Plan de Reducción SMED
+        <!-- SECCIÓN 2: TEORÍA DE RESTRICCIONES & CUELLO DE BOTELLA -->
+        <section class="space-y-4">
+            <h2 class="text-xl font-bold text-slate-900 tracking-tight flex items-center gap-2">
+                <i data-lucide="split" class="w-5 h-5 text-amber-600"></i>
+                <span>2. Identificación de la Restricción (Teoría de Restricciones - TOC)</span>
             </h2>
-            <div class="space-y-4 text-xs font-mono text-slate-600">
-                <div class="framer-card p-4 rounded-xl border border-slate-200">
-                    <strong class="text-blue-700 block mb-1">Pérdida Crítica #1: Changeover Cleaning (CC)</strong>
-                    <p class="text-slate-600 leading-relaxed">
-                        El Diagrama de Pareto demostró que el 70% de la indisponibilidad correspondía a cambios de SKU y limpieza higiénica entre lotes de producción.
-                    </p>
+            <div class="text-sm text-slate-600 space-y-3 leading-relaxed">
+                <p>
+                    El análisis de datos demostró que la fábrica no es una sola línea lineal, sino <strong>dos líneas totalmente desacopladas</strong>:
+                </p>
+                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2 text-xs font-mono">
+                    <div class="flex items-center justify-between">
+                        <b class="text-blue-900">Línea 1 (Galletas Sandwich - 70% Ventas):</b>
+                        <span class="text-slate-500">6 SKUs de Alto Volumen</span>
+                    </div>
+                    <div class="p-2.5 bg-white rounded border border-slate-200 text-slate-600">
+                        Mezcladora &rarr; Formadora &rarr; Horno Túnel &rarr; <span class="text-rose-600 font-bold bg-rose-50 px-1.5 py-0.5 rounded border border-rose-200">LLENADORA (OEE 37.90% 🔴 RESTRICCIÓN)</span> &rarr; Decoradora &rarr; Envolvedora &rarr; Encajonadora
+                    </div>
                 </div>
-                <div class="framer-card p-4 rounded-xl border border-slate-200">
-                    <strong class="text-blue-700 block mb-1">Aplicación de SMED (Single-Minute Exchange of Die)</strong>
-                    <p class="text-slate-600 leading-relaxed">
-                        Se separaron las tareas operativas:
-                    </p>
-                    <ul class="list-disc pl-5 mt-1 text-slate-600 space-y-1">
-                        <li><strong>Tareas Internas:</strong> Aquellas que estrictamente requieren la máquina detenida (cambio de troquel / mordazas).</li>
-                        <li><strong>Tareas Externas:</strong> Preparación previa de bobinas de film, precalentamiento y herramentales que deben ejecutarse mientras la máquina sigue produciendo el lote anterior.</li>
-                        <li><strong>Meta:</strong> Reducción del 40% en el tiempo promedio de CC.</li>
+                <p>
+                    El Diagrama de Pareto 80/20 sobre la Llenadora reveló que acumula <strong>123.5 horas de parada en Cambios de Formato y Limpieza (CC)</strong> al mes (1,957 eventos, 58.5% de su tiempo detenido). Cualquier mejora fuera de esta máquina es un espejismo; optimizar la Llenadora eleva la capacidad de toda la fábrica.
+                </p>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3: METODOLOGÍA LEAN SMED -->
+        <section class="space-y-4">
+            <h2 class="text-xl font-bold text-slate-900 tracking-tight flex items-center gap-2">
+                <i data-lucide="wrench" class="w-5 h-5 text-emerald-600"></i>
+                <span>3. Plan de Reducción SMED & Cronograma Hombre-Máquina</span>
+            </h2>
+            <div class="space-y-3 text-xs font-mono text-slate-600">
+                <div class="bg-white p-4 rounded-xl border border-slate-200">
+                    <strong class="text-slate-900 block mb-1 text-sm font-sans font-bold">Protocolo de Conversión de Tareas (45 min &rarr; 15 min):</strong>
+                    <ul class="list-disc pl-5 mt-2 space-y-1.5 leading-relaxed font-mono">
+                        <li><strong>Desacople Externo (5S):</strong> Kitting previo de herramientas, precalentamiento de crema a 30°C y revisión de receta mientras la máquina aún produce el lote anterior (-12 min).</li>
+                        <li><strong>Cabezal Gemelo Prelavado & Poka-Yoke:</strong> Reemplazo del bloque de boquillas mediante abrazaderas Tri-Clamp de 1/4 de vuelta y galgas fijas sin llaves ajustables (-10 min).</li>
+                        <li><strong>Validación Microbiológica ATP Digital en Paralelo:</strong> Test de hisopo digital al minuto 12 con luminómetro EnSURE Touch (< 30 RLU) sin esperar parada de línea (-8 min).</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!-- 3. ENTREGABLES TÉCNICOS -->
-        <section>
-            <h2 class="case-section-title">
-                <i data-lucide="box" class="w-5 h-5 text-indigo-700"></i>
-                3. Entregables Técnicos del Proyecto
+        <!-- SECCIÓN 4: CASO DE NEGOCIO & RETORNO FINANCIERO -->
+        <section class="space-y-4">
+            <h2 class="text-xl font-bold text-slate-900 tracking-tight flex items-center gap-2">
+                <i data-lucide="coins" class="w-5 h-5 text-emerald-600"></i>
+                <span>4. Caso de Negocio Defendible: SMED vs Compra de Maquinaria</span>
             </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs font-mono">
-                <div class="framer-card p-4 rounded-xl">
-                    <strong class="text-slate-900 block mb-1">Modelo Estrella en Power BI</strong>
-                    <p class="text-slate-600 leading-relaxed">
-                        Tabla de hechos (8,044 eventos de máquina) relacionada 1:&infin; con dimensiones de máquinas, productos y velocidades estándar de ingeniería.
+            <div class="overflow-x-auto">
+                <table class="w-full text-xs font-mono text-left bg-white rounded-xl border border-slate-200 overflow-hidden">
+                    <thead class="bg-slate-100 text-slate-700 font-bold border-b border-slate-200">
+                        <tr>
+                            <th class="p-3 font-sans">Variable Evaluada</th>
+                            <th class="p-3 text-right">Alternativa Tradicional (Capex Mayor)</th>
+                            <th class="p-3 text-right text-blue-700 font-bold">Propuesta Lean SMED (Angelo Apolo)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-200">
+                        <tr>
+                            <td class="p-3 font-sans font-semibold">Estrategia</td>
+                            <td class="p-3 text-right text-slate-600">Comprar 1 Llenadora nueva</td>
+                            <td class="p-3 text-right text-emerald-700 font-bold">Estandarización SMED + Cabezal Gemelo</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-sans font-semibold">Inversión Inicial</td>
+                            <td class="p-3 text-right text-rose-600 font-bold">$250,000 USD</td>
+                            <td class="p-3 text-right text-emerald-600 font-bold">$23,800 USD (Capex menor)</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-sans font-semibold">Tiempo de Implementación</td>
+                            <td class="p-3 text-right text-slate-600">6 a 9 meses</td>
+                            <td class="p-3 text-right text-slate-900 font-bold">8 Semanas (Gantt A3)</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-sans font-semibold">Beneficio Anual Generado</td>
+                            <td class="p-3 text-right text-slate-600">+$581,000 USD / año</td>
+                            <td class="p-3 text-right text-emerald-700 font-bold">+$581,391 USD / año</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-sans font-semibold">Período de Retorno (Payback)</td>
+                            <td class="p-3 text-right text-slate-600">5.2 Meses</td>
+                            <td class="p-3 text-right text-emerald-700 font-black">14.9 Días</td>
+                        </tr>
+                        <tr class="bg-emerald-50/60 font-bold">
+                            <td class="p-3 font-sans text-emerald-950">Ahorro Neto de Capital</td>
+                            <td class="p-3 text-right text-slate-500">$0</td>
+                            <td class="p-3 text-right text-emerald-700">$226,200 USD Ahorrados</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 5: ENTREGABLES Y CÓDIGO -->
+        <section class="space-y-4">
+            <h2 class="text-xl font-bold text-slate-900 tracking-tight flex items-center gap-2">
+                <i data-lucide="code-2" class="w-5 h-5 text-indigo-600"></i>
+                <span>5. Entregables Técnicos & Repositorio</span>
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-mono">
+                <div class="bg-white p-5 rounded-xl border border-slate-200 space-y-2">
+                    <b class="text-slate-900 text-sm font-sans block">Dashboard Web Interactivo:</b>
+                    <p class="text-slate-600 leading-relaxed font-mono">
+                        Desarrollado en Python (FastAPI) y DuckDB In-Memory con 4 vistas operativas: Diagnóstico OEE, Restricción, Simulador What-If y Consola SQL nativa (< 3 ms).
                     </p>
+                    <div class="pt-2">
+                        <a href="https://github.com/32456344567/02_Analisis_OEE_Paradas_SMED" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-bold inline-flex items-center gap-1">
+                            <span>Ver código en GitHub</span>
+                            <i data-lucide="external-link" class="w-3 h-3"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="framer-card p-4 rounded-xl">
-                    <strong class="text-slate-900 block mb-1">Reporte A3 de Mejora Continua</strong>
-                    <p class="text-slate-600 leading-relaxed">
-                        Informe A3 estructurado para comité gerencial con causa raíz, plan de contención y cuantificación de capacidad recuperada en millones de paquetes al año.
+                <div class="bg-white p-5 rounded-xl border border-slate-200 space-y-2">
+                    <b class="text-slate-900 text-sm font-sans block">Toolkit de Planta & Reporte A3:</b>
+                    <p class="text-slate-600 leading-relaxed font-mono">
+                        Matriz SMED en Excel (4 hojas con AMFE de riesgos), Justificación Financiera para Directorio y Reporte A3 oficial metodología Toyota.
                     </p>
+                    <div class="pt-2">
+                        <a href="https://github.com/32456344567/02_Analisis_OEE_Paradas_SMED/tree/main/entregables_planta" target="_blank" rel="noopener noreferrer" class="text-emerald-700 hover:underline font-bold inline-flex items-center gap-1">
+                            <span>Explorar entregables de planta</span>
+                            <i data-lucide="folder" class="w-3 h-3"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- NAVIGATION -->
+        <!-- NAVEGACIÓN ENTRE CASOS -->
         <div class="pt-8 border-t border-slate-200 flex items-center justify-between font-mono text-xs">
             <a href="proyecto_01_ptar.html" class="text-slate-500 hover:text-slate-900 flex items-center gap-1.5">
-                <i data-lucide="arrow-left" class="w-4 h-4"></i> Caso Anterior: PTAR & Energía
+                <i data-lucide="arrow-left" class="w-4 h-4"></i> Caso 01: PTAR & Gemelo Digital
             </a>
-            <a href="proyecto_03_spc.html" class="text-emerald-700 hover:underline flex items-center gap-1.5">
+            <a href="proyecto_03_spc.html" class="text-blue-600 hover:underline flex items-center gap-1.5 font-bold">
                 Siguiente Caso: Calidad & Costo de Scrap <i data-lucide="arrow-right" class="w-4 h-4"></i>
             </a>
         </div>
 
     </main>
-
 
     <!-- FOOTER -->
     <footer class="border-t border-slate-200 bg-white py-12 text-center text-xs font-mono text-slate-500">
@@ -240,18 +302,16 @@
                 <span>Ing. Angelo Omar Apolo Chamba · Guayaquil, Ecuador</span>
             </div>
             <div class="text-slate-500">
-                Ingeniero Químico (UTMACH) · Ingeniería de Procesos, Analítica de Datos & IA en Planta, Mejora Continua
+                Ingeniero Químico · Especialista en Optimización de Procesos Industriales, Datos & Mejora Continua
             </div>
-            <div class="text-[11px] text-slate-600">
+            <div class="text-[11px] text-slate-400">
                 Portafolio Profesional de Ingeniería & Casos de Estudio Reales © 2026
             </div>
         </div>
     </footer>
 
-
     <script>
         lucide.createIcons();
     </script>
-    <script src="assets/js/main.js"></script>
 </body>
 </html>
