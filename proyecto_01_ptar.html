@@ -17,46 +17,49 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="assets/css/custom.css">
 </head>
-<body class="bg-[#070B14] text-slate-100 antialiased bg-corporate-grid">
+<body class="bg-[#090A0F] text-slate-100 antialiased selection:bg-blue-600 selection:text-white relative">
 
 
-        <!-- TOP NAVIGATION -->
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-[#0A0F1D]/95 backdrop-blur-md border-b border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Ambient Glow Top -->
+    <div class="ambient-glow-top"></div>
+
+    <!-- TOP NAVIGATION -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-[#090A0F]/80 backdrop-blur-xl border-b border-white/[0.06]">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20 gap-4">
                 
                 <!-- Brand / Identidad -->
                 <a href="index.html" class="flex items-center gap-3 shrink-0 group">
-                    <div class="w-10 h-10 rounded-lg bg-blue-600 flex items-center justify-center font-mono font-bold text-white text-base shadow-md group-hover:bg-blue-500 transition-colors shrink-0">
+                    <div class="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center font-mono font-bold text-white text-base shadow-lg shadow-blue-600/25 group-hover:bg-blue-500 transition-all shrink-0">
                         AA
                     </div>
                     <div class="shrink-0">
-                        <div class="font-bold text-slate-100 text-sm sm:text-base tracking-tight group-hover:text-blue-400 transition-colors whitespace-nowrap">
+                        <div class="font-bold text-white text-sm sm:text-base tracking-tight group-hover:text-blue-400 transition-colors whitespace-nowrap">
                             ING. ANGELO APOLO
                         </div>
                         <div class="text-[11px] font-mono text-slate-400 whitespace-nowrap">
-                            INGENIERO QUÍMICO · PTAR & OPERACIONES
+                            INGENIERO QUÍMICO · OPERACIONES & PTAR
                         </div>
                     </div>
                 </a>
 
                 <!-- Enlaces Centrales de Navegación -->
-                <div class="hidden lg:flex items-center gap-6 xl:gap-7 text-xs xl:text-sm font-medium text-slate-300 shrink-0">
-                    <a href="index.html#perfil" class="hover:text-blue-400 transition-colors whitespace-nowrap">Perfil</a>
-                    <a href="index.html#casos-estudio" class="hover:text-blue-400 transition-colors flex items-center gap-1.5 whitespace-nowrap">
-                        Casos de Estudio
-                        <span class="hidden xl:inline-flex px-1.5 py-0.5 text-[10px] font-mono bg-blue-500/10 text-blue-400 rounded border border-blue-500/20">3 Casos</span>
+                <div class="hidden lg:flex items-center gap-6 xl:gap-8 text-xs xl:text-sm font-medium text-slate-300 shrink-0">
+                    <a href="index.html#perfil" class="hover:text-white transition-colors whitespace-nowrap">Perfil</a>
+                    <a href="index.html#proyectos" class="text-blue-400 font-semibold flex items-center gap-1.5 whitespace-nowrap">
+                        Proyectos
+                        <span class="px-2 py-0.5 text-[10px] font-mono bg-blue-500/10 text-blue-400 rounded-full border border-blue-500/20">3 Reales</span>
                     </a>
-                    <a href="index.html#experiencia" class="hover:text-blue-400 transition-colors whitespace-nowrap">Experiencia de Planta</a>
-                    <a href="index.html#competencias" class="hover:text-blue-400 transition-colors whitespace-nowrap">Competencias</a>
-                    <a href="index.html#contacto" class="hover:text-blue-400 transition-colors whitespace-nowrap">Contacto</a>
+                    <a href="index.html#experiencia" class="hover:text-white transition-colors whitespace-nowrap">Experiencia de Planta</a>
+                    <a href="index.html#competencias" class="hover:text-white transition-colors whitespace-nowrap">Competencias</a>
+                    <a href="index.html#contacto" class="hover:text-white transition-colors whitespace-nowrap">Contacto</a>
                 </div>
 
-                <!-- Botones de Acción Directa con Iconos Oficiales -->
+                <!-- Botones de Acción Directa -->
                 <div class="hidden sm:flex items-center gap-2.5 shrink-0">
                     <a href="https://wa.me/593969763084?text=Hola%20Ing.%20Angelo%20Apolo,%20revisamos%20su%20portafolio%20y%20nos%20gustar%C3%ADa%20conversar%20sobre%20una%20oportunidad%20laboral." 
                        target="_blank" rel="noopener noreferrer" 
-                       class="flex items-center gap-2 px-3.5 py-2 text-xs font-mono font-semibold text-emerald-300 bg-emerald-950/40 hover:bg-emerald-900/60 border border-emerald-700/60 rounded-lg transition-all shrink-0 whitespace-nowrap shadow-sm">
+                       class="flex items-center gap-2 px-3.5 py-2 text-xs font-mono font-semibold text-emerald-300 bg-emerald-950/40 hover:bg-emerald-900/60 border border-emerald-700/50 rounded-lg transition-all shrink-0 whitespace-nowrap shadow-sm">
                         <svg class="w-4 h-4 fill-current text-emerald-400 shrink-0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.25-1.49-1.4-1.74-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.32-.02-.45-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.54.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.28z"/></svg>
                         <span>WhatsApp: 0969763084</span>
                     </a>
@@ -69,20 +72,20 @@
                 </div>
 
                 <!-- Botón Hamburguesa Móvil -->
-                <button id="mobile-menu-btn" class="lg:hidden p-2 text-slate-400 hover:text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" aria-label="Abrir menú">
+                <button id="mobile-menu-btn" class="lg:hidden p-2 text-slate-400 hover:text-white rounded-lg focus:outline-none" aria-label="Abrir menú">
                     <i data-lucide="menu" class="w-6 h-6"></i>
                 </button>
             </div>
         </div>
 
         <!-- Menú Desplegable Móvil -->
-        <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-800 bg-[#0A0F1D] px-4 pt-3 pb-5 space-y-3 font-mono text-sm">
-            <a href="index.html#perfil" class="block text-slate-300 hover:text-blue-400 py-1">Perfil</a>
-            <a href="index.html#casos-estudio" class="block text-slate-300 hover:text-blue-400 py-1">Casos de Estudio (3 Proyectos Reales)</a>
-            <a href="index.html#experiencia" class="block text-slate-300 hover:text-blue-400 py-1">Experiencia de Planta</a>
-            <a href="index.html#competencias" class="block text-slate-300 hover:text-blue-400 py-1">Competencias</a>
-            <a href="index.html#contacto" class="block text-slate-300 hover:text-blue-400 py-1">Contacto</a>
-            <div class="pt-3 border-t border-slate-800 flex flex-col gap-2">
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-white/[0.06] bg-[#090A0F] px-4 pt-4 pb-6 space-y-3 font-mono text-sm">
+            <a href="index.html#perfil" class="block text-slate-300 hover:text-white py-1">Perfil</a>
+            <a href="index.html#proyectos" class="block text-slate-300 hover:text-white py-1">Proyectos (3 Reales)</a>
+            <a href="index.html#experiencia" class="block text-slate-300 hover:text-white py-1">Experiencia de Planta</a>
+            <a href="index.html#competencias" class="block text-slate-300 hover:text-white py-1">Competencias</a>
+            <a href="index.html#contacto" class="block text-slate-300 hover:text-white py-1">Contacto</a>
+            <div class="pt-3 border-t border-white/[0.08] flex flex-col gap-2">
                 <a href="https://wa.me/593969763084?text=Hola%20Ing.%20Angelo%20Apolo,%20revisamos%20su%20portafolio%20y%20nos%20gustar%C3%ADa%20conversar%20sobre%20una%20oportunidad%20laboral." 
                    target="_blank" rel="noopener noreferrer" 
                    class="flex items-center justify-center gap-2 px-3 py-2 text-xs font-semibold text-emerald-300 bg-emerald-950/40 border border-emerald-700/60 rounded-lg">
@@ -112,11 +115,11 @@
             </div>
 
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-blue-500/10 text-blue-400 text-xs font-mono font-bold uppercase mb-3 border border-blue-500/20">
-                PROYECTO 01 · INGENIERÍA DE PROCESOS & EFICIENCIA ENERGÉTICA
+                PROYECTO 01 · CONTROL OPERACIONAL DE PTAR & SIMULACIÓN DINÁMICA
             </div>
 
             <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-                Optimización Operativa de PTAR y Eficiencia Energética en Sistemas de Aireación
+                Control Operacional de PTAR y Simulación Dinámica de Lodos Activados
             </h1>
 
             <div class="flex flex-wrap items-center gap-6 mt-6 text-xs font-mono text-slate-400 border-t border-slate-800/80 pt-4">
@@ -132,7 +135,7 @@
     <main class="py-12 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         
         <!-- SINOPSIS EJECUTIVA -->
-        <div class="corp-card rounded-2xl p-6 border-l-4 border-l-blue-500">
+        <div class="framer-card rounded-2xl p-6 border-l-4 border-l-blue-500">
             <h3 class="text-xs font-mono font-bold uppercase text-blue-400 tracking-wider mb-2">Resumen Ejecutivo del Proyecto</h3>
             <p class="text-sm text-slate-200 leading-relaxed">
                 En las Estaciones Depuradoras de Aguas Residuales (PTAR) industriales y municipales basadas en lodos activados, los <strong class="text-white">sopladores de aireación representan entre el 50% y el 65% del consumo eléctrico total</strong> de la planta. Históricamente, la instalación operaba bajo una política de sobre-aireación constante (oxígeno disuelto DO &gt; 2.5–3.5 mg/L) por temor a sanciones de la normativa ambiental ecuatoriana (<strong class="text-white">TULSMA Libro VI: DBO &le; 20 mg/L</strong>). Mediante un análisis de balances de masa sobre 80,000 lecturas SCADA, modelado cinético de transferencia de oxígeno con la ley de Monod y un Sensor Virtual / Gemelo Digital para anticipar el retraso de 5 días de laboratorio, se optimizó la consigna de aireación a <strong class="text-white">1.8–2.2 mg/L</strong>, logrando un ahorro neto de <strong class="text-emerald-400 font-bold">$8,545 USD/año (92,883 kWh/año)</strong> y 98.17% de cumplimiento con <strong class="text-emerald-400 font-bold">CAPEX cero</strong>.
@@ -150,15 +153,15 @@
                     La planta procesa un caudal medio de <strong>753 m³/h</strong> con una carga orgánica de entrada de <strong>5,670 kg DBO/día</strong> (317 mg/L DBO y 666 mg/L DQO medios):
                 </p>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2 font-mono text-xs">
-                    <div class="corp-card p-4 rounded-xl">
+                    <div class="framer-card p-4 rounded-xl">
                         <strong class="text-white block mb-1">Pre-tratamiento & DAF</strong>
                         <p class="text-slate-400">Tamiz rotativo de desbaste grueso y celda DAF para remoción de grasas y aceites &ge; 85%.</p>
                     </div>
-                    <div class="corp-card p-4 rounded-xl">
+                    <div class="framer-card p-4 rounded-xl">
                         <strong class="text-white block mb-1">Reactor Aerobio (4,050 m³)</strong>
                         <p class="text-slate-400">Tanque biológico de mezcla completa con lodos activados (MLSS = 3,500 mg/L) y sopladores con variadores VFD.</p>
                     </div>
-                    <div class="corp-card p-4 rounded-xl">
+                    <div class="framer-card p-4 rounded-xl">
                         <strong class="text-white block mb-1">Clarificador Secundario C-301</strong>
                         <p class="text-slate-400">Sedimentador de biomasa con recirculación RAS hacia selector anóxico y purga periódica WAS.</p>
                     </div>
@@ -177,13 +180,13 @@
                     A pesar de destinar <strong>$215,266 USD anuales</strong> exclusivamente a la facturación eléctrica de sopladores (2,339,852 kWh/año a $0.092 USD/kWh), la planta registraba <strong>1,465 eventos de descarga fuera de norma</strong> (122 horas al año en riesgo de multas).
                 </p>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs font-mono pt-2">
-                    <div class="corp-card p-4 rounded-xl border-l-2 border-l-amber-500">
+                    <div class="framer-card p-4 rounded-xl border-l-2 border-l-amber-500">
                         <strong class="text-amber-400 block mb-1">Inercia Analítica de 5 Días (DBO₅)</strong>
                         <p class="text-slate-400">
                             La prueba estándar de DBO₅ requiere 120 horas de incubación. Ante picos de producción que ingresaban a las 06:00 y 18:00, los operadores no tenían visibilidad instantánea de la calidad de descarga.
                         </p>
                     </div>
-                    <div class="corp-card p-4 rounded-xl border-l-2 border-l-rose-500">
+                    <div class="framer-card p-4 rounded-xl border-l-2 border-l-rose-500">
                         <strong class="text-rose-400 block mb-1">Sobre-aireación Ineficiente</strong>
                         <p class="text-slate-400">
                             Para evitar sanciones, se forzaban los sopladores a trabajar a máxima velocidad (DO &gt; 3.0 mg/L), sin considerar que la cinética bacteriana se satura a niveles mucho menores.
@@ -200,13 +203,13 @@
                 3. Metodología de Ingeniería: DMAIC & Balances de Masa
             </h2>
             <div class="space-y-4 text-xs font-mono text-slate-300">
-                <div class="corp-card p-4 rounded-xl border border-slate-800">
+                <div class="framer-card p-4 rounded-xl border border-slate-800">
                     <strong class="text-emerald-400 block mb-1">1. Define & Measure: Auditoría SCADA</strong>
                     <p class="text-slate-400">
                         Análisis sobre 80,000 registros a intervalos de 5 minutos: Tiempo de Retención Hidráulico (HRT = 5.38 h), relación Alimento/Microorganismo (F/M = 0.40 kg DBO/kg MLSS·d) y eficiencia media de remoción del 95.28%.
                     </p>
                 </div>
-                <div class="corp-card p-4 rounded-xl border border-slate-800">
+                <div class="framer-card p-4 rounded-xl border border-slate-800">
                     <strong class="text-emerald-400 block mb-1">2. Analyze: Modelado de Cinética de Monod</strong>
                     <p class="text-slate-400">
                         Se modeló la curva de transferencia de oxígeno demostrando que la afinidad bacteriana se satura con \(K_{DO} \approx 0.2 - 0.5\text{ mg/L}\):
@@ -218,7 +221,7 @@
                         Operar por encima de DO = 2.2 mg/L exigía un <strong>+35% de potencia de sopladores</strong> para una reducción marginal menor a 0.9 mg/L de DBO.
                     </p>
                 </div>
-                <div class="corp-card p-4 rounded-xl border border-slate-800">
+                <div class="framer-card p-4 rounded-xl border border-slate-800">
                     <strong class="text-emerald-400 block mb-1">3. Improve & Control: Sensor Virtual & POE Operativo</strong>
                     <p class="text-slate-400">
                         Se redefinió el punto de consigna en <strong>1.8 a 2.2 mg/L de DO</strong> con modulación de variadores de frecuencia (VFD) y se estandarizó el procedimiento <code>POE-OP-PTAR-001</code> con matriz de consignas por turno. Se integró telemetría SCADA Web y dashboards en Power BI bajo norma ISA-101.
@@ -296,7 +299,7 @@
                 <i data-lucide="play-circle" class="w-5 h-5 text-cyan-400"></i>
                 5. Demostración Interactiva en Railway Cloud & Módulos SCADA
             </h2>
-            <div class="corp-card rounded-2xl p-6 border border-slate-700 space-y-6">
+            <div class="framer-card rounded-2xl p-6 border border-slate-700 space-y-6">
                 <div>
                     <p class="text-xs text-slate-300 font-mono leading-relaxed mb-4">
                         El sistema SCADA industrial integra supervisión en tiempo real, monitoreo de consignas de aireación, control de variadores VFD y una consola analítica de datos:
