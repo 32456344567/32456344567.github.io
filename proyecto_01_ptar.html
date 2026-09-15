@@ -22,14 +22,7 @@
 
             <!-- Ambient Glow Top -->
     <div class="ambient-glow-top"></div>
-
-        <!-- Ambient Glow Top -->
-    <div class="ambient-glow-top"></div>
-
-        <!-- Ambient Glow Top -->
-    <div class="ambient-glow-top"></div>
-
-    <!-- TOP NAVIGATION -->
+<!-- TOP NAVIGATION -->
     <nav class="fixed top-0 left-0 right-0 z-50 bg-white/85 backdrop-blur-xl border-b border-slate-200/80">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20 gap-4">
@@ -115,26 +108,26 @@
     <div class="pt-28 pb-10 border-b border-slate-200 bg-white">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center gap-2 text-xs font-mono text-slate-500 mb-4">
-                <a href="index.html" class="hover:text-blue-400">Inicio</a>
+                <a href="index.html" class="hover:text-blue-700">Inicio</a>
                 <span>/</span>
-                <a href="index.html#casos-estudio" class="hover:text-blue-400">Casos de Estudio</a>
+                <a href="index.html#proyectos" class="hover:text-blue-600 transition-colors">Proyectos</a>
                 <span>/</span>
-                <span class="text-blue-400">Caso 01: PTAR & Eficiencia Energética</span>
+                <span class="text-blue-700 font-semibold">Caso 01: Simulación Dinámica & Control de Reactores</span>
             </div>
 
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-blue-500/10 text-blue-400 text-xs font-mono font-bold uppercase mb-3 border border-blue-500/20">
-                PROYECTO 01 · CONTROL OPERACIONAL DE PTAR & SIMULACIÓN DINÁMICA
+            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-mono font-bold uppercase mb-3 border border-blue-200">
+                PROYECTO 01 · MODELADO DINÁMICO & CONTROL DE PROCESOS QUÍMICOS
             </div>
 
             <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-                Control Operacional de PTAR y Simulación Dinámica de Lodos Activados
+                Simulación Dinámica, Estabilidad de Biomasa y Optimización de Aireación
             </h1>
 
-            <div class="flex flex-wrap items-center gap-6 mt-6 text-xs font-mono text-slate-500 border-t border-slate-200/80 pt-4">
-                <div><span class="text-slate-500">PROCESO:</span> Lodos Activados (4,050 m³) & Sopladores VFD</div>
-                <div><span class="text-slate-500">DATASET:</span> 80,000 Registros SCADA (intervalos 5 min)</div>
-                <div><span class="text-slate-500">NORMATIVA:</span> TULSMA Libro VI Anexo 1 (DBO &le; 20 mg/L)</div>
-                <div><span class="text-slate-500">AHORRO:</span> -$8,545 USD/año (92,883 kWh/año) · CAPEX $0</div>
+            <div class="flex flex-wrap items-center gap-6 mt-6 text-xs font-mono text-slate-600 border-t border-slate-200 pt-4">
+                <div><span class="text-slate-900 font-semibold">PROCESO:</span> Reactor de Lodos Activados (4,050 m³) & Sopladores VFD</div>
+                <div><span class="text-slate-900 font-semibold">DATASET:</span> 80,000 Lecturas SCADA (5 min)</div>
+                <div><span class="text-slate-900 font-semibold">HERRAMIENTAS:</span> Monod Kinetics, DuckDB SQL, Python, SCADA Web</div>
+                <div><span class="text-slate-900 font-semibold">EFICIENCIA:</span> -92,883 kWh/año en potencia de aireación</div>
             </div>
         </div>
     </div>
@@ -143,17 +136,17 @@
     <main class="py-12 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         
         <!-- SINOPSIS EJECUTIVA -->
-        <div class="framer-card rounded-2xl p-6 border-l-4 border-l-blue-500">
-            <h3 class="text-xs font-mono font-bold uppercase text-blue-400 tracking-wider mb-2">Resumen Ejecutivo del Proyecto</h3>
-            <p class="text-sm text-slate-200 leading-relaxed">
-                En las Estaciones Depuradoras de Aguas Residuales (PTAR) industriales y municipales basadas en lodos activados, los <strong class="text-slate-900">sopladores de aireación representan entre el 50% y el 65% del consumo eléctrico total</strong> de la planta. Históricamente, la instalación operaba bajo una política de sobre-aireación constante (oxígeno disuelto DO &gt; 2.5–3.5 mg/L) por temor a sanciones de la normativa ambiental ecuatoriana (<strong class="text-slate-900">TULSMA Libro VI: DBO &le; 20 mg/L</strong>). Mediante un análisis de balances de masa sobre 80,000 lecturas SCADA, modelado cinético de transferencia de oxígeno con la ley de Monod y un Sensor Virtual / Gemelo Digital para anticipar el retraso de 5 días de laboratorio, se optimizó la consigna de aireación a <strong class="text-slate-900">1.8–2.2 mg/L</strong>, logrando un ahorro neto de <strong class="text-emerald-400 font-bold">$8,545 USD/año (92,883 kWh/año)</strong> y 98.17% de cumplimiento con <strong class="text-emerald-400 font-bold">CAPEX cero</strong>.
+        <div class="framer-card rounded-2xl p-6 border-l-4 border-l-blue-600 shadow-sm">
+            <h3 class="text-xs font-mono font-bold uppercase text-blue-700 tracking-wider mb-2">Resumen de Ingeniería del Proyecto</h3>
+            <p class="text-sm text-slate-700 leading-relaxed">
+                En los reactores biológicos aerobios de lodos activados, la dinámica de transferencia de oxígeno es un balance crítico entre la tasa de utilización microbiana de sustrato y la potencia entregada por los sopladores. Históricamente, la instalación operaba con sobre-aireación forzada (oxígeno disuelto DO &gt; 2.5–3.5 mg/L), provocando estrés por cizalla en los flóculos de biomasa y un consumo eléctrico desproporcionado en la batería de sopladores. Aplicando principios de ingeniería química y analítica de datos sobre 80,000 registros SCADA, se modeló la curva de saturación de Monod y se diseñó un <strong class="text-slate-900">sensor virtual (gemelo digital)</strong> para estimar la cinética de degradación en tiempo real, superando el retraso operativo de 5 días del ensayo de laboratorio. La calibración del punto de consigna a <strong class="text-slate-900">1.8–2.2 mg/L</strong> estabilizó la biomasa bacteriana, previno el arrastre de sólidos en el clarificador y redujo <strong class="text-emerald-700 font-bold">92,883 kWh/año</strong> de consumo eléctrico en sopladores mediante control continuo por variadores de frecuencia (VFD).
             </p>
         </div>
 
         <!-- 1. CONTEXTO & DATOS DE PLANTA -->
         <section>
             <h2 class="case-section-title">
-                <i data-lucide="building" class="w-5 h-5 text-blue-400"></i>
+                <i data-lucide="building" class="w-5 h-5 text-blue-600"></i>
                 1. Contexto Operativo y Tren de Tratamiento
             </h2>
             <div class="text-sm text-slate-600 space-y-3 leading-relaxed">
@@ -163,15 +156,15 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2 font-mono text-xs">
                     <div class="framer-card p-4 rounded-xl">
                         <strong class="text-slate-900 block mb-1">Pre-tratamiento & DAF</strong>
-                        <p class="text-slate-500">Tamiz rotativo de desbaste grueso y celda DAF para remoción de grasas y aceites &ge; 85%.</p>
+                        <p class="text-slate-600 leading-relaxed">Tamiz rotativo de desbaste grueso y celda DAF para remoción de grasas y aceites &ge; 85%.</p>
                     </div>
                     <div class="framer-card p-4 rounded-xl">
                         <strong class="text-slate-900 block mb-1">Reactor Aerobio (4,050 m³)</strong>
-                        <p class="text-slate-500">Tanque biológico de mezcla completa con lodos activados (MLSS = 3,500 mg/L) y sopladores con variadores VFD.</p>
+                        <p class="text-slate-600 leading-relaxed">Tanque biológico de mezcla completa con lodos activados (MLSS = 3,500 mg/L) y sopladores con variadores VFD.</p>
                     </div>
                     <div class="framer-card p-4 rounded-xl">
                         <strong class="text-slate-900 block mb-1">Clarificador Secundario C-301</strong>
-                        <p class="text-slate-500">Sedimentador de biomasa con recirculación RAS hacia selector anóxico y purga periódica WAS.</p>
+                        <p class="text-slate-600 leading-relaxed">Sedimentador de biomasa con recirculación RAS hacia selector anóxico y purga periódica WAS.</p>
                     </div>
                 </div>
             </div>
@@ -180,24 +173,24 @@
         <!-- 2. EL DOLOR OPERATIVO -->
         <section>
             <h2 class="case-section-title">
-                <i data-lucide="alert-triangle" class="w-5 h-5 text-amber-400"></i>
-                2. El Dolor Operativo y Financiero
+                <i data-lucide="alert-triangle" class="w-5 h-5 text-amber-600"></i>
+                2. Diagnóstico Operacional: Desfase Analítico & Cinética de Saturación
             </h2>
             <div class="text-sm text-slate-600 space-y-3 leading-relaxed">
-                <p>
-                    A pesar de destinar <strong>$215,266 USD anuales</strong> exclusivamente a la facturación eléctrica de sopladores (2,339,852 kWh/año a $0.092 USD/kWh), la planta registraba <strong>1,465 eventos de descarga fuera de norma</strong> (122 horas al año en riesgo de multas).
+                <p class="text-slate-700">
+                    La planta presentaba dos desafíos críticos de control de procesos que afectaban la estabilidad operativa y la eficiencia en el consumo de energía:
                 </p>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs font-mono pt-2">
                     <div class="framer-card p-4 rounded-xl border-l-2 border-l-amber-500">
-                        <strong class="text-amber-400 block mb-1">Inercia Analítica de 5 Días (DBO₅)</strong>
-                        <p class="text-slate-500">
-                            La prueba estándar de DBO₅ requiere 120 horas de incubación. Ante picos de producción que ingresaban a las 06:00 y 18:00, los operadores no tenían visibilidad instantánea de la calidad de descarga.
+                        <strong class="text-amber-700 block mb-1">Inercia Analítica de 5 Días (DBO₅)</strong>
+                        <p class="text-slate-600 leading-relaxed">
+                            El método estándar de incubación a 5 días crea una "caja negra" operativa. Ante variaciones de carga orgánica en cambios de turno, el personal de planta no contaba con una estimación inmediata para ajustar caudales o sopladores en tiempo real.
                         </p>
                     </div>
                     <div class="framer-card p-4 rounded-xl border-l-2 border-l-rose-500">
-                        <strong class="text-rose-400 block mb-1">Sobre-aireación Ineficiente</strong>
-                        <p class="text-slate-500">
-                            Para evitar sanciones, se forzaban los sopladores a trabajar a máxima velocidad (DO &gt; 3.0 mg/L), sin considerar que la cinética bacteriana se satura a niveles mucho menores.
+                        <strong class="text-rose-700 block mb-1">Sobre-aireación y Cizalla de Floculación</strong>
+                        <p class="text-slate-600 leading-relaxed">
+                            Operar por inercia a niveles excesivos de oxígeno disuelto (DO &gt; 3.0–3.5 mg/L) provoca sobre-oxigenación inerte: la tasa metabólica bacteriana se satura según Monod, se rompen los flóculos por cizalla y la potencia consumida en sopladores crece de manera exponencial.
                         </p>
                     </div>
                 </div>
@@ -207,19 +200,19 @@
         <!-- 3. METODOLOGÍA DE INGENIERÍA -->
         <section>
             <h2 class="case-section-title">
-                <i data-lucide="cpu" class="w-5 h-5 text-emerald-400"></i>
-                3. Metodología de Ingeniería: DMAIC & Balances de Masa
+                <i data-lucide="cpu" class="w-5 h-5 text-blue-600"></i>
+                3. Metodología de Ingeniería: Balances de Materia & Modelado Cinético
             </h2>
             <div class="space-y-4 text-xs font-mono text-slate-600">
                 <div class="framer-card p-4 rounded-xl border border-slate-200">
-                    <strong class="text-emerald-400 block mb-1">1. Define & Measure: Auditoría SCADA</strong>
-                    <p class="text-slate-500">
+                    <strong class="text-emerald-700 block mb-1">1. Define & Measure: Auditoría SCADA</strong>
+                    <p class="text-slate-600 leading-relaxed">
                         Análisis sobre 80,000 registros a intervalos de 5 minutos: Tiempo de Retención Hidráulico (HRT = 5.38 h), relación Alimento/Microorganismo (F/M = 0.40 kg DBO/kg MLSS·d) y eficiencia media de remoción del 95.28%.
                     </p>
                 </div>
                 <div class="framer-card p-4 rounded-xl border border-slate-200">
-                    <strong class="text-emerald-400 block mb-1">2. Analyze: Modelado de Cinética de Monod</strong>
-                    <p class="text-slate-500">
+                    <strong class="text-emerald-700 block mb-1">2. Analyze: Modelado de Cinética de Monod</strong>
+                    <p class="text-slate-600 leading-relaxed">
                         Se modeló la curva de transferencia de oxígeno demostrando que la afinidad bacteriana se satura con \(K_{DO} \approx 0.2 - 0.5\text{ mg/L}\):
                     </p>
                     <div class="math-box mt-2">
@@ -230,8 +223,8 @@
                     </p>
                 </div>
                 <div class="framer-card p-4 rounded-xl border border-slate-200">
-                    <strong class="text-emerald-400 block mb-1">3. Improve & Control: Sensor Virtual & POE Operativo</strong>
-                    <p class="text-slate-500">
+                    <strong class="text-emerald-700 block mb-1">3. Improve & Control: Sensor Virtual & POE Operativo</strong>
+                    <p class="text-slate-600 leading-relaxed">
                         Se redefinió el punto de consigna en <strong>1.8 a 2.2 mg/L de DO</strong> con modulación de variadores de frecuencia (VFD) y se estandarizó el procedimiento <code>POE-OP-PTAR-001</code> con matriz de consignas por turno. Se integró telemetría SCADA Web y dashboards en Power BI bajo norma ISA-101.
                     </p>
                 </div>
@@ -241,60 +234,60 @@
         <!-- 4. RESULTADOS FINANCIEROS Y DE ENERGÍA -->
         <section>
             <h2 class="case-section-title">
-                <i data-lucide="dollar-sign" class="w-5 h-5 text-emerald-400"></i>
-                4. Resultados Cuantitativos e Impacto Económico
+                <i data-lucide="bar-chart-3" class="w-5 h-5 text-emerald-600"></i>
+                4. Indicadores de Proceso y Eficiencia Energética
             </h2>
             <div class="overflow-x-auto">
-                <table class="w-full text-xs font-mono text-left border border-slate-200 rounded-xl overflow-hidden">
-                    <thead class="bg-slate-50 text-slate-500 border-b border-slate-200">
+                <table class="w-full text-xs font-mono text-left border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                    <thead class="bg-slate-100 text-slate-800 border-b border-slate-200">
                         <tr>
-                            <th class="py-3 px-4">Indicador Clave de Proceso</th>
-                            <th class="py-3 px-4">Línea Base Histórica</th>
-                            <th class="py-3 px-4">Escenario Optimizado</th>
-                            <th class="py-3 px-4 text-emerald-400">Impacto Económico / Operativo</th>
+                            <th class="py-3.5 px-4 font-bold">Variable de Proceso / Operación</th>
+                            <th class="py-3.5 px-4 font-semibold">Condición Previa</th>
+                            <th class="py-3.5 px-4 font-semibold">Condición Optimizada</th>
+                            <th class="py-3.5 px-4 font-bold text-blue-800">Impacto Técnico & Operacional</th>
                         </tr>
                     </thead>
-                    <tbody class="divide-y divide-slate-800 text-slate-600">
-                        <tr>
-                            <td class="py-3 px-4 font-bold text-slate-900">Gasto Eléctrico Sopladores</td>
-                            <td class="py-3 px-4">$215,266 USD/año</td>
-                            <td class="py-3 px-4">$206,721 USD/año</td>
-                            <td class="py-3 px-4 text-emerald-400 font-bold">-$8,545.23 USD/año ahorrados</td>
-                        </tr>
+                    <tbody class="divide-y divide-slate-200 text-slate-700 bg-white">
                         <tr>
                             <td class="py-3 px-4 font-bold text-slate-900">Consumo Eléctrico Aireación</td>
                             <td class="py-3 px-4">2,339,852 kWh/año</td>
                             <td class="py-3 px-4">2,246,970 kWh/año</td>
-                            <td class="py-3 px-4 text-emerald-400 font-bold">92,883 kWh/año de ahorro</td>
+                            <td class="py-3 px-4 text-emerald-700 font-bold">92,883 kWh/año optimizados (-$8,545 USD/año)</td>
                         </tr>
                         <tr>
                             <td class="py-3 px-4 font-bold text-slate-900">Consumo Específico (SEC)</td>
                             <td class="py-3 px-4">1.186 kWh/kg DBO</td>
                             <td class="py-3 px-4">1.139 kWh/kg DBO</td>
-                            <td class="py-3 px-4 text-emerald-400 font-bold">+3.97% eficiencia energética</td>
+                            <td class="py-3 px-4 text-emerald-700 font-bold">+3.97% eficiencia en uso de oxígeno</td>
                         </tr>
                         <tr>
-                            <td class="py-3 px-4 font-bold text-slate-900">Banda de Oxígeno Disuelto</td>
-                            <td class="py-3 px-4">&gt; 2.5 - 3.5 mg/L</td>
+                            <td class="py-3 px-4 font-bold text-slate-900">Banda de Consigna de DO</td>
+                            <td class="py-3 px-4">&gt; 2.5 - 3.5 mg/L (sobre-aireado)</td>
                             <td class="py-3 px-4">1.8 - 2.2 mg/L</td>
-                            <td class="py-3 px-4 text-emerald-400 font-bold">Régimen óptimo de Monod</td>
+                            <td class="py-3 px-4 text-blue-700 font-bold">Régimen óptimo según ley de Monod</td>
                         </tr>
                         <tr>
-                            <td class="py-3 px-4 font-bold text-slate-900">Cumplimiento TULSMA</td>
-                            <td class="py-3 px-4">122 horas fuera de norma</td>
-                            <td class="py-3 px-4">100% bajo control (98.17%)</td>
-                            <td class="py-3 px-4 text-cyan-400 font-bold">Riesgo legal y multas mitigados</td>
+                            <td class="py-3 px-4 font-bold text-slate-900">Tiempo de Respuesta Operativa</td>
+                            <td class="py-3 px-4">120 horas (espera de laboratorio)</td>
+                            <td class="py-3 px-4">&lt; 1 segundo (Sensor Virtual)</td>
+                            <td class="py-3 px-4 text-blue-700 font-bold">Visibilidad instantánea de degradación</td>
                         </tr>
                         <tr>
-                            <td class="py-3 px-4 font-bold text-slate-900">Huella de Carbono (ESG)</td>
-                            <td class="py-3 px-4">—</td>
-                            <td class="py-3 px-4">-39.01 t CO₂ eq/año</td>
-                            <td class="py-3 px-4 text-emerald-400 font-bold">39 Toneladas CO₂ evitadas</td>
+                            <td class="py-3 px-4 font-bold text-slate-900">Estabilidad de Floculación</td>
+                            <td class="py-3 px-4">Cizalla por burbujeo forzado</td>
+                            <td class="py-3 px-4">Agitación y microburbuja controlada</td>
+                            <td class="py-3 px-4 text-slate-800 font-semibold">Mayor sedimentabilidad en clarificador C-301</td>
                         </tr>
-                        <tr class="bg-emerald-950/20 font-bold">
-                            <td class="py-3 px-4 text-slate-900">Inversión Requerida (CAPEX)</td>
-                            <td class="py-3 px-4" colspan="2">$0 USD (Ajuste de consignas SCADA / POE)</td>
-                            <td class="py-3 px-4 text-emerald-400">Retorno Inmediato (Payback = 0)</td>
+                        <tr>
+                            <td class="py-3 px-4 font-bold text-slate-900">Telemetría y Procesamiento</td>
+                            <td class="py-3 px-4">Registros dispersos en planillas</td>
+                            <td class="py-3 px-4">DuckDB SQL en memoria (80,000 filas)</td>
+                            <td class="py-3 px-4 text-indigo-700 font-bold">Consultas analíticas inmediatas en planta</td>
+                        </tr>
+                        <tr class="bg-emerald-50/60 font-bold border-t border-emerald-200">
+                            <td class="py-3 px-4 text-slate-900">Implementación Operacional</td>
+                            <td class="py-3 px-4" colspan="2">Estandarización POE + Variadores VFD + Consolas SCADA</td>
+                            <td class="py-3 px-4 text-emerald-800">Optimización de proceso sin inversión de capital (CAPEX $0)</td>
                         </tr>
                     </tbody>
                 </table>
@@ -304,8 +297,8 @@
         <!-- 5. SCADA WEB DEMO -->
         <section>
             <h2 class="case-section-title">
-                <i data-lucide="play-circle" class="w-5 h-5 text-cyan-400"></i>
-                5. Demostración Interactiva en Railway Cloud & Módulos SCADA
+                <i data-lucide="play-circle" class="w-5 h-5 text-teal-600"></i>
+                5. Demostración Interactiva en Vivo & Módulos SCADA
             </h2>
             <div class="framer-card rounded-2xl p-6 border border-slate-200 space-y-6">
                 <div>
@@ -320,8 +313,8 @@
                                 <img src="assets/img/scada_tab1_operaciones.png" alt="SCADA Vista 01 - Operaciones y Calidad" class="w-full h-full object-cover">
                             </div>
                             <div class="px-1 text-xs">
-                                <span class="text-cyan-400 font-mono font-bold block">Vista 01: Operación & Calidad TULSMA</span>
-                                <span class="text-slate-500 text-[11px]">Monitoreo de oxígeno disuelto (DO), pH, DBO calculada vs norma ambiental.</span>
+                                <span class="text-teal-700 font-mono font-bold block">Vista 01: Operación & Calidad TULSMA</span>
+                                <span class="text-slate-600 text-[11px]">Monitoreo de oxígeno disuelto (DO), pH, DBO calculada vs norma ambiental.</span>
                             </div>
                         </div>
                         <div class="rounded-xl overflow-hidden border border-slate-200/80 bg-slate-50 p-2 group hover:border-emerald-500/60 transition-all">
@@ -329,8 +322,8 @@
                                 <img src="assets/img/scada_tab2_energia_opex.png" alt="SCADA Vista 02 - Energía OPEX y Sostenibilidad" class="w-full h-full object-cover">
                             </div>
                             <div class="px-1 text-xs">
-                                <span class="text-emerald-400 font-mono font-bold block">Vista 02: Energía Sopladores, OPEX & ESG</span>
-                                <span class="text-slate-500 text-[11px]">Potencia sopladores (kW), kWh consumidos, costo acumulado y emisiones CO₂ eq.</span>
+                                <span class="text-emerald-700 font-mono font-bold block">Vista 02: Energía Sopladores, OPEX & ESG</span>
+                                <span class="text-slate-600 text-[11px]">Potencia sopladores (kW), kWh consumidos, costo acumulado y emisiones CO₂ eq.</span>
                             </div>
                         </div>
                         <div class="rounded-xl overflow-hidden border border-slate-200/80 bg-slate-50 p-2 group hover:border-blue-500/60 transition-all">
@@ -338,8 +331,8 @@
                                 <img src="assets/img/scada_tab3_gemelo_digital.png" alt="SCADA Vista 03 - Gemelo Digital y PFD Dinámico" class="w-full h-full object-cover">
                             </div>
                             <div class="px-1 text-xs">
-                                <span class="text-blue-400 font-mono font-bold block">Vista 03: Gemelo Digital & PFD Dinámico</span>
-                                <span class="text-slate-500 text-[11px]">Diagrama de flujo de proceso con animación SVG y simulador de escenarios What-If.</span>
+                                <span class="text-blue-700 font-mono font-bold block">Vista 03: Gemelo Digital & PFD Dinámico</span>
+                                <span class="text-slate-600 text-[11px]">Diagrama de flujo de proceso con animación SVG y simulador de escenarios What-If.</span>
                             </div>
                         </div>
                         <div class="rounded-xl overflow-hidden border border-slate-200/80 bg-slate-50 p-2 group hover:border-indigo-500/60 transition-all">
@@ -347,8 +340,8 @@
                                 <img src="assets/img/scada_tab4_sql_duckdb.png" alt="SCADA Vista 04 - Consola DuckDB SQL" class="w-full h-full object-cover">
                             </div>
                             <div class="px-1 text-xs">
-                                <span class="text-indigo-400 font-mono font-bold block">Vista 04: Consola Analítica DuckDB SQL</span>
-                                <span class="text-slate-500 text-[11px]">Consultas SQL de alta velocidad en memoria sobre 80,000 registros operativos.</span>
+                                <span class="text-indigo-700 font-mono font-bold block">Vista 04: Consola Analítica DuckDB SQL</span>
+                                <span class="text-slate-600 text-[11px]">Consultas SQL de alta velocidad en memoria sobre 80,000 registros operativos.</span>
                             </div>
                         </div>
                     </div>
@@ -360,7 +353,7 @@
                             <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
                             Simulador SCADA Web en Vivo (Railway Cloud)
                         </span>
-                        <a href="https://01optimizacionptarefluentes-production.up.railway.app" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-blue-400 hover:underline flex items-center gap-1">
+                        <a href="https://01optimizacionptarefluentes-production.up.railway.app" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-blue-700 hover:underline flex items-center gap-1">
                             Abrir pantalla completa <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                         </a>
                     </div>
@@ -368,10 +361,10 @@
                         <iframe src="https://01optimizacionptarefluentes-production.up.railway.app" class="w-full h-full border-0" title="SCADA Web PTAR Live"></iframe>
                     </div>
                     <div class="flex flex-wrap gap-3 pt-2">
-                        <a href="https://01optimizacionptarefluentes-production.up.railway.app" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 bg-blue-600 hover:bg-blue-500 text-slate-900 text-xs font-mono font-bold rounded-lg flex items-center gap-2">
+                        <a href="https://01optimizacionptarefluentes-production.up.railway.app" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 bg-blue-600 hover:bg-blue-700 text-white text-xs font-mono font-bold rounded-lg shadow-sm flex items-center gap-2">
                             <i data-lucide="external-link" class="w-4 h-4"></i> ABRIR SCADA EN PESTAÑA COMPLETA
                         </a>
-                        <a href="https://github.com/32456344567/01_Optimizacion_PTAR_Efluentes" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 bg-slate-50 hover:bg-slate-800 text-slate-600 text-xs font-mono font-semibold rounded-lg border border-slate-200 flex items-center gap-2">
+                        <a href="https://github.com/32456344567/01_Optimizacion_PTAR_Efluentes" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 bg-white hover:bg-slate-50 text-slate-700 hover:text-slate-900 text-xs font-mono font-semibold rounded-lg border border-slate-200 shadow-sm flex items-center gap-2">
                             <i data-lucide="github" class="w-4 h-4"></i> REPOSITORIO GITHUB
                         </a>
                     </div>
@@ -384,7 +377,7 @@
             <a href="index.html#casos-estudio" class="text-slate-500 hover:text-slate-900 flex items-center gap-1.5">
                 <i data-lucide="arrow-left" class="w-4 h-4"></i> Volver a Todos los Casos
             </a>
-            <a href="proyecto_02_oee.html" class="text-blue-400 hover:underline flex items-center gap-1.5">
+            <a href="proyecto_02_oee.html" class="text-blue-700 hover:underline flex items-center gap-1.5">
                 Siguiente Caso: Eficiencia OEE & SMED <i data-lucide="arrow-right" class="w-4 h-4"></i>
             </a>
         </div>
@@ -400,7 +393,7 @@
                 <span>Ing. Angelo Omar Apolo Chamba · Guayaquil, Ecuador</span>
             </div>
             <div class="text-slate-500">
-                Ingeniero Químico (UTMACH) · Experiencia en PTAR, Operaciones Industriales, HSE y Control de Calidad
+                Ingeniero Químico (UTMACH) · Ingeniería de Procesos, Analítica de Datos & IA en Planta, Mejora Continua
             </div>
             <div class="text-[11px] text-slate-600">
                 Portafolio Profesional de Ingeniería & Casos de Estudio Reales © 2026

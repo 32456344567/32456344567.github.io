@@ -20,11 +20,11 @@ document.addEventListener('DOMContentLoaded', () => {
     filterBtns.forEach(btn => {
         btn.addEventListener('click', () => {
             filterBtns.forEach(b => {
-                b.classList.remove('bg-blue-600', 'text-white', 'border-blue-500');
-                b.classList.add('bg-slate-800/80', 'text-slate-400', 'border-slate-700');
+                b.classList.remove('bg-blue-600', 'text-white', 'border-blue-600');
+                b.classList.add('bg-white', 'text-slate-600', 'border-slate-200');
             });
-            btn.classList.add('bg-blue-600', 'text-white', 'border-blue-500');
-            btn.classList.remove('bg-slate-800/80', 'text-slate-400', 'border-slate-700');
+            btn.classList.add('bg-blue-600', 'text-white', 'border-blue-600');
+            btn.classList.remove('bg-white', 'text-slate-600', 'border-slate-200');
 
             const filter = btn.getAttribute('data-filter');
 
@@ -93,10 +93,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if (el) {
                 const orig = el.innerText;
                 el.innerText = '¡Copiado!';
-                el.classList.add('text-emerald-400');
+                el.classList.add('text-emerald-700');
                 setTimeout(() => {
                     el.innerText = orig;
-                    el.classList.remove('text-emerald-400');
+                    el.classList.remove('text-emerald-700');
                 }, 2000);
             }
         });
