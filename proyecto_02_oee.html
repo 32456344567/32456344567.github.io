@@ -84,7 +84,7 @@
             </h1>
 
             <div class="flex flex-wrap items-center gap-6 mt-6 text-xs font-mono text-slate-600 border-t border-slate-200 pt-4">
-                <div><span class="text-slate-900 font-semibold">PLANTA:</span> Grandma EDNA's Biscuits (Manufactura Continua)</div>
+                <div><span class="text-slate-900 font-semibold">ORIGEN:</span> Dataset Industrial Kaggle (Grandma EDNA's Biscuits)</div>
                 <div><span class="text-slate-900 font-semibold">TELEMETRÍA:</span> 8,044 Eventos (Base: 744 h de Planta)</div>
                 <div><span class="text-slate-900 font-semibold">RESTRICCIÓN:</span> Llenadora de Galletas (OEE 37.90%)</div>
                 <div><span class="text-slate-900 font-semibold">STACK:</span> Python · DuckDB In-Memory · FastAPI · Lean SMED</div>
@@ -97,19 +97,19 @@
 
         <!-- RESUMEN PARA NO TÉCNICOS (RRHH) -->
         <div class="framer-card rounded-2xl p-6 border-l-4 border-l-emerald-600 shadow-sm bg-emerald-50/30">
-            <h3 class="text-xs font-mono font-bold uppercase text-emerald-700 tracking-wider mb-3">En resumen (para quien no es ingeniero de planta)</h3>
+            <h3 class="text-xs font-mono font-bold uppercase text-emerald-700 tracking-wider mb-3">En resumen (para reclutadores y perfiles de gestión)</h3>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
                 <div>
-                    <span class="block text-[11px] font-mono font-bold text-slate-500 uppercase mb-1">El problema</span>
-                    <p class="text-slate-700 leading-relaxed">Gerencia quería comprar una máquina de <strong>$250,000 USD</strong> para producir más galletas. Antes de aprobar ese gasto, había que responder una pregunta incómoda: ¿la planta realmente necesita más máquinas, o está desperdiciando la capacidad que ya tiene?</p>
+                    <span class="block text-[11px] font-mono font-bold text-slate-500 uppercase mb-1">El dilema industrial</span>
+                    <p class="text-slate-700 leading-relaxed">En manufactura, ante demandas de mayor volumen suele plantearse la compra de maquinaria costosa (Capex de <strong>$250,000 USD</strong>). La pregunta técnica que guía este estudio fue: ¿la planta realmente requiere más activos, o sufre de capacidad oculta por ineficiencias operativas?</p>
                 </div>
                 <div>
-                    <span class="block text-[11px] font-mono font-bold text-slate-500 uppercase mb-1">Lo que hice</span>
-                    <p class="text-slate-700 leading-relaxed">Analicé 8,044 eventos de máquina de un mes completo y encontré que una sola máquina —la Llenadora— frena el 70% de la facturación de la planta. Diseñé un plan de 8 semanas para acelerarla sin comprar nada nuevo, y lo empaqueté en un dashboard web donde cualquiera puede auditar el cálculo con SQL en vivo.</p>
+                    <span class="block text-[11px] font-mono font-bold text-slate-500 uppercase mb-1">El enfoque analítico</span>
+                    <p class="text-slate-700 leading-relaxed">A partir de un dataset de telemetría con 8,044 eventos (744 h de producción), modelé el OEE canónico en Python y DuckDB, demostrando que la Llenadora de Galletas frena el 70% de la facturación. Diseñé una propuesta técnica con Lean SMED para reducir tiempos de cambio y la desplegué en un dashboard interactivo auditable.</p>
                 </div>
                 <div>
-                    <span class="block text-[11px] font-mono font-bold text-slate-500 uppercase mb-1">El resultado</span>
-                    <p class="text-slate-700 leading-relaxed">Un caso de negocio defendible: <strong>$23,800 USD</strong> en vez de $250,000, resultado en <strong>8 semanas</strong> en vez de 9 meses, con retorno de inversión en <strong>14.9 días</strong>. Pruébalo tú mismo en la demo en vivo (link abajo).</p>
+                    <span class="block text-[11px] font-mono font-bold text-slate-500 uppercase mb-1">La propuesta técnica</span>
+                    <p class="text-slate-700 leading-relaxed">Un caso de negocio justificado con datos: una inversión en estandarización de <strong>$23,800 USD</strong> liberaría la capacidad requerida con un payback proyectado de <strong>14.9 días</strong>, sustentando cómo tomar decisiones operativas antes de comprometer capital.</p>
                 </div>
             </div>
         </div>
@@ -118,7 +118,7 @@
         <div class="framer-card rounded-2xl p-6 border-l-4 border-l-blue-600 shadow-sm bg-white">
             <h3 class="text-xs font-mono font-bold uppercase text-blue-700 tracking-wider mb-2">Resumen Ejecutivo de Negocio</h3>
             <p class="text-sm text-slate-700 leading-relaxed">
-                Este proyecto demuestra cómo recuperar capacidad instalada oculta sin incurrir en compras innecesarias de maquinaria (Capex cero). Mediante el análisis de <strong>8,044 eventos operativos</strong> en Python y DuckDB In-Memory, se descompuso el OEE de la fábrica (58.71% vs 85.0% meta mundial) y se identificó que la <strong>Llenadora de Galletas (`Biscuit Filling Machine`)</strong> frena el 70% de la facturación con un OEE de apenas <strong>37.90%</strong>. Al aplicar la metodología <strong>Lean SMED</strong>, se estandarizó el cambio de formato de <strong>45 min a 15 min (-66.7%)</strong>, liberando <strong>+49.4 h/mes</strong> y generando un caso de negocio de <strong>+$581,539 USD anuales</strong> con un Payback de <strong>14.9 días</strong> frente al Capex evitado de <strong>$250,000 USD</strong> de comprar una máquina nueva.
+                Este estudio de caso demuestra cómo diagnosticar y cuantificar capacidad instalada oculta mediante analítica de datos industriales. A partir de un dataset de telemetría de <strong>8,044 eventos operativos</strong> en Python y DuckDB In-Memory, se descompuso el OEE de la fábrica (58.71% vs 85.0% meta mundial) bajo estándar ANSI/ISA-95 y se identificó que la <strong>Llenadora de Galletas (`Biscuit Filling Machine`)</strong> gobierna la restricción del sistema con un OEE de <strong>37.90%</strong>. Se diseñó una propuesta técnica bajo metodología <strong>Lean SMED</strong> para estandarizar el cambio de formato de <strong>45 min a 15 min (-66.7%)</strong>, liberando <strong>+49.4 h/mes</strong> y sustentando un caso de negocio proyectado de <strong>+$581,539 USD anuales</strong> con un Payback de <strong>14.9 días</strong> frente al Capex tradicional de compra de maquinaria (<strong>$250,000 USD</strong>).
             </p>
         </div>
 
