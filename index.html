@@ -348,31 +348,51 @@
                         </span>
                     </div>
 
-                    <!-- Visual Graphic Card / High Impact Metric Display -->
-                    <div class="relative w-full aspect-[21/9] rounded-2xl overflow-hidden border border-slate-200 bg-slate-900 p-6 flex flex-col justify-between cursor-pointer group shadow-sm hover:border-slate-300 transition-all text-white" onclick="window.location.href='proyecto_02_oee.html'">
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs font-mono text-cyan-400 font-bold flex items-center gap-2">
-                                <span class="w-2 h-2 rounded-full bg-cyan-400"></span> Grandma EDNA's Biscuits · Manufactura Continua (2 Líneas)
-                            </span>
-                            <span class="text-xs font-mono text-slate-400">8,044 Eventos · Base: 744 h Planta</span>
-                        </div>
-                        <div class="grid grid-cols-3 gap-4 py-2 text-center">
-                            <div class="bg-slate-800/90 p-3 rounded-xl border border-slate-700 shadow-sm">
-                                <span class="text-slate-400 font-semibold text-[10px] block uppercase font-mono">OEE Planta</span>
-                                <span class="text-lg sm:text-xl font-bold text-white font-mono">58.7% <span class="text-xs text-rose-400 font-normal">(Meta 85%)</span></span>
-                            </div>
-                            <div class="bg-slate-800/90 p-3 rounded-xl border border-slate-700 shadow-sm">
-                                <span class="text-slate-400 font-semibold text-[10px] block uppercase font-mono">Reducción Setup SMED</span>
-                                <span class="text-lg sm:text-xl font-bold text-emerald-400 font-mono">-66.7% <span class="text-xs text-slate-300 font-normal">(45m &rarr; 15m)</span></span>
-                            </div>
-                            <div class="bg-slate-800/90 p-3 rounded-xl border border-slate-700 shadow-sm">
-                                <span class="text-slate-400 font-semibold text-[10px] block uppercase font-mono">Beneficio Anual</span>
-                                <span class="text-lg sm:text-xl font-bold text-emerald-400 font-mono">+$581,539 <span class="text-xs text-slate-300 font-normal">USD</span></span>
+                    <!-- OEE SCREENSHOTS ROTATING CAROUSEL -->
+                    <div class="relative w-full aspect-[16/9] rounded-2xl overflow-hidden border border-slate-300 bg-slate-950 group cursor-pointer shadow-lg" id="oee-carousel-p2" onclick="window.location.href='proyecto_02_oee.html'">
+                        <!-- Slide 1 -->
+                        <div class="oee-slide relative w-full h-full transition-all duration-300" data-index="0">
+                            <img src="assets/img/oee_tab1_diagnostico.png" alt="OEE Vista 01 - Diagnóstico Global y Cascada de Capacidad" class="w-full h-full object-cover">
+                            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-3 flex items-center justify-between text-xs font-mono text-white">
+                                <span class="text-cyan-300 font-bold flex items-center gap-2">
+                                    <span class="w-2 h-2 rounded-full bg-cyan-400"></span> 01. Diagnóstico OEE (58.71%) & Cascada ANSI/ISA-95
+                                </span>
+                                <span class="text-slate-300 text-[11px] bg-slate-900/80 px-2 py-0.5 rounded border border-white/20">1 / 3</span>
                             </div>
                         </div>
-                        <div class="flex items-center justify-between text-xs font-mono text-slate-400">
-                            <span>Cuello de Botella: Llenadora (37.9% OEE) · Payback SMED: 14.9 Días</span>
-                            <span class="text-blue-400 group-hover:underline flex items-center gap-1 font-semibold">Ver caso de estudio <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></span>
+                        <!-- Slide 2 -->
+                        <div class="oee-slide hidden relative w-full h-full transition-all duration-300" data-index="1">
+                            <img src="assets/img/oee_tab2_restriccion.png" alt="OEE Vista 02 - Restricción TOC y Pareto 80/20 Llenadora" class="w-full h-full object-cover">
+                            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-3 flex items-center justify-between text-xs font-mono text-white">
+                                <span class="text-rose-400 font-bold flex items-center gap-2">
+                                    <span class="w-2 h-2 rounded-full bg-rose-400"></span> 02. Cuello de Botella TOC & Pareto 80/20 (Llenadora 37.9%)
+                                </span>
+                                <span class="text-slate-300 text-[11px] bg-slate-900/80 px-2 py-0.5 rounded border border-white/20">2 / 3</span>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="oee-slide hidden relative w-full h-full transition-all duration-300" data-index="2">
+                            <img src="assets/img/oee_tab3_business_case.png" alt="OEE Vista 03 - Caso de Negocio SMED y Retorno Financiero" class="w-full h-full object-cover">
+                            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-3 flex items-center justify-between text-xs font-mono text-white">
+                                <span class="text-emerald-400 font-bold flex items-center gap-2">
+                                    <span class="w-2 h-2 rounded-full bg-emerald-400"></span> 03. Business Case SMED: Payback 14.9 Días (+$581,539 USD/año)
+                                </span>
+                                <span class="text-slate-300 text-[11px] bg-slate-900/80 px-2 py-0.5 rounded border border-white/20">3 / 3</span>
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <button onclick="prevOeeSlide(event)" class="absolute left-2.5 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/70 hover:bg-black/90 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity z-20" aria-label="Anterior">
+                            <i data-lucide="chevron-left" class="w-4 h-4"></i>
+                        </button>
+                        <button onclick="nextOeeSlide(event)" class="absolute right-2.5 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/70 hover:bg-black/90 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity z-20" aria-label="Siguiente">
+                            <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                        </button>
+
+                        <div class="absolute top-3 right-3 flex items-center gap-1.5 bg-black/70 px-2.5 py-1 rounded-full z-20">
+                            <span class="oee-dot w-2 h-2 rounded-full bg-blue-500 cursor-pointer" onclick="goToOeeSlide(0, event)"></span>
+                            <span class="oee-dot w-2 h-2 rounded-full bg-slate-600 cursor-pointer" onclick="goToOeeSlide(1, event)"></span>
+                            <span class="oee-dot w-2 h-2 rounded-full bg-slate-600 cursor-pointer" onclick="goToOeeSlide(2, event)"></span>
                         </div>
                     </div>
 
