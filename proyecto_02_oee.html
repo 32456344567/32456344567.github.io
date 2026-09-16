@@ -94,13 +94,44 @@
 
     <!-- MAIN BODY -->
     <main class="py-12 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
-        
-        <!-- RESUMEN EJECUTIVO (ELEVATOR PITCH PARA RRHH & GERENCIA) -->
+
+        <!-- RESUMEN PARA NO TÉCNICOS (RRHH) -->
+        <div class="framer-card rounded-2xl p-6 border-l-4 border-l-emerald-600 shadow-sm bg-emerald-50/30">
+            <h3 class="text-xs font-mono font-bold uppercase text-emerald-700 tracking-wider mb-3">En resumen (para quien no es ingeniero de planta)</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                <div>
+                    <span class="block text-[11px] font-mono font-bold text-slate-500 uppercase mb-1">El problema</span>
+                    <p class="text-slate-700 leading-relaxed">Gerencia quería comprar una máquina de <strong>$250,000 USD</strong> para producir más galletas. Antes de aprobar ese gasto, había que responder una pregunta incómoda: ¿la planta realmente necesita más máquinas, o está desperdiciando la capacidad que ya tiene?</p>
+                </div>
+                <div>
+                    <span class="block text-[11px] font-mono font-bold text-slate-500 uppercase mb-1">Lo que hice</span>
+                    <p class="text-slate-700 leading-relaxed">Analicé 8,044 eventos de máquina de un mes completo y encontré que una sola máquina —la Llenadora— frena el 70% de la facturación de la planta. Diseñé un plan de 8 semanas para acelerarla sin comprar nada nuevo, y lo empaqueté en un dashboard web donde cualquiera puede auditar el cálculo con SQL en vivo.</p>
+                </div>
+                <div>
+                    <span class="block text-[11px] font-mono font-bold text-slate-500 uppercase mb-1">El resultado</span>
+                    <p class="text-slate-700 leading-relaxed">Un caso de negocio defendible: <strong>$23,800 USD</strong> en vez de $250,000, resultado en <strong>8 semanas</strong> en vez de 9 meses, con retorno de inversión en <strong>14.9 días</strong>. Pruébalo tú mismo en la demo en vivo (link abajo).</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- RESUMEN EJECUTIVO (ELEVATOR PITCH TÉCNICO) -->
         <div class="framer-card rounded-2xl p-6 border-l-4 border-l-blue-600 shadow-sm bg-white">
             <h3 class="text-xs font-mono font-bold uppercase text-blue-700 tracking-wider mb-2">Resumen Ejecutivo de Negocio</h3>
             <p class="text-sm text-slate-700 leading-relaxed">
-                Este proyecto demuestra cómo recuperar capacidad instalada oculta sin incurrir en compras innecesarias de maquinaria (Capex cero). Mediante el análisis de <strong>8,044 eventos operativos</strong> en Python y DuckDB In-Memory, se descompuso el OEE de la fábrica (58.21% vs 85.0% meta mundial) y se identificó que la <strong>Llenadora de Galletas (`Biscuit Filling Machine`)</strong> frena el 70% de la facturación con un OEE de apenas <strong>37.90%</strong>. Al aplicar la metodología <strong>Lean SMED</strong>, se estandarizó el cambio de formato de <strong>45 min a 15 min (-66.7%)</strong>, liberando <strong>+49.4 h/mes</strong> y generando un caso de negocio de <strong>+$581,391 USD anuales</strong> con un Payback de <strong>14.9 días</strong> frente al Capex evitado de <strong>$250,000 USD</strong> de comprar una máquina nueva.
+                Este proyecto demuestra cómo recuperar capacidad instalada oculta sin incurrir en compras innecesarias de maquinaria (Capex cero). Mediante el análisis de <strong>8,044 eventos operativos</strong> en Python y DuckDB In-Memory, se descompuso el OEE de la fábrica (58.71% vs 85.0% meta mundial) y se identificó que la <strong>Llenadora de Galletas (`Biscuit Filling Machine`)</strong> frena el 70% de la facturación con un OEE de apenas <strong>37.90%</strong>. Al aplicar la metodología <strong>Lean SMED</strong>, se estandarizó el cambio de formato de <strong>45 min a 15 min (-66.7%)</strong>, liberando <strong>+49.4 h/mes</strong> y generando un caso de negocio de <strong>+$581,539 USD anuales</strong> con un Payback de <strong>14.9 días</strong> frente al Capex evitado de <strong>$250,000 USD</strong> de comprar una máquina nueva.
             </p>
+        </div>
+
+        <!-- HABILIDADES DEMOSTRADAS (ESCANEO RÁPIDO PARA RECLUTADORES / ATS) -->
+        <div class="flex flex-wrap gap-2 text-xs font-mono">
+            <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 border border-slate-200 font-semibold">Python</span>
+            <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 border border-slate-200 font-semibold">SQL / DuckDB</span>
+            <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 border border-slate-200 font-semibold">FastAPI</span>
+            <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 border border-slate-200 font-semibold">Análisis de Datos Industriales</span>
+            <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 border border-slate-200 font-semibold">Lean Manufacturing / SMED</span>
+            <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 border border-slate-200 font-semibold">Teoría de Restricciones (TOC)</span>
+            <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 border border-slate-200 font-semibold">Modelado Financiero / Business Case</span>
+            <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 border border-slate-200 font-semibold">Comunicación Ejecutiva</span>
         </div>
 
         <!-- TARJETAS DE IMPACTO CUANTIFICADO -->
@@ -139,16 +170,16 @@
                 </p>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs font-mono pt-1">
                     <div class="bg-white p-4 rounded-xl border border-slate-200">
-                        <strong class="text-slate-900 block mb-1">Disponibilidad (A) = 80.12%</strong>
+                        <strong class="text-slate-900 block mb-1">Disponibilidad (A) = 76.10%</strong>
                         <p class="text-slate-600 leading-relaxed">Tiempo en Marcha / Tiempo Planificado. 147.9 h de paradas en el mes gobernadas por cambios de producto (CC) y averías mecánicas.</p>
                     </div>
                     <div class="bg-white p-4 rounded-xl border border-slate-200">
-                        <strong class="text-slate-900 block mb-1">Rendimiento (P) = 74.05%</strong>
+                        <strong class="text-slate-900 block mb-1">Rendimiento (P) = 78.44%</strong>
                         <p class="text-slate-600 leading-relaxed">Producción Real / Capacidad Nominal. Velocidad observada en la restricción: 38,506 u/h vs diseño de 51,840 u/h (-25.7%).</p>
                     </div>
                     <div class="bg-white p-4 rounded-xl border border-slate-200">
-                        <strong class="text-slate-900 block mb-1">Calidad (Q) = 98.24%</strong>
-                        <p class="text-slate-600 leading-relaxed">Galletas Conformes / Total Producido. 458.3 M unidades vendibles con merma controlada en 1.76%.</p>
+                        <strong class="text-slate-900 block mb-1">Calidad (Q) = 98.36%</strong>
+                        <p class="text-slate-600 leading-relaxed">Galletas Conformes / Total Producido. 458.3 M unidades vendibles con merma controlada en ~1.64%.</p>
                     </div>
                 </div>
                 <div class="mt-4 rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-white p-2">
@@ -244,8 +275,8 @@
                         </tr>
                         <tr>
                             <td class="p-3 font-sans font-semibold">Beneficio Anual Generado</td>
-                            <td class="p-3 text-right text-slate-600">+$581,000 USD / año</td>
-                            <td class="p-3 text-right text-emerald-700 font-bold">+$581,391 USD / año</td>
+                            <td class="p-3 text-right text-slate-600">≈ $581,000 USD / año</td>
+                            <td class="p-3 text-right text-emerald-700 font-bold">+$581,539 USD / año</td>
                         </tr>
                         <tr>
                             <td class="p-3 font-sans font-semibold">Período de Retorno (Payback)</td>
@@ -279,7 +310,7 @@
                 <div class="bg-white p-5 rounded-xl border border-slate-200 space-y-2">
                     <b class="text-slate-900 text-sm font-sans block">Dashboard Web Interactivo:</b>
                     <p class="text-slate-600 leading-relaxed font-mono">
-                        Desarrollado en Python (FastAPI) y DuckDB In-Memory con 4 vistas operativas: Diagnóstico OEE, Restricción, Simulador What-If y Consola SQL nativa (< 3 ms).
+                        Desarrollado en Python (FastAPI) y DuckDB In-Memory con 4 vistas operativas: Diagnóstico OEE, Restricción, Simulador What-If y Consola SQL de auditoría <strong>de solo lectura</strong> (whitelist de tablas + timeout, sin riesgo de fuga de archivos).
                     </p>
                     <div class="pt-2">
                         <a href="https://github.com/32456344567/02_Analisis_OEE_Paradas_SMED" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-bold inline-flex items-center gap-1">
@@ -299,6 +330,29 @@
                             <i data-lucide="folder" class="w-3 h-3"></i>
                         </a>
                     </div>
+                </div>
+            </div>
+
+            <div class="pt-2 border-t border-slate-200">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-xs font-mono font-bold text-slate-900 uppercase flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        Dashboard OEE & SMED en Vivo (Railway Cloud)
+                    </span>
+                    <a href="https://02analisisoeeparadassmed-production.up.railway.app" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-blue-700 hover:underline flex items-center gap-1">
+                        Abrir pantalla completa <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                    </a>
+                </div>
+                <div class="aspect-video w-full rounded-xl overflow-hidden border border-slate-200 bg-slate-950 mb-4">
+                    <iframe src="https://02analisisoeeparadassmed-production.up.railway.app" class="w-full h-full border-0" title="Dashboard OEE & SMED Live"></iframe>
+                </div>
+                <div class="flex flex-wrap gap-3 pt-2">
+                    <a href="https://02analisisoeeparadassmed-production.up.railway.app" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 bg-blue-600 hover:bg-blue-700 text-white text-xs font-mono font-bold rounded-lg shadow-sm flex items-center gap-2">
+                        <i data-lucide="external-link" class="w-4 h-4"></i> ABRIR DASHBOARD EN PESTAÑA COMPLETA
+                    </a>
+                    <a href="https://github.com/32456344567/02_Analisis_OEE_Paradas_SMED" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 bg-white hover:bg-slate-50 text-slate-700 hover:text-slate-900 text-xs font-mono font-semibold rounded-lg border border-slate-200 shadow-sm flex items-center gap-2">
+                        <i data-lucide="github" class="w-4 h-4"></i> REPOSITORIO GITHUB
+                    </a>
                 </div>
             </div>
         </section>
