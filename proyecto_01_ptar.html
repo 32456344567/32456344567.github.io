@@ -112,34 +112,53 @@
                 <span>/</span>
                 <a href="index.html#proyectos" class="hover:text-blue-600 transition-colors">Proyectos</a>
                 <span>/</span>
-                <span class="text-blue-700 font-semibold">Caso 01: Simulación Dinámica & Control de Reactores</span>
+                <span class="text-blue-700 font-semibold">Caso 01: Monitoreo Inteligente & Eficiencia Energética en PTAR</span>
             </div>
 
             <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-mono font-bold uppercase mb-3 border border-blue-200">
-                PROYECTO 01 · MODELADO DINÁMICO & CONTROL DE PROCESOS QUÍMICOS
+                PROYECTO 01 · INGENIERÍA DE PROCESOS + DATOS E IA
             </div>
 
             <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-                Simulación Dinámica, Estabilidad de Biomasa y Optimización de Aireación
+                De 5 Días de Laboratorio a Segundos: Monitoreo en Tiempo Real de una Planta de Tratamiento de Aguas
             </h1>
 
             <div class="flex flex-wrap items-center gap-6 mt-6 text-xs font-mono text-slate-600 border-t border-slate-200 pt-4">
                 <div><span class="text-slate-900 font-semibold">PROCESO:</span> Reactor de Lodos Activados (4,050 m³) & Sopladores VFD</div>
                 <div><span class="text-slate-900 font-semibold">DATASET:</span> 80,000 Lecturas SCADA (5 min)</div>
-                <div><span class="text-slate-900 font-semibold">HERRAMIENTAS:</span> Monod Kinetics, DuckDB SQL, Python, SCADA Web</div>
-                <div><span class="text-slate-900 font-semibold">EFICIENCIA:</span> -92,883 kWh/año en potencia de aireación</div>
+                <div><span class="text-slate-900 font-semibold">HERRAMIENTAS:</span> Python, XGBoost, DuckDB SQL, FastAPI, SCADA Web</div>
+                <div><span class="text-slate-900 font-semibold">EN PRODUCCIÓN:</span> App web en vivo, 98.17% cumplimiento ambiental medido</div>
             </div>
         </div>
     </div>
 
     <!-- MAIN BODY -->
     <main class="py-12 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-        
-        <!-- SINOPSIS EJECUTIVA -->
+
+        <!-- RESUMEN PARA NO TÉCNICOS (RRHH) -->
+        <div class="framer-card rounded-2xl p-6 border-l-4 border-l-emerald-600 shadow-sm bg-emerald-50/30">
+            <h3 class="text-xs font-mono font-bold uppercase text-emerald-700 tracking-wider mb-3">En resumen (para quien no es ingeniero de procesos)</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                <div>
+                    <span class="block text-[11px] font-mono font-bold text-slate-500 uppercase mb-1">El problema</span>
+                    <p class="text-slate-700 leading-relaxed">La planta no sabía si el agua tratada cumplía la norma ambiental hasta <strong>5 días después</strong> (tiempo del análisis de laboratorio). Mientras tanto, operaba "a ciegas" e inyectaba más oxígeno del necesario por precaución, gastando electricidad de más.</p>
+                </div>
+                <div>
+                    <span class="block text-[11px] font-mono font-bold text-slate-500 uppercase mb-1">Lo que hice</span>
+                    <p class="text-slate-700 leading-relaxed">Analicé 80,000 lecturas de sensores, construí un modelo que estima la calidad del agua <strong>al instante</strong>, y lo integré en una plataforma web de monitoreo en vivo. Antes de reportar el ahorro económico, audité mi propio cálculo inicial con los datos reales y lo corregí.</p>
+                </div>
+                <div>
+                    <span class="block text-[11px] font-mono font-bold text-slate-500 uppercase mb-1">El resultado</span>
+                    <p class="text-slate-700 leading-relaxed">Una herramienta <strong>en producción hoy</strong> (link abajo), con cumplimiento ambiental del <strong>98.17%</strong> medido sobre datos reales, y una consigna de operación validada con evidencia en vez de intuición.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SINOPSIS EJECUTIVA (TÉCNICA) -->
         <div class="framer-card rounded-2xl p-6 border-l-4 border-l-blue-600 shadow-sm">
             <h3 class="text-xs font-mono font-bold uppercase text-blue-700 tracking-wider mb-2">Resumen de Ingeniería del Proyecto</h3>
             <p class="text-sm text-slate-700 leading-relaxed">
-                En los reactores biológicos aerobios de lodos activados, la dinámica de transferencia de oxígeno es un balance crítico entre la tasa de utilización microbiana de sustrato y la potencia entregada por los sopladores. Históricamente, la instalación operaba con sobre-aireación forzada (oxígeno disuelto DO &gt; 2.5–3.5 mg/L), provocando estrés por cizalla en los flóculos de biomasa y un consumo eléctrico desproporcionado en la batería de sopladores. Aplicando principios de ingeniería química y analítica de datos sobre 80,000 registros SCADA, se modeló la curva de saturación de Monod y se diseñó un <strong class="text-slate-900">sensor virtual (gemelo digital)</strong> para estimar la cinética de degradación en tiempo real, superando el retraso operativo de 5 días del ensayo de laboratorio. La calibración del punto de consigna a <strong class="text-slate-900">1.8–2.2 mg/L</strong> estabilizó la biomasa bacteriana, previno el arrastre de sólidos en el clarificador y redujo <strong class="text-emerald-700 font-bold">92,883 kWh/año</strong> de consumo eléctrico en sopladores mediante control continuo por variadores de frecuencia (VFD).
+                En los reactores biológicos aerobios de lodos activados, la dinámica de transferencia de oxígeno es un balance crítico entre la tasa de utilización microbiana de sustrato y la potencia entregada por los sopladores. Históricamente, la instalación operaba con sobre-aireación forzada (oxígeno disuelto DO &gt; 2.5–3.5 mg/L) por precaución ante la norma ambiental. Aplicando principios de ingeniería química y analítica de datos sobre 80,000 registros SCADA, se modeló la curva de saturación de Monod y se diseñó un <strong class="text-slate-900">sensor virtual (gemelo digital)</strong> para estimar la calidad del efluente en tiempo real, superando el retraso operativo de 5 días del ensayo de laboratorio. La consigna de oxígeno disuelto se redefinió a <strong class="text-slate-900">1.8–2.2 mg/L</strong>, banda validada mediante una <strong class="text-slate-900">regresión empírica sobre la relación real Aire–Oxígeno–Carga</strong> de la planta (no una fórmula teórica asumida), lo que permitió cuantificar con rigor un ahorro de <strong class="text-emerald-700 font-bold">11,810 kWh/año</strong> en sopladores sin inversión de capital.
             </p>
         </div>
 
@@ -225,7 +244,7 @@
                 <div class="framer-card p-4 rounded-xl border border-slate-200">
                     <strong class="text-emerald-700 block mb-1">3. Improve & Control: Sensor Virtual & POE Operativo</strong>
                     <p class="text-slate-600 leading-relaxed">
-                        Se redefinió el punto de consigna en <strong>1.8 a 2.2 mg/L de DO</strong> con modulación de variadores de frecuencia (VFD) y se estandarizó el procedimiento <code>POE-OP-PTAR-001</code> con matriz de consignas por turno. Se integró telemetría SCADA Web y dashboards en Power BI bajo norma ISA-101.
+                        Se redefinió el punto de consigna en <strong>1.8 a 2.2 mg/L de DO</strong> con modulación de variadores de frecuencia (VFD) y se estandarizó el procedimiento <code>POE-OP-PTAR-001</code> con matriz de consignas por turno. Se integró telemetría en una plataforma SCADA Web propia (FastAPI + DuckDB) bajo norma ISA-101.
                     </p>
                 </div>
             </div>
@@ -251,14 +270,14 @@
                         <tr>
                             <td class="py-3 px-4 font-bold text-slate-900">Consumo Eléctrico Aireación</td>
                             <td class="py-3 px-4">2,339,852 kWh/año</td>
-                            <td class="py-3 px-4">2,246,970 kWh/año</td>
-                            <td class="py-3 px-4 text-emerald-700 font-bold">92,883 kWh/año optimizados (-$8,545 USD/año)</td>
+                            <td class="py-3 px-4">2,328,042 kWh/año</td>
+                            <td class="py-3 px-4 text-emerald-700 font-bold">11,810 kWh/año optimizados (-$1,086.53 USD/año)</td>
                         </tr>
                         <tr>
                             <td class="py-3 px-4 font-bold text-slate-900">Consumo Específico (SEC)</td>
                             <td class="py-3 px-4">1.186 kWh/kg DBO</td>
-                            <td class="py-3 px-4">1.139 kWh/kg DBO</td>
-                            <td class="py-3 px-4 text-emerald-700 font-bold">+3.97% eficiencia en uso de oxígeno</td>
+                            <td class="py-3 px-4">1.180 kWh/kg DBO</td>
+                            <td class="py-3 px-4 text-emerald-700 font-bold">+0.50% eficiencia en uso de oxígeno</td>
                         </tr>
                         <tr>
                             <td class="py-3 px-4 font-bold text-slate-900">Banda de Consigna de DO</td>
@@ -291,6 +310,12 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
+            <div class="mt-4 flex items-start gap-3 text-xs text-slate-600 bg-slate-50 border border-slate-200 rounded-xl p-4">
+                <i data-lucide="shield-check" class="w-4 h-4 text-blue-600 shrink-0 mt-0.5"></i>
+                <p class="leading-relaxed">
+                    <strong class="text-slate-900">Nota de rigor:</strong> el ahorro reportado no sale de una fórmula teórica asumida. Se validó con una regresión sobre la relación real Aire–Oxígeno–Carga observada en los 80,000 registros de la planta, aplicada únicamente a los tramos donde realmente hay margen (DO &gt; 2.2 mg/L). El primer cálculo, hecho con un supuesto más optimista, sobreestimaba el ahorro en ~8x — se detectó, se corrigió y se documentó públicamente antes de publicar el caso.
+                </p>
             </div>
         </section>
 
