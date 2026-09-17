@@ -3,30 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caso 03: Decisiones de Calidad, Scrap y Retrabajo (COPQ) | Ing. Angelo Apolo</title>
-    
+    <title>Caso 03: Calidad, Scrap y Costo de Retrabajo (COPQ) | Ing. Angelo Apolo</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="assets/css/custom.css">
 </head>
-<body class="bg-[#F8FAFC] text-slate-800 antialiased selection:bg-blue-600 selection:text-slate-900 relative">
+<body class="bg-[#F8FAFC] text-slate-800 antialiased selection:bg-blue-600 selection:text-white relative">
 
-
-            <!-- Ambient Glow Top -->
     <div class="ambient-glow-top"></div>
-<!-- TOP NAVIGATION -->
+
+    <!-- TOP NAVIGATION -->
     <nav class="fixed top-0 left-0 right-0 z-50 bg-white/85 backdrop-blur-xl border-b border-slate-200/80">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20 gap-4">
-                
+
                 <!-- Brand / Identidad -->
                 <a href="index.html" class="flex items-center gap-3 shrink-0 group">
                     <div class="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center font-mono font-bold text-white text-base shadow-md shadow-blue-600/20 group-hover:bg-blue-700 transition-all shrink-0">
@@ -42,7 +37,7 @@
                     </div>
                 </a>
 
-                <!-- Enlaces Centrales de Navegación -->
+                <!-- Enlaces Centrales -->
                 <div class="hidden lg:flex items-center gap-6 xl:gap-8 text-xs xl:text-sm font-medium text-slate-600 shrink-0">
                     <a href="index.html#perfil" class="hover:text-slate-900 transition-colors whitespace-nowrap">Perfil</a>
                     <a href="index.html#proyectos" class="text-blue-600 font-semibold flex items-center gap-1.5 whitespace-nowrap">
@@ -51,179 +46,320 @@
                     </a>
                     <a href="index.html#stack-tecnico" class="hover:text-slate-900 transition-colors whitespace-nowrap">Datos & IA</a>
                     <a href="index.html#experiencia" class="hover:text-slate-900 transition-colors whitespace-nowrap">Experiencia de Planta</a>
-                    <a href="index.html#competencias" class="hover:text-slate-900 transition-colors whitespace-nowrap">Competencias</a>
                     <a href="index.html#contacto" class="hover:text-slate-900 transition-colors whitespace-nowrap">Contacto</a>
                 </div>
 
-                <!-- Botones de Acción Directa -->
+                <!-- Botones Contacto -->
                 <div class="hidden sm:flex items-center gap-2.5 shrink-0">
-                    <a href="https://wa.me/593969763084?text=Hola%20Ing.%20Angelo%20Apolo,%20revisamos%20su%20portafolio%20y%20nos%20gustar%C3%ADa%20conversar%20sobre%20una%20oportunidad%20laboral." 
-                       target="_blank" rel="noopener noreferrer" 
-                       class="flex items-center gap-2 px-3.5 py-2 text-xs font-mono font-semibold text-emerald-700 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 rounded-lg transition-all shrink-0 whitespace-nowrap shadow-sm">
-                        <svg class="w-4 h-4 fill-current text-emerald-600 shrink-0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.25-1.49-1.4-1.74-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.32-.02-.45-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.54.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.28z"/></svg>
+                    <a href="https://wa.me/593969763084" target="_blank" rel="noopener noreferrer"
+                       class="flex items-center gap-2 px-3.5 py-2 text-xs font-mono font-semibold text-emerald-700 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 rounded-lg transition-all shadow-sm">
                         <span>WhatsApp: 0969763084</span>
                     </a>
-                    <a href="https://www.linkedin.com/in/angelo-a-44a9a323b" 
-                       target="_blank" rel="noopener noreferrer" 
-                       class="flex items-center gap-2 px-3.5 py-2 text-xs font-mono font-semibold text-white bg-[#0A66C2] hover:bg-[#004182] rounded-lg transition-all shadow-sm shrink-0 whitespace-nowrap">
-                        <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.66 1.66 0 0 0-1.66 1.66c0 .92.74 1.67 1.66 1.67a1.67 1.67 0 0 0 0-3.33z"/></svg>
+                    <a href="https://www.linkedin.com/in/angelo-a-44a9a323b" target="_blank" rel="noopener noreferrer"
+                       class="flex items-center gap-2 px-3.5 py-2 text-xs font-mono font-semibold text-white bg-[#0A66C2] hover:bg-[#004182] rounded-lg transition-all shadow-sm">
                         <span>LinkedIn</span>
                     </a>
                 </div>
-
-                <!-- Botón Hamburguesa Móvil -->
-                <button id="mobile-menu-btn" class="lg:hidden p-2 text-slate-600 hover:text-slate-900 rounded-lg focus:outline-none" aria-label="Abrir menú">
-                    <i data-lucide="menu" class="w-6 h-6"></i>
-                </button>
-            </div>
-        </div>
-
-        <!-- Menú Desplegable Móvil -->
-        <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 bg-white px-4 pt-4 pb-6 space-y-3 font-mono text-sm shadow-lg">
-            <a href="index.html#perfil" class="block text-slate-700 hover:text-blue-600 py-1">Perfil</a>
-            <a href="index.html#proyectos" class="block text-slate-700 hover:text-blue-600 py-1">Proyectos (3 Reales)</a>
-            <a href="index.html#stack-tecnico" class="block text-slate-700 hover:text-blue-600 py-1">Datos & IA</a>
-            <a href="index.html#experiencia" class="block text-slate-700 hover:text-blue-600 py-1">Experiencia de Planta</a>
-            <a href="index.html#competencias" class="block text-slate-700 hover:text-blue-600 py-1">Competencias</a>
-            <a href="index.html#contacto" class="block text-slate-700 hover:text-blue-600 py-1">Contacto</a>
-            <div class="pt-3 border-t border-slate-200 flex flex-col gap-2">
-                <a href="https://wa.me/593969763084?text=Hola%20Ing.%20Angelo%20Apolo,%20revisamos%20su%20portafolio%20y%20nos%20gustar%C3%ADa%20conversar%20sobre%20una%20oportunidad%20laboral." 
-                   target="_blank" rel="noopener noreferrer" 
-                   class="flex items-center justify-center gap-2 px-3 py-2 text-xs font-semibold text-emerald-700 bg-emerald-50 border border-emerald-200 rounded-lg">
-                    <svg class="w-4 h-4 fill-current text-emerald-600 shrink-0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.25-1.49-1.4-1.74-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.32-.02-.45-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.54.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.28z"/></svg>
-                    <span>WhatsApp: 0969763084</span>
-                </a>
-                <a href="https://www.linkedin.com/in/angelo-a-44a9a323b" 
-                   target="_blank" rel="noopener noreferrer" 
-                   class="flex items-center justify-center gap-2 px-3 py-2 text-xs font-semibold text-white bg-[#0A66C2] rounded-lg">
-                    <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.66 1.66 0 0 0-1.66 1.66c0 .92.74 1.67 1.66 1.67a1.67 1.67 0 0 0 0-3.33z"/></svg>
-                    <span>LinkedIn</span>
-                </a>
             </div>
         </div>
     </nav>
 
-
-    <!-- HEADER -->
+    <!-- HEADER DEL CASO -->
     <div class="pt-28 pb-10 border-b border-slate-200 bg-white">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center gap-2 text-xs font-mono text-slate-500 mb-4">
                 <a href="index.html" class="hover:text-blue-700">Inicio</a>
                 <span>/</span>
-                <a href="index.html#proyectos" class="hover:text-indigo-600 transition-colors">Proyectos</a>
+                <a href="index.html#proyectos" class="hover:text-cyan-600 transition-colors">Proyectos</a>
                 <span>/</span>
-                <span class="text-indigo-700 font-semibold">Caso 03: Decisiones de Calidad & Costo de Scrap (COPQ)</span>
+                <span class="text-cyan-700 font-semibold">Caso 03: Calidad, Scrap y Costo de Retrabajo (COPQ)</span>
             </div>
 
-            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-indigo-50 text-indigo-700 text-xs font-mono font-bold uppercase mb-3 border border-indigo-200">
-                PROYECTO 03 · CONTROL DE CALIDAD, ESTADÍSTICA & SIX SIGMA
+            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-cyan-50 text-cyan-700 text-xs font-mono font-bold uppercase mb-3 border border-cyan-200">
+                PROYECTO 03 · CALIDAD, COSTOS Y DECISIONES DE PLANTA
             </div>
 
             <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-                Decisiones de Calidad, Inspección en Línea, Reducción de Scrap y Costo de Retrabajo
+                ¿Reparar o Desechar? Un Criterio de Datos para Dejar de Pagar la Misma Pieza Dos Veces
             </h1>
 
             <div class="flex flex-wrap items-center gap-6 mt-6 text-xs font-mono text-slate-600 border-t border-slate-200 pt-4">
-                <div><span class="text-slate-900 font-semibold">ENFOQUE:</span> Costo de No Calidad (COPQ) & Retrabajo vs Scrap</div>
-                <div><span class="text-slate-900 font-semibold">DATASET:</span> 10,000 Registros de Inspección y Decisión</div>
-                <div><span class="text-slate-900 font-semibold">ESTADÍSTICA:</span> Chi-cuadrado (χ²), ANOVA, Probabilidad Condicional</div>
-                <div><span class="text-slate-900 font-semibold">HERRAMIENTAS:</span> Python, Matriz de Decisión para Piso & Protocolo CAPA 8D</div>
+                <div><span class="text-slate-900 font-semibold">ORIGEN:</span> Estudio de Caso sobre Dataset Público de Manufactura (Kaggle)</div>
+                <div><span class="text-slate-900 font-semibold">DATOS:</span> 10,000 Decisiones de Inspección de Calidad</div>
+                <div><span class="text-slate-900 font-semibold">RESULTADO:</span> Ahorro Proyectado +$48,784 USD / año</div>
+                <div><span class="text-slate-900 font-semibold">STACK:</span> Python · FastAPI · DuckDB · Power BI</div>
             </div>
         </div>
     </div>
 
     <!-- MAIN BODY -->
-    <main class="py-12 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-        
-        <!-- RESUMEN EJECUTIVO -->
-        <div class="framer-card rounded-2xl p-6 border-l-4 border-l-indigo-600 shadow-sm">
-            <h3 class="text-xs font-mono font-bold uppercase text-indigo-700 tracking-wider mb-2">Resumen de Aseguramiento de Calidad</h3>
-            <p class="text-sm text-slate-700 leading-relaxed">
-                Este proyecto analiza con rigor estadístico y matemático uno de los problemas operativos más frecuentes en manufactura: <strong class="text-slate-900">determinar objetivamente cuándo reprocesar un lote no conforme (rework) y cuándo descartarlo a scrap directo</strong>. A partir de una base de <strong class="text-slate-900">10,000 decisiones de inspección</strong>, se aplicaron pruebas de Chi-cuadrado (χ²) y ANOVA para evaluar la tasa de escape de defectos hacia el cliente (garantía a 90 días) frente a la fiabilidad de inspección manual versus automatizada. El resultado es un algoritmo probabilístico de decisión y una <strong class="text-slate-900">Matriz Operativa de Decisión de Retrabajo</strong> respaldada por un <strong class="text-slate-900">Plan de Acción Correctiva CAPA / 8D</strong> que estandariza las autorizaciones en piso de planta.
+    <main class="py-12 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+
+        <!-- NOTA DE TRANSPARENCIA: ORIGEN DEL DATASET -->
+        <div class="flex items-start gap-3 text-xs font-mono text-slate-500 bg-slate-50 border border-slate-200 rounded-xl p-4">
+            <i data-lucide="info" class="w-4 h-4 text-slate-400 shrink-0 mt-0.5"></i>
+            <p class="leading-relaxed">
+                Este es un <strong class="text-slate-700">estudio de caso de práctica</strong>: los datos provienen de un dataset público de manufactura publicado en Kaggle (10,000 decisiones de inspección de calidad). Lo utilicé como un caso realista para aplicar de principio a fin mi forma de trabajar: entender el problema de negocio, analizar los datos, construir un tablero de decisión y entregar herramientas usables en piso de planta.
             </p>
         </div>
 
-        <!-- 1. DESGLOSE DEL COSTO COPQ -->
-        <section>
-            <h2 class="case-section-title">
-                <i data-lucide="pie-chart" class="w-5 h-5 text-indigo-700"></i>
-                1. Desglose del Costo de No Calidad (COPQ)
+        <!-- RESUMEN PARA NO TÉCNICOS (RRHH) -->
+        <div class="framer-card rounded-2xl p-6 border-l-4 border-l-emerald-600 shadow-sm bg-emerald-50/30">
+            <h3 class="text-xs font-mono font-bold uppercase text-emerald-700 tracking-wider mb-3">En resumen (para reclutadores y perfiles de gestión)</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                <div>
+                    <span class="block text-[11px] font-mono font-bold text-slate-500 uppercase mb-1">El dilema industrial</span>
+                    <p class="text-slate-700 leading-relaxed">Cuando un inspector detecta una pieza defectuosa, decide "a ojo" si repararla o desecharla. Ese criterio informal esconde una trampa: reparar piezas que de todas formas van a terminar en la basura, después de haber gastado tiempo, energía y materiales en el intento.</p>
+                </div>
+                <div>
+                    <span class="block text-[11px] font-mono font-bold text-slate-500 uppercase mb-1">El enfoque analítico</span>
+                    <p class="text-slate-700 leading-relaxed">Analicé 10,000 decisiones reales de inspección con Python, cuantifiqué cuánto cuesta cada tipo de error y encontré los 3 factores que más elevan la tasa de fallas (velocidad de línea, antigüedad de la máquina y método de inspección). Todo lo llevé a un tablero ejecutivo interactivo.</p>
+                </div>
+                <div>
+                    <span class="block text-[11px] font-mono font-bold text-slate-500 uppercase mb-1">La propuesta técnica</span>
+                    <p class="text-slate-700 leading-relaxed">Una regla simple de piso: cuándo autorizar reparación y cuándo desechar de inmediato. Aplicada a esta muestra, evita <strong>+$48,784 USD/año</strong> en pérdidas dobles y libera <strong>78 horas</strong> de trabajo de planta, sin ninguna inversión en equipos.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- RESUMEN EJECUTIVO -->
+        <div class="framer-card rounded-2xl p-6 border-l-4 border-l-blue-600 shadow-sm bg-white">
+            <h3 class="text-xs font-mono font-bold uppercase text-blue-700 tracking-wider mb-2">Resumen Ejecutivo de Negocio</h3>
+            <p class="text-sm text-slate-700 leading-relaxed">
+                Sobre una base de <strong class="text-slate-900">10,000 decisiones de inspección de calidad</strong>, medí el <strong class="text-slate-900">Costo de la Mala Calidad (COPQ)</strong>: <strong class="text-slate-900">$115,899.59 USD</strong> acumulados entre piezas desechadas, reparaciones y reclamos de clientes. El hallazgo central es que <strong class="text-slate-900">191 piezas fueron reparadas y aun así terminaron en la basura</strong>, pagando dos veces el mismo costo (mano de obra + energía + el material perdido). Diseñé una regla de decisión simple basada en la severidad del defecto, la volqué en un <strong class="text-slate-900">tablero ejecutivo interactivo</strong> y en un modelo de <strong class="text-slate-900">Power BI</strong>, y la respaldé con herramientas de piso: una guía visual de un vistazo (One-Point Lesson) y un plan formal de acción correctiva (CAPA / 8D).
+            </p>
+        </div>
+
+        <!-- HABILIDADES DEMOSTRADAS (ESCANEO RÁPIDO PARA RECLUTADORES / ATS) -->
+        <div class="flex flex-wrap gap-2 text-xs font-mono">
+            <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 border border-slate-200 font-semibold">Python</span>
+            <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 border border-slate-200 font-semibold">SQL / DuckDB</span>
+            <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 border border-slate-200 font-semibold">FastAPI</span>
+            <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 border border-slate-200 font-semibold">Power BI</span>
+            <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 border border-slate-200 font-semibold">Análisis de Costo de No Calidad (COPQ)</span>
+            <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 border border-slate-200 font-semibold">Six Sigma DMAIC</span>
+            <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 border border-slate-200 font-semibold">Reporte A3 / CAPA 8D</span>
+            <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 border border-slate-200 font-semibold">Comunicación Ejecutiva</span>
+        </div>
+
+        <!-- TARJETAS DE IMPACTO CUANTIFICADO -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-xs">
+                <span class="text-[10px] font-mono text-slate-400 font-bold block uppercase">Costo de No Calidad</span>
+                <span class="text-2xl font-black font-mono text-rose-600">$115.9k</span>
+                <span class="text-[11px] text-slate-500 block mt-0.5">USD acumulados (COPQ)</span>
+            </div>
+            <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-xs">
+                <span class="text-[10px] font-mono text-slate-400 font-bold block uppercase">Ahorro Proyectado</span>
+                <span class="text-2xl font-black font-mono text-emerald-600">+$48.8k</span>
+                <span class="text-[11px] text-slate-500 block mt-0.5">USD / año a inversión cero</span>
+            </div>
+            <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-xs">
+                <span class="text-[10px] font-mono text-slate-400 font-bold block uppercase">Horas Recuperadas</span>
+                <span class="text-2xl font-black font-mono text-blue-600">+78 h</span>
+                <span class="text-[11px] text-slate-500 block mt-0.5">De mano de obra en planta</span>
+            </div>
+            <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-xs">
+                <span class="text-[10px] font-mono text-slate-400 font-bold block uppercase">Fuga a Cliente</span>
+                <span class="text-2xl font-black font-mono text-amber-600">1.25%</span>
+                <span class="text-[11px] text-slate-500 block mt-0.5">Reclamos de garantía a 90 días</span>
+            </div>
+        </div>
+
+        <!-- SECCIÓN 1: RESUMEN EJECUTIVO COPQ -->
+        <section class="space-y-4">
+            <h2 class="text-xl font-bold text-slate-900 tracking-tight flex items-center gap-2">
+                <i data-lucide="pie-chart" class="w-5 h-5 text-blue-600"></i>
+                <span>1. ¿Cuánto cuesta realmente no hacerlo bien a la primera?</span>
             </h2>
             <div class="text-sm text-slate-600 space-y-3 leading-relaxed">
                 <p>
-                    Se estructuró el modelo de costos dividiéndolo en sus tres componentes fundamentales:
+                    Antes de proponer cualquier cambio, necesitaba un número que un gerente pudiera defender frente a la dirección. Clasifiqué cada una de las 10,000 decisiones según su desenlace real (aprobada, reparada con éxito, reparada sin éxito, desechada) y calculé su costo promedio:
                 </p>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs font-mono pt-2">
-                    <div class="framer-card p-4 rounded-xl">
-                        <strong class="text-slate-900 block mb-1">1. Falla Interna</strong>
-                        <p class="text-slate-600 leading-relaxed">Unidades destruidas a scrap directo + horas-hombre y energía invertidas en operaciones de retrabajo fallidas.</p>
+                    <div class="bg-white p-4 rounded-xl border border-slate-200">
+                        <strong class="text-slate-900 block mb-1">Falla Interna</strong>
+                        <p class="text-slate-600 leading-relaxed">Piezas desechadas directamente y horas de reparación invertidas en piezas que igual se perdieron.</p>
                     </div>
-                    <div class="framer-card p-4 rounded-xl">
-                        <strong class="text-slate-900 block mb-1">2. Falla Externa (Grave)</strong>
-                        <p class="text-slate-600 leading-relaxed">Reclamos de clientes en garantía a 90 días (warranty_claim_90d), con costo de flete, penalización comercial y daño reputacional.</p>
+                    <div class="bg-white p-4 rounded-xl border border-slate-200">
+                        <strong class="text-slate-900 block mb-1">Falla Externa (la más cara)</strong>
+                        <p class="text-slate-600 leading-relaxed">Reclamos de clientes dentro de los 90 días posteriores a la entrega: dañan la relación comercial además del bolsillo.</p>
                     </div>
-                    <div class="framer-card p-4 rounded-xl">
-                        <strong class="text-slate-900 block mb-1">3. Costos de Evaluación</strong>
-                        <p class="text-slate-600 leading-relaxed">Eficacia y costo comparativo entre inspección manual, sensores en línea y visión artificial automatizada.</p>
+                    <div class="bg-white p-4 rounded-xl border border-slate-200">
+                        <strong class="text-slate-900 block mb-1">Costo de Evaluación</strong>
+                        <p class="text-slate-600 leading-relaxed">Qué tan bien (y a qué costo) detectamos el defecto antes de que llegue al cliente: inspección manual vs. sensores automáticos.</p>
+                    </div>
+                </div>
+                <p>
+                    El resultado más contundente: reparar una pieza con defecto severo y que aun así termine desechada cuesta <strong class="text-slate-900">$126.78 USD</strong>, mientras que haberla desechado de inmediato hubiera costado <strong class="text-slate-900">$101.31 USD</strong>. Es decir, la planta paga <strong class="text-rose-600">$25.47 USD de más por pieza</strong> solo por no tener un criterio claro de cuándo NO vale la pena reparar.
+                </p>
+                <div class="mt-4 rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-white p-2">
+                    <img src="assets/img/copq_tab1_resumen_ejecutivo.png" alt="Dashboard COPQ - Resumen Ejecutivo de Costo de No Calidad" class="w-full h-auto rounded-lg">
+                    <div class="p-2 text-xs font-mono text-slate-500 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-1">
+                        <span>Vista 01: Resumen Ejecutivo COPQ, costo por tipo de decisión y distribución de pérdidas</span>
+                        <span class="text-blue-600 font-semibold font-mono">COPQ Total: $115,899.59 USD</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 2. ANÁLISIS ESTADÍSTICO -->
-        <section>
-            <h2 class="case-section-title">
-                <i data-lucide="activity" class="w-5 h-5 text-blue-700"></i>
-                2. Análisis Estadístico Causa-Raíz
+        <!-- SECCIÓN 2: CAUSA RAÍZ -->
+        <section class="space-y-4">
+            <h2 class="text-xl font-bold text-slate-900 tracking-tight flex items-center gap-2">
+                <i data-lucide="search" class="w-5 h-5 text-amber-600"></i>
+                <span>2. ¿Por qué fallan las piezas? Encontrando la causa raíz</span>
             </h2>
-            <div class="space-y-4 text-xs font-mono text-slate-600">
-                <div class="framer-card p-4 rounded-xl border border-slate-200">
-                    <strong class="text-blue-700 block mb-1">Pruebas Chi-cuadrado (χ²) de Escape a Cliente</strong>
-                    <p class="text-slate-600 leading-relaxed">
-                        Se evaluó la independencia estadística entre el método de inspección y la tasa de reclamo en garantía, demostrando la brecha de falsos negativos entre la inspección manual y los sistemas automatizados de visión.
-                    </p>
+            <div class="text-sm text-slate-600 space-y-3 leading-relaxed">
+                <p>
+                    Un número de pérdida sin causa raíz no le sirve a nadie en piso de planta. Cruzando los datos de cada evento encontré 3 factores que disparan la tasa de defectos de forma consistente:
+                </p>
+                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2 text-xs font-mono">
+                    <div class="flex items-center justify-between">
+                        <b class="text-blue-900">1. Velocidad de línea forzada</b>
+                        <span class="text-slate-500">+49% de defectos por encima de 139 u/h</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <b class="text-blue-900">2. Antigüedad de la máquina</b>
+                        <span class="text-slate-500">+58% de defectos en máquinas con más de 8 años</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <b class="text-blue-900">3. Método de inspección</b>
+                        <span class="text-slate-500">La inspección manual deja pasar 73% más defectos que los sensores automáticos</span>
+                    </div>
                 </div>
-                <div class="framer-card p-4 rounded-xl border border-slate-200">
-                    <strong class="text-blue-700 block mb-1">ANOVA & Tiempos de Ciclo</strong>
-                    <p class="text-slate-600 leading-relaxed">
-                        Comparación de tiempos de ciclo y costos totales entre líneas, turnos y grados de materia prima, identificando a qué velocidades operativas se disparaban los defectos.
-                    </p>
-                </div>
-                <div class="framer-card p-4 rounded-xl border border-slate-200">
-                    <strong class="text-blue-700 block mb-1">Regla Financiera de Decisión de Retrabajo</strong>
-                    <p class="text-slate-600 leading-relaxed">
-                        Se estableció el algoritmo matemático que determina si autorizar retrabajo es económicamente viable frente al scrap directo:
-                    </p>
-                    <div class="math-box mt-2">
-                        $$\mathbb{E}[\text{Beneficio Rework}] = P(\text{Pass}) \times \text{Valor Producto} - \text{Costo Rework} > -\text{Costo Scrap Directo}$$
+                <p>
+                    El desglose de defectos por tipo (rayaduras, grietas, acabado, dimensión, contaminación) también sigue una regla 80/20 clara: tres de los cinco tipos de defecto concentran más del 60% del costo total de no conformidad, lo que permite priorizar dónde intervenir primero en vez de atacar todo a la vez.
+                </p>
+                <div class="mt-4 rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-white p-2">
+                    <img src="assets/img/copq_tab2_causa_raiz.png" alt="Dashboard COPQ - Causa Raiz y Desempeño Operativo" class="w-full h-auto rounded-lg">
+                    <div class="p-2 text-xs font-mono text-slate-500 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-1">
+                        <span>Vista 02: Pareto de defectos, tasa de fallas por velocidad y por antigüedad de máquina</span>
+                        <span class="text-amber-600 font-semibold font-mono">191 piezas con pérdida doble identificadas</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 3. ENTREGABLES -->
-        <section>
-            <h2 class="case-section-title">
-                <i data-lucide="check-square" class="w-5 h-5 text-emerald-700"></i>
-                3. Entregables Operativos para Planta
+        <!-- SECCIÓN 3: INSPECCIÓN Y GARANTÍA -->
+        <section class="space-y-4">
+            <h2 class="text-xl font-bold text-slate-900 tracking-tight flex items-center gap-2">
+                <i data-lucide="shield-check" class="w-5 h-5 text-emerald-600"></i>
+                <span>3. Blindando al cliente: inspección y reclamos de garantía</span>
+            </h2>
+            <div class="text-sm text-slate-600 space-y-3 leading-relaxed">
+                <p>
+                    El peor escenario de calidad no es el scrap: es que un defecto se escape hasta el cliente. Medí qué porcentaje de piezas defectuosas termina en un reclamo de garantía a 90 días según el método de inspección usado, y confirmé el riesgo del factor humano:
+                </p>
+                <ul class="list-disc pl-5 space-y-1.5 text-xs font-mono">
+                    <li>Sensores inteligentes: <strong class="text-emerald-700">0.93%</strong> de escape a cliente</li>
+                    <li>Visión artificial: <strong class="text-blue-700">1.05%</strong> de escape a cliente</li>
+                    <li>Inspección manual: <strong class="text-amber-700">1.61%</strong> de escape a cliente (+73% de riesgo)</li>
+                </ul>
+                <p>
+                    También encontré que el material Grado A (Premium) concentra la mayor cantidad de reclamos, no porque sea de peor calidad, sino porque el cliente le exige tolerancias más estrictas — una señal útil para ajustar los criterios de inspección según el tipo de producto y no aplicar la misma vara a todos.
+                </p>
+                <div class="mt-4 rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-white p-2">
+                    <img src="assets/img/copq_tab3_inspeccion_garantia.png" alt="Dashboard COPQ - Eficacia de Inspeccion y Blindaje de Garantia" class="w-full h-auto rounded-lg">
+                    <div class="p-2 text-xs font-mono text-slate-500 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-1">
+                        <span>Vista 03: Tasa de escape a garantía por método de inspección y auditoría de eventos críticos</span>
+                        <span class="text-emerald-600 font-semibold font-mono">125 reclamos de garantía a 90 días</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 4: ENTREGABLES PARA PISO DE PLANTA -->
+        <section class="space-y-4">
+            <h2 class="text-xl font-bold text-slate-900 tracking-tight flex items-center gap-2">
+                <i data-lucide="check-square" class="w-5 h-5 text-indigo-600"></i>
+                <span>4. Entregables Listos para Usar en Piso de Planta</span>
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs font-mono">
-                <div class="framer-card p-4 rounded-xl">
-                    <strong class="text-slate-900 block mb-1">Matriz de Decisión para Supervisores</strong>
+                <div class="bg-white p-4 rounded-xl border border-slate-200">
+                    <strong class="text-slate-900 block mb-1 text-sm font-sans">Guía Visual de Decisión (One-Point Lesson)</strong>
                     <p class="text-slate-600 leading-relaxed">
-                        Herramienta de uso en piso para estandarizar cuándo autorizar retrabajo según máquina, material y tipo de defecto.
+                        Una hoja de un vistazo para el puesto de inspección: según la severidad del defecto, indica si conviene reparar, retener para evaluación o desechar de inmediato. Pensada para decidir en segundos, sin depender del criterio de cada turno.
                     </p>
                 </div>
-                <div class="framer-card p-4 rounded-xl">
-                    <strong class="text-slate-900 block mb-1">Plan de Acción Correctiva CAPA / 8D</strong>
+                <div class="bg-white p-4 rounded-xl border border-slate-200">
+                    <strong class="text-slate-900 block mb-1 text-sm font-sans">Plan de Acción Correctiva (CAPA / 8D)</strong>
                     <p class="text-slate-600 leading-relaxed">
-                        Protocolo formal de ocho disciplinas (8D) para eliminar la causa raíz de descalibraciones ambientales y mecánicas.
+                        Protocolo formal de 8 disciplinas para atacar la causa raíz (velocidad de línea, mantenimiento de máquinas viejas, estandarización de inspección) y no solo tratar el síntoma.
+                    </p>
+                </div>
+                <div class="bg-white p-4 rounded-xl border border-slate-200">
+                    <strong class="text-slate-900 block mb-1 text-sm font-sans">Tablero Ejecutivo en Power BI</strong>
+                    <p class="text-slate-600 leading-relaxed">
+                        Modelo de datos y medidas DAX listos para que un gerente de calidad monitoree el COPQ por planta, línea y turno sin depender de reportes manuales en Excel.
+                    </p>
+                </div>
+                <div class="bg-white p-4 rounded-xl border border-slate-200">
+                    <strong class="text-slate-900 block mb-1 text-sm font-sans">Reporte A3 de Resolución de Problemas</strong>
+                    <p class="text-slate-600 leading-relaxed">
+                        Resumen de una sola página con el problema, la causa raíz, la solución propuesta y el impacto financiero — el formato que se presenta a dirección.
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- NAVIGATION -->
+        <!-- SECCIÓN 5: DASHBOARD EN VIVO Y CÓDIGO -->
+        <section class="space-y-4">
+            <h2 class="text-xl font-bold text-slate-900 tracking-tight flex items-center gap-2">
+                <i data-lucide="code-2" class="w-5 h-5 text-indigo-600"></i>
+                <span>5. Dashboard en Vivo & Repositorio</span>
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-mono">
+                <div class="bg-white p-5 rounded-xl border border-slate-200 space-y-2">
+                    <b class="text-slate-900 text-sm font-sans block">Dashboard Web Interactivo:</b>
+                    <p class="text-slate-600 leading-relaxed font-mono">
+                        Desarrollado en Python (FastAPI) y DuckDB In-Memory, con filtros por planta, línea y turno, y 3 vistas ejecutivas: resumen COPQ, causa raíz operativa, e inspección y garantía.
+                    </p>
+                    <div class="pt-2">
+                        <a href="https://github.com/32456344567/03_Control_Calidad_Scrap_Retrabajo" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-bold inline-flex items-center gap-1">
+                            <span>Ver código en GitHub</span>
+                            <i data-lucide="external-link" class="w-3 h-3"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-slate-200 space-y-2">
+                    <b class="text-slate-900 text-sm font-sans block">Toolkit de Planta:</b>
+                    <p class="text-slate-600 leading-relaxed font-mono">
+                        Matriz de decisión en Excel, guía visual de piso, protocolo CAPA/8D y Reporte A3, listos para imprimir y usar.
+                    </p>
+                    <div class="pt-2">
+                        <a href="https://github.com/32456344567/03_Control_Calidad_Scrap_Retrabajo/tree/main/entregables_planta" target="_blank" rel="noopener noreferrer" class="text-emerald-700 hover:underline font-bold inline-flex items-center gap-1">
+                            <span>Explorar entregables de planta</span>
+                            <i data-lucide="folder" class="w-3 h-3"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-2 border-t border-slate-200">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-xs font-mono font-bold text-slate-900 uppercase flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        Dashboard COPQ en Vivo (Railway Cloud)
+                    </span>
+                    <a href="https://web-production-cc7d7.up.railway.app" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-blue-700 hover:underline flex items-center gap-1">
+                        Abrir pantalla completa <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                    </a>
+                </div>
+                <div class="aspect-video w-full rounded-xl overflow-hidden border border-slate-200 bg-slate-950 mb-4">
+                    <iframe src="https://web-production-cc7d7.up.railway.app" class="w-full h-full border-0" title="Dashboard COPQ Live"></iframe>
+                </div>
+                <div class="flex flex-wrap gap-3 pt-2">
+                    <a href="https://web-production-cc7d7.up.railway.app" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 bg-blue-600 hover:bg-blue-700 text-white text-xs font-mono font-bold rounded-lg shadow-sm flex items-center gap-2">
+                        <i data-lucide="external-link" class="w-4 h-4"></i> ABRIR DASHBOARD EN PESTAÑA COMPLETA
+                    </a>
+                    <a href="https://github.com/32456344567/03_Control_Calidad_Scrap_Retrabajo" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 bg-white hover:bg-slate-50 text-slate-700 hover:text-slate-900 text-xs font-mono font-semibold rounded-lg border border-slate-200 shadow-sm flex items-center gap-2">
+                        <i data-lucide="github" class="w-4 h-4"></i> REPOSITORIO GITHUB
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- NAVEGACIÓN ENTRE CASOS -->
         <div class="pt-8 border-t border-slate-200 flex items-center justify-between font-mono text-xs">
             <a href="proyecto_02_oee.html" class="text-slate-500 hover:text-slate-900 flex items-center gap-1.5">
                 <i data-lucide="arrow-left" class="w-4 h-4"></i> Caso Anterior: OEE & SMED
@@ -234,7 +370,6 @@
         </div>
 
     </main>
-
 
     <!-- FOOTER -->
     <footer class="border-t border-slate-200 bg-white py-12 text-center text-xs font-mono text-slate-500">
@@ -252,23 +387,8 @@
         </div>
     </footer>
 
-
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            lucide.createIcons();
-            if (window.renderMathInElement) {
-                renderMathInElement(document.body, {
-                    delimiters: [
-                        {left: '$$', right: '$$', display: true},
-                        {left: '\\[', right: '\\]', display: true},
-                        {left: '$', right: '$', display: false},
-                        {left: '\\(', right: '\\)', display: false}
-                    ],
-                    throwOnError: false
-                });
-            }
-        });
+        lucide.createIcons();
     </script>
-    <script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -270,3 +270,66 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+// COPQ (Calidad, Scrap & Retrabajo) Carousel Logic
+let currentCopqSlide = 0;
+let copqInterval = null;
+
+window.showCopqSlide = function(idx) {
+    const container = document.getElementById('copq-carousel-p3');
+    if (!container) return;
+    const slides = container.querySelectorAll('.copq-slide');
+    const dots = container.querySelectorAll('.copq-dot');
+    if (!slides.length) return;
+
+    currentCopqSlide = (idx + slides.length) % slides.length;
+
+    slides.forEach((s, i) => {
+        if (i === currentCopqSlide) {
+            s.classList.remove('hidden');
+        } else {
+            s.classList.add('hidden');
+        }
+    });
+
+    dots.forEach((d, i) => {
+        if (i === currentCopqSlide) {
+            d.classList.remove('bg-slate-600');
+            d.classList.add('bg-blue-500');
+        } else {
+            d.classList.remove('bg-blue-500');
+            d.classList.add('bg-slate-600');
+        }
+    });
+};
+
+window.nextCopqSlide = function(e) {
+    if (e) e.stopPropagation();
+    showCopqSlide(currentCopqSlide + 1);
+};
+
+window.prevCopqSlide = function(e) {
+    if (e) e.stopPropagation();
+    showCopqSlide(currentCopqSlide - 1);
+};
+
+window.goToCopqSlide = function(idx, e) {
+    if (e) e.stopPropagation();
+    showCopqSlide(idx);
+};
+
+function startCopqCarousel() {
+    if (copqInterval) clearInterval(copqInterval);
+    copqInterval = setInterval(() => {
+        showCopqSlide(currentCopqSlide + 1);
+    }, 4100);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const container = document.getElementById('copq-carousel-p3');
+    if (container) {
+        container.addEventListener('mouseenter', () => clearInterval(copqInterval));
+        container.addEventListener('mouseleave', () => startCopqCarousel());
+        startCopqCarousel();
+    }
+});
+

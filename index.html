@@ -433,71 +433,97 @@
                 </div>
 
 
-                <!-- PROYECTO 03: CONTROL DE CALIDAD SPC -->
+                <!-- PROYECTO 03: CALIDAD, SCRAP Y COSTO DE RETRABAJO (COPQ) -->
                 <div class="framer-card rounded-3xl p-6 sm:p-8 space-y-6">
                     <div class="flex flex-wrap items-center justify-between gap-3 text-xs font-mono">
                         <span class="px-3 py-1 rounded-full bg-cyan-50 text-cyan-700 border border-cyan-200 font-bold">
-                            PROYECTO 03 · CALIDAD & ANALÍTICA ESTADÍSTICA (SPC)
+                            PROYECTO 03 · CALIDAD, COSTOS Y DECISIONES DE PLANTA
                         </span>
-                        <span class="text-slate-600 framer-pill px-3 py-1 rounded-full">
-                            Minitab & Cartas X̄-R
+                        <span class="text-emerald-700 flex items-center gap-1.5 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full font-semibold">
+                            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Dashboard COPQ Live
                         </span>
                     </div>
 
-                    <!-- Visual Graphic Placeholder / Mockup in Light Frame -->
-                    <div class="relative w-full aspect-[21/9] rounded-2xl overflow-hidden border border-slate-200 bg-slate-50 p-6 flex flex-col justify-between cursor-pointer group shadow-sm hover:border-slate-300 transition-all" onclick="window.location.href='proyecto_03_spc.html'">
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs font-mono text-cyan-700 font-bold flex items-center gap-2">
-                                <span class="w-2 h-2 rounded-full bg-cyan-500"></span> Control Estadístico en Línea de Envasado
-                            </span>
-                            <span class="text-xs font-mono text-slate-500">12,500 Puntos Analizados</span>
-                        </div>
-                        <div class="grid grid-cols-3 gap-4 py-2 text-center">
-                            <div class="bg-white p-3 rounded-xl border border-slate-200 shadow-sm">
-                                <span class="text-slate-500 font-semibold text-[10px] block uppercase font-mono">Capacidad Inicial</span>
-                                <span class="text-lg sm:text-xl font-bold text-amber-600 font-mono">Cpk = 0.82</span>
-                            </div>
-                            <div class="bg-white p-3 rounded-xl border border-slate-200 shadow-sm">
-                                <span class="text-slate-500 font-semibold text-[10px] block uppercase font-mono">Capacidad Lograda</span>
-                                <span class="text-lg sm:text-xl font-bold text-emerald-600 font-mono">Cpk = 1.41</span>
-                            </div>
-                            <div class="bg-white p-3 rounded-xl border border-slate-200 shadow-sm">
-                                <span class="text-slate-500 font-semibold text-[10px] block uppercase font-mono">Fuera de Tolerancia</span>
-                                <span class="text-lg sm:text-xl font-bold text-slate-900 font-mono">-68% Dispersión</span>
+                    <!-- COPQ SCREENSHOTS ROTATING CAROUSEL -->
+                    <div class="relative w-full aspect-[16/9] rounded-2xl overflow-hidden border border-slate-300 bg-slate-950 group cursor-pointer shadow-lg" id="copq-carousel-p3" onclick="window.location.href='proyecto_03_spc.html'">
+                        <!-- Slide 1 -->
+                        <div class="copq-slide relative w-full h-full transition-all duration-300" data-index="0">
+                            <img src="assets/img/copq_tab1_resumen_ejecutivo.png" alt="Dashboard COPQ Vista 01 - Resumen Ejecutivo de Costo de No Calidad" class="w-full h-full object-cover object-top">
+                            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-3 flex items-center justify-between text-xs font-mono text-white">
+                                <span class="text-cyan-300 font-bold flex items-center gap-2">
+                                    <span class="w-2 h-2 rounded-full bg-cyan-400"></span> 01. Resumen Ejecutivo: Costo de la Mala Calidad (COPQ)
+                                </span>
+                                <span class="text-slate-300 text-[11px] bg-slate-900/80 px-2 py-0.5 rounded border border-white/20">1 / 3</span>
                             </div>
                         </div>
-                        <div class="flex items-center justify-between text-xs font-mono text-slate-500">
-                            <span>Gráficos X̄-R · Reglas de Western Electric</span>
-                            <span class="text-blue-600 group-hover:underline flex items-center gap-1 font-semibold">Ver detalles <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></span>
+                        <!-- Slide 2 -->
+                        <div class="copq-slide hidden relative w-full h-full transition-all duration-300" data-index="1">
+                            <img src="assets/img/copq_tab2_causa_raiz.png" alt="Dashboard COPQ Vista 02 - Causa Raiz y Desempeño Operativo" class="w-full h-full object-cover object-top">
+                            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-3 flex items-center justify-between text-xs font-mono text-white">
+                                <span class="text-amber-300 font-bold flex items-center gap-2">
+                                    <span class="w-2 h-2 rounded-full bg-amber-400"></span> 02. Por qué fallan las piezas: velocidad, antigüedad de máquina y defectos
+                                </span>
+                                <span class="text-slate-300 text-[11px] bg-slate-900/80 px-2 py-0.5 rounded border border-white/20">2 / 3</span>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="copq-slide hidden relative w-full h-full transition-all duration-300" data-index="2">
+                            <img src="assets/img/copq_tab3_inspeccion_garantia.png" alt="Dashboard COPQ Vista 03 - Eficacia de Inspeccion y Blindaje de Garantia" class="w-full h-full object-cover object-top">
+                            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-3 flex items-center justify-between text-xs font-mono text-white">
+                                <span class="text-emerald-400 font-bold flex items-center gap-2">
+                                    <span class="w-2 h-2 rounded-full bg-emerald-400"></span> 03. Qué tan bien protegemos al cliente: inspección y garantía
+                                </span>
+                                <span class="text-slate-300 text-[11px] bg-slate-900/80 px-2 py-0.5 rounded border border-white/20">3 / 3</span>
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <button onclick="prevCopqSlide(event)" class="absolute left-2.5 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/70 hover:bg-black/90 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity z-20" aria-label="Anterior">
+                            <i data-lucide="chevron-left" class="w-4 h-4"></i>
+                        </button>
+                        <button onclick="nextCopqSlide(event)" class="absolute right-2.5 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/70 hover:bg-black/90 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity z-20" aria-label="Siguiente">
+                            <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                        </button>
+
+                        <div class="absolute top-3 right-3 flex items-center gap-1.5 bg-black/70 px-2.5 py-1 rounded-full z-20">
+                            <span class="copq-dot w-2 h-2 rounded-full bg-blue-500 cursor-pointer" onclick="goToCopqSlide(0, event)"></span>
+                            <span class="copq-dot w-2 h-2 rounded-full bg-slate-600 cursor-pointer" onclick="goToCopqSlide(1, event)"></span>
+                            <span class="copq-dot w-2 h-2 rounded-full bg-slate-600 cursor-pointer" onclick="goToCopqSlide(2, event)"></span>
                         </div>
                     </div>
 
                     <!-- Clean Content -->
                     <div class="space-y-3 pt-2">
                         <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
-                            Control Estadístico de Procesos (SPC) y Reducción de Variabilidad
+                            ¿Reparar la pieza defectuosa o desecharla? Un criterio de datos para dejar de perder dinero dos veces
                         </h3>
 
                         <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
-                            Análisis analítico sobre 12,500 registros de inspección en piso de planta. Implementación de cartas de control estadístico (X̄-R), cálculo automatizado de capacidad de proceso (Cp / Cpk) y detección sistemática de causas especiales de variación para estandarizar las tolerancias operativas y prevenir no conformidades.
+                            Estudio de caso sobre un dataset público de manufactura (Kaggle, 10,000 decisiones de inspección de calidad). En muchas plantas esa decisión la toma cada supervisor "a ojo", y el resultado es que se gasta tiempo y materiales reparando piezas que igual terminan en la basura. Analicé los datos para encontrar la regla real detrás de esa pérdida, construí un tablero ejecutivo interactivo para visualizarla y entregué herramientas listas para usar en piso de planta: una guía visual de decisión y un plan de acción correctiva.
                         </p>
 
                         <div class="flex flex-wrap gap-2 pt-2 text-xs font-mono">
-                            <span class="framer-pill px-3 py-1 rounded-full">Cartas de Control X̄-R</span>
-                            <span class="framer-pill px-3 py-1 rounded-full">Capacidad Cp / Cpk</span>
-                            <span class="framer-pill px-3 py-1 rounded-full">Minitab & Python</span>
-                            <span class="framer-pill px-3 py-1 rounded-full">Acciones Correctivas CAPA</span>
-                            <span class="framer-pill px-3 py-1 rounded-full">Normas NTE INEN</span>
+                            <span class="framer-pill px-3 py-1 rounded-full">Costo de No Calidad (COPQ)</span>
+                            <span class="framer-pill px-3 py-1 rounded-full">Dashboard Ejecutivo Interactivo</span>
+                            <span class="framer-pill px-3 py-1 rounded-full">Power BI</span>
+                            <span class="framer-pill px-3 py-1 rounded-full">Python & FastAPI</span>
+                            <span class="framer-pill px-3 py-1 rounded-full">Reporte A3 & CAPA 8D</span>
                         </div>
                     </div>
 
                     <!-- Actions -->
                     <div class="pt-4 border-t border-slate-100 flex flex-wrap items-center justify-between gap-4">
-                        <a href="proyecto_03_spc.html" class="px-5 py-2.5 text-xs font-mono font-bold text-white btn-primary rounded-xl flex items-center gap-2">
-                            <span>LEER CASO DE ESTUDIO</span>
-                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                        </a>
-                        <span class="text-xs font-mono text-slate-600 font-medium">Control de Calidad · Green Belt</span>
+                        <div class="flex flex-wrap gap-3">
+                            <a href="proyecto_03_spc.html" class="px-5 py-2.5 text-xs font-mono font-bold text-white btn-primary rounded-xl flex items-center gap-2">
+                                <span>LEER CASO DE ESTUDIO</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </a>
+                            <a href="https://web-production-cc7d7.up.railway.app" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 text-xs font-mono font-semibold text-slate-700 hover:text-slate-900 btn-secondary rounded-xl flex items-center gap-2">
+                                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                                <span>PROBAR DASHBOARD EN VIVO</span>
+                            </a>
+                        </div>
+                        <span class="text-xs font-mono text-slate-600 font-medium">10,000 Registros · Ahorro +$48,784 USD/año</span>
                     </div>
                 </div>
 
