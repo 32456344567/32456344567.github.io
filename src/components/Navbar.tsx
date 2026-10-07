@@ -22,33 +22,33 @@ export default function Navbar() {
                 Angelo Apolo
               </span>
               <span className="text-[10px] font-mono uppercase tracking-widest text-neutral-500">
-                Process & Data Engineer
+                Ingeniero Químico · Procesos & Datos
               </span>
             </div>
           </Link>
 
-          {/* Links Principales (Desktop) */}
+          {/* Links Principales (Desktop) - 100% Español */}
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-neutral-600">
-            <a href="#about" className="hover:text-neutral-950 transition-colors">
-              About
+            <a href="#sobre-mi" className="hover:text-neutral-950 transition-colors">
+              Sobre Mí
             </a>
             <a href="#stack" className="hover:text-neutral-950 transition-colors flex items-center gap-1.5">
-              <span>Stack</span>
+              <span>Stack Técnico</span>
               <span className="px-1.5 py-0.5 text-[9px] font-mono uppercase bg-neutral-100 text-neutral-700 rounded border border-neutral-200">
-                Periodic Table
+                Tabla Periódica
               </span>
             </a>
-            <a href="#work" className="hover:text-neutral-950 transition-colors">
-              Work
+            <a href="#proyectos" className="hover:text-neutral-950 transition-colors">
+              Proyectos
             </a>
-            <a href="#experience" className="hover:text-neutral-950 transition-colors">
-              Experience
+            <a href="#experiencia" className="hover:text-neutral-950 transition-colors">
+              Experiencia
             </a>
-            <a href="#metrics" className="hover:text-neutral-950 transition-colors">
-              Metrics
+            <a href="#metricas" className="hover:text-neutral-950 transition-colors">
+              Resultados
             </a>
-            <a href="#contact" className="hover:text-neutral-950 transition-colors">
-              Contact
+            <a href="#contacto" className="hover:text-neutral-950 transition-colors">
+              Contacto
             </a>
           </nav>
 
@@ -61,7 +61,7 @@ export default function Navbar() {
               className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-mono font-medium text-neutral-700 hover:text-neutral-950 bg-neutral-100 hover:bg-neutral-200/80 rounded-lg border border-neutral-200 transition-all"
             >
               <FileText className="w-3.5 h-3.5" />
-              <span>Résumé</span>
+              <span>Ver CV (PDF)</span>
             </a>
             <a
               href="https://wa.me/593969763084?text=Hola%20Ing.%20Angelo%20Apolo,%20revisamos%20su%20portafolio%20y%20nos%20gustar%C3%ADa%20conversar."
@@ -69,7 +69,7 @@ export default function Navbar() {
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-medium text-white bg-neutral-900 hover:bg-neutral-800 rounded-lg shadow-sm transition-all"
             >
-              <span>Let&apos;s talk</span>
+              <span>Conversemos</span>
               <ArrowUpRight className="w-3.5 h-3.5" />
             </a>
           </div>
@@ -89,15 +89,15 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden border-b border-neutral-200 bg-white/95 px-6 py-6 space-y-4">
           <nav className="flex flex-col space-y-3 text-sm font-medium text-neutral-700">
-            <a href="#about" onClick={() => setIsOpen(false)} className="py-1">About</a>
+            <a href="#sobre-mi" onClick={() => setIsOpen(false)} className="py-1">Sobre Mí</a>
             <a href="#stack" onClick={() => setIsOpen(false)} className="py-1 flex items-center justify-between">
-              <span>Stack</span>
-              <span className="text-[10px] font-mono px-2 py-0.5 bg-neutral-100 rounded">Periodic Table</span>
+              <span>Stack Técnico</span>
+              <span className="text-[10px] font-mono px-2 py-0.5 bg-neutral-100 rounded">Tabla Periódica</span>
             </a>
-            <a href="#work" onClick={() => setIsOpen(false)} className="py-1">Work</a>
-            <a href="#experience" onClick={() => setIsOpen(false)} className="py-1">Experience</a>
-            <a href="#metrics" onClick={() => setIsOpen(false)} className="py-1">Metrics</a>
-            <a href="#contact" onClick={() => setIsOpen(false)} className="py-1">Contact</a>
+            <a href="#proyectos" onClick={() => setIsOpen(false)} className="py-1">Proyectos</a>
+            <a href="#experiencia" onClick={() => setIsOpen(false)} className="py-1">Experiencia</a>
+            <a href="#metricas" onClick={() => setIsOpen(false)} className="py-1">Resultados</a>
+            <a href="#contacto" onClick={() => setIsOpen(false)} className="py-1">Contacto</a>
           </nav>
           <div className="pt-3 border-t border-neutral-100 flex flex-col gap-2">
             <a
@@ -107,7 +107,7 @@ export default function Navbar() {
               className="flex items-center justify-center gap-2 py-2 text-xs font-mono font-medium bg-neutral-100 rounded-lg"
             >
               <FileText className="w-4 h-4" />
-              <span>Ver Résumé (PDF)</span>
+              <span>Ver CV Oficial (PDF)</span>
             </a>
             <a
               href="https://wa.me/593969763084"

@@ -454,19 +454,19 @@ export default function PeriodicTable() {
           <div className="space-y-3">
             <div className="flex items-center gap-2">
               <span className="text-xs font-mono font-semibold tracking-wider text-neutral-400 uppercase">
-                02 — SKILLS ARCHITECTURE
+                02 — ARQUITECTURA DE COMPETENCIAS
               </span>
             </div>
             <h2 className="text-4xl sm:text-5xl font-serif font-bold text-neutral-900 tracking-tight">
-              The periodic table of my stack.
+              La tabla periódica de mi stack técnico.
             </h2>
             <p className="text-neutral-600 text-sm sm:text-base max-w-2xl font-normal">
-              30 competencias técnicas de ingeniería industrial y de datos agrupadas en familias químicas. 
+              30 competencias técnicas de ingeniería química, planta industrial y analítica de datos agrupadas por familias químicas. 
               Haz clic en cualquier elemento para inspeccionar su aplicación real en planta.
             </p>
           </div>
 
-          {/* Filtros de Categorías */}
+          {/* Filtros de Categorías - 100% Español */}
           <div className="flex flex-wrap items-center gap-1.5 p-1.5 bg-neutral-100/90 rounded-xl border border-neutral-200/80 text-xs font-mono">
             <button
               onClick={() => setSelectedCategory("all")}
@@ -476,7 +476,7 @@ export default function PeriodicTable() {
                   : "text-neutral-600 hover:text-neutral-900 hover:bg-neutral-200/60"
               }`}
             >
-              All
+              Todos
             </button>
             <button
               onClick={() => setSelectedCategory("processes")}
@@ -607,7 +607,7 @@ export default function PeriodicTable() {
             </div>
           </div>
 
-          {/* Tarjeta Lateral de Detalle Interactivo (Exacta a dataconale.com en el video) */}
+          {/* Tarjeta Lateral de Detalle Interactivo */}
           <div className="lg:col-span-4 sticky top-28">
             <div className="bg-white rounded-2xl border border-neutral-200 p-6 sm:p-7 shadow-xl shadow-neutral-100 transition-all">
               

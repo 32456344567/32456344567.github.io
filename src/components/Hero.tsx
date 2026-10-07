@@ -21,7 +21,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-[92vh] pt-28 pb-16 flex items-center justify-center overflow-hidden border-b border-neutral-200">
       
-      {/* Marca de agua tipográfica gigante en fondo (como en dataconale.com) */}
+      {/* Marca de agua tipográfica gigante en fondo */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none z-0 overflow-hidden">
         <span className="text-[17vw] font-serif font-black tracking-tighter text-neutral-900/[0.03] uppercase whitespace-nowrap">
           ANGELO
@@ -31,7 +31,7 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           
-          {/* Columna Izquierda: Copy Principal & Acciones */}
+          {/* Columna Izquierda: Mensaje Principal & Acciones */}
           <div className="lg:col-span-7 flex flex-col justify-center space-y-8">
             
             {/* Meta-tag de ubicación y profesión */}
@@ -42,30 +42,30 @@ export default function Hero() {
               </span>
             </div>
 
-            {/* Título Principal Editorial */}
+            {/* Título Principal Editorial en Español */}
             <div className="space-y-2">
               <h1 className="text-6xl sm:text-7xl xl:text-8xl font-serif font-bold tracking-tight text-neutral-900 leading-[0.95]">
-                Chemical <br />
-                <span className="italic font-normal">Engineer.</span>
+                Ingeniero <br />
+                <span className="italic font-normal">Químico.</span>
               </h1>
               <p className="pt-2 text-sm sm:text-base font-mono text-neutral-600">
-                Process Optimization | Digital Twins | Industrial Data | Lean Six Sigma
+                Optimización de Procesos | Gemelos Digitales | Analítica Industrial | Lean Six Sigma
               </p>
             </div>
 
             {/* Filosofía / Propuesta de Valor */}
             <p className="text-base sm:text-lg text-neutral-600 max-w-xl font-normal leading-relaxed">
               Ingeniero Químico con más de 2 años de experiencia directa en planta continua. 
-              Especializado en transformar la complejidad química y operativa en <strong className="font-semibold text-neutral-900">operaciones de alta eficiencia, cero no conformidades y gemelos digitales con IA</strong>.
+              Especializado en traducir la complejidad química y operativa en <strong className="font-semibold text-neutral-900">operaciones de alta eficiencia, cero no conformidades y gemelos digitales con IA</strong>.
             </p>
 
             {/* Botones de Acción */}
             <div className="flex flex-wrap items-center gap-4 pt-2">
               <a
-                href="#work"
+                href="#proyectos"
                 className="inline-flex items-center gap-2 px-6 py-3.5 bg-neutral-900 text-white font-medium text-sm rounded-xl shadow-md hover:bg-neutral-800 transition-all hover:translate-y-[-1px]"
               >
-                <span>Explore work</span>
+                <span>Ver proyectos reales</span>
                 <ArrowDown className="w-4 h-4" />
               </a>
 
@@ -75,7 +75,7 @@ export default function Hero() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-3.5 bg-white text-neutral-900 font-medium text-sm rounded-xl border border-neutral-300 hover:border-neutral-900 hover:bg-neutral-50 transition-all"
               >
-                <span>Let&apos;s talk</span>
+                <span>Conversemos</span>
                 <ArrowUpRight className="w-4 h-4" />
               </a>
 
@@ -86,11 +86,11 @@ export default function Hero() {
                 className="inline-flex items-center gap-2 px-4 py-3.5 text-neutral-600 hover:text-neutral-900 font-mono text-xs transition-colors"
               >
                 <FileText className="w-4 h-4" />
-                <span>Résumé (PDF)</span>
+                <span>Descargar CV (PDF)</span>
               </a>
             </div>
 
-            {/* Quick Credentials Strip */}
+            {/* Credenciales Rápidas en Planta */}
             <div className="pt-4 border-t border-neutral-200/80 flex flex-wrap items-center gap-y-2 gap-x-6 text-xs font-mono text-neutral-500">
               <div className="flex items-center gap-1.5">
                 <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
@@ -102,7 +102,7 @@ export default function Hero() {
               </div>
               <div className="flex items-center gap-1.5">
                 <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                <span>IA Aplicada (U. Míchigan)</span>
+                <span>IA Aplicada (U. de Míchigan)</span>
               </div>
             </div>
 
@@ -142,11 +142,11 @@ export default function Hero() {
                     priority
                   />
                   <div className="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-black/75 backdrop-blur-sm text-[10px] font-mono text-white">
-                    LIVE
+                    EN VIVO
                   </div>
                 </div>
 
-                {/* Información de Identificación */}
+                {/* Información de Identificación en Planta */}
                 <div className="space-y-3">
                   <div>
                     <h2 className="font-bold text-neutral-900 text-lg leading-tight">
@@ -159,16 +159,16 @@ export default function Hero() {
 
                   <div className="p-3 bg-neutral-50 rounded-xl border border-neutral-100 space-y-1.5 text-[11px] font-mono">
                     <div className="flex justify-between text-neutral-500">
-                      <span>LOCATION</span>
-                      <strong className="text-neutral-800 font-medium">Guayaquil, EC</strong>
+                      <span>UBICACIÓN</span>
+                      <strong className="text-neutral-800 font-medium">Guayaquil, Ecuador</strong>
                     </div>
                     <div className="flex justify-between text-neutral-500">
-                      <span>SPECIALTY</span>
-                      <strong className="text-neutral-800 font-medium">Process & Data</strong>
+                      <span>ESPECIALIDAD</span>
+                      <strong className="text-neutral-800 font-medium">Procesos & Datos</strong>
                     </div>
                     <div className="flex justify-between text-neutral-500">
-                      <span>STATUS</span>
-                      <strong className="text-emerald-700 font-medium">Available for Hiring</strong>
+                      <span>ESTADO</span>
+                      <strong className="text-emerald-700 font-medium">Disponible para Contratación</strong>
                     </div>
                   </div>
 
@@ -176,9 +176,9 @@ export default function Hero() {
                   <div className="pt-2 flex items-center justify-between border-t border-neutral-100 text-[11px] text-neutral-500">
                     <div className="flex items-center gap-1.5">
                       <QrCode className="w-4 h-4 text-neutral-700" />
-                      <span className="font-mono text-[10px]">ID: IQ-2024-EC</span>
+                      <span className="font-mono text-[10px]">REGISTRO: IQ-2024-EC</span>
                     </div>
-                    <span className="text-[10px] font-mono text-neutral-400">Hover 3D</span>
+                    <span className="text-[10px] font-mono text-neutral-400">Efecto 3D</span>
                   </div>
                 </div>
 
@@ -193,9 +193,9 @@ export default function Hero() {
 
       {/* Indicador de scroll */}
       <div className="absolute bottom-4 right-8 hidden lg:flex items-center gap-2 text-xs font-mono text-neutral-400 select-none">
-        <span>DATA-DRIVEN & AGILE</span>
+        <span>RIGOR TÉCNICO & BASADO EN DATOS</span>
         <span className="text-neutral-300">|</span>
-        <span>SCROLL ↓</span>
+        <span>DESPLAZAR ↓</span>
       </div>
 
     </section>

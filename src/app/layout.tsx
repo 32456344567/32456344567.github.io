@@ -22,8 +22,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Angelo Apolo · Chemical Engineer · Process, Data & AI",
-  description: "Portafolio oficial del Ing. Químico Angelo Apolo. Optimización de procesos industriales, Gemelos Digitales, Lean Six Sigma y analítica de datos.",
+  title: "Ing. Angelo Apolo · Ingeniero Químico · Procesos Industriales, Datos & Gemelos Digitales",
+  description: "Portafolio oficial del Ing. Químico Angelo Apolo. Optimización de procesos industriales, Gemelos Digitales, Lean Six Sigma y analítica de datos en planta.",
   keywords: [
     "Ingeniero Químico",
     "Procesos Industriales",

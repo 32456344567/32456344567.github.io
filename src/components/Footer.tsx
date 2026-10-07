@@ -17,25 +17,25 @@ export default function Footer() {
   };
 
   return (
-    <footer id="contact" className="pt-24 pb-12 bg-white relative overflow-hidden">
+    <footer id="contacto" className="pt-24 pb-12 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Sección de Llamado Principal */}
         <div className="border-b border-neutral-200 pb-20">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
             
-            {/* Titular Editorial Gigante */}
+            {/* Titular Editorial Gigante en Español */}
             <div className="lg:col-span-8 space-y-6">
               <span className="text-xs font-mono font-semibold tracking-wider text-neutral-400 uppercase">
-                06 — CONTACT & COLLABORATION
+                06 — CONTACTO Y COLABORACIÓN
               </span>
               <h2 className="text-5xl sm:text-6xl md:text-7xl font-serif font-bold text-neutral-900 tracking-tight leading-[0.95]">
-                Let&apos;s build <br />
-                <span className="italic font-normal">something efficient.</span>
+                Construyamos <br />
+                <span className="italic font-normal">procesos eficientes.</span>
               </h2>
               <p className="text-neutral-600 text-base sm:text-lg max-w-xl font-normal leading-relaxed">
                 ¿Buscas optimizar un proceso industrial, controlar mermas con rigor analítico 
-                o elevar la confiabilidad en planta continua? Conversemos.
+                o elevar la confiabilidad en planta continua? Conversemos directamente.
               </p>
 
               {/* Email con Copiado en 1 Clic */}
@@ -57,7 +57,7 @@ export default function Footer() {
                     ) : (
                       <>
                         <Copy className="w-3.5 h-3.5" />
-                        <span>Copiar</span>
+                        <span>Copiar correo</span>
                       </>
                     )}
                   </span>
@@ -76,7 +76,7 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Sello Circular Giratorio (Como en el video dataconale.com) */}
+            {/* Sello Circular Giratorio */}
             <div className="lg:col-span-4 flex justify-start lg:justify-end items-center">
               <div className="relative w-40 h-40 flex items-center justify-center">
                 {/* SVG de Texto Circular Girando */}
@@ -131,7 +131,7 @@ export default function Footer() {
 
           <div className="flex items-center gap-4">
             <span className="text-neutral-400">
-              © {new Date().getFullYear()} Angelo Apolo · Built with Next.js & Tailwind CSS
+              © {new Date().getFullYear()} Ing. Angelo Apolo · Desarrollado con Next.js y Tailwind CSS
             </span>
             <button
               onClick={scrollToTop}

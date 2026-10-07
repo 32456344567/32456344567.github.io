@@ -4,7 +4,7 @@ import { ArrowUpRight, CheckCircle2, ShieldCheck, Factory, Cpu, Flame } from "lu
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-24 border-b border-neutral-200 bg-white">
+    <section id="sobre-mi" className="py-24 border-b border-neutral-200 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -13,7 +13,7 @@ export default function AboutSection() {
           <div className="lg:col-span-7 space-y-6">
             <div className="space-y-2">
               <span className="text-xs font-mono font-semibold tracking-wider text-neutral-400 uppercase">
-                01 — PROFESSIONAL PROFILE
+                01 — PERFIL PROFESIONAL
               </span>
               <h2 className="text-4xl sm:text-5xl font-serif font-bold text-neutral-900 tracking-tight">
                 Hola, soy Angelo.
@@ -21,12 +21,12 @@ export default function AboutSection() {
             </div>
 
             <p className="text-base sm:text-lg text-neutral-700 leading-relaxed font-normal">
-              Ingeniero Químico con formación analítica y experiencia directa en turnos continuos de planta industrial. 
-              Mi enfoque une el <strong className="font-semibold text-neutral-900">rigor técnico de los balances de materia y la química industrial</strong> con herramientas modernas de datos, Lean Six Sigma y automatización.
+              Ingeniero Químico con sólida formación analítica y experiencia directa en turnos continuos de planta industrial. 
+              Mi enfoque une el <strong className="font-semibold text-neutral-900">rigor técnico de los balances de materia y la química industrial</strong> con herramientas modernas de analítica de datos, Lean Six Sigma y automatización digital.
             </p>
 
             <p className="text-sm sm:text-base text-neutral-600 leading-relaxed">
-              Actualmente como <strong className="font-medium text-neutral-900">Técnico de PTAR en Incarpalm</strong>, aseguro el 100% de cumplimiento normativo ambiental TULSMA, optimizo la dosificación en sistemas DAF y coordino la confiabilidad de bombas y sopladores mediante SAP PM. Previamente en <strong className="font-medium text-neutral-900">Symrise AG</strong> y <strong className="font-medium text-neutral-900">Agua Azul Ec.</strong>, lideré diagnósticos de Machine Security (25+ máquinas), protocolos LOTO y aseguramiento de calidad NTE INEN.
+              Actualmente como <strong className="font-medium text-neutral-900">Técnico de PTAR en Incarpalm</strong>, aseguro el 100% de cumplimiento normativo ambiental TULSMA, optimizo la dosificación en sistemas DAF y coordino la confiabilidad mecánica de bombas y sopladores mediante SAP PM. En mis pasantías y cargos previos en <strong className="font-medium text-neutral-900">Symrise AG</strong>, <strong className="font-medium text-neutral-900">Agua Azul Ec.</strong>, <strong className="font-medium text-neutral-900">MAATE</strong> y <strong className="font-medium text-neutral-900">Camaronera Montealto</strong>, lideré diagnósticos de resguardos de maquinaria (Machine Security en 25+ equipos), protocolos LOTO, fiscalizaciones ambientales y control de calidad bajo normas NTE INEN.
             </p>
 
             {/* Enlaces de Perfil */}
@@ -37,7 +37,7 @@ export default function AboutSection() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2.5 bg-neutral-900 text-white rounded-xl text-xs font-mono font-medium hover:bg-neutral-800 transition-all shadow-sm"
               >
-                <span>Descargar CV Completo</span>
+                <span>Descargar CV Oficial</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </a>
 
@@ -47,7 +47,7 @@ export default function AboutSection() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2.5 bg-neutral-100 text-neutral-700 rounded-xl text-xs font-mono font-medium hover:bg-neutral-200 transition-all border border-neutral-200"
               >
-                <span>LinkedIn Oficial</span>
+                <span>Perfil de LinkedIn</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </a>
             </div>
@@ -64,7 +64,7 @@ export default function AboutSection() {
                 Operaciones Continuas
               </h3>
               <p className="text-xs text-neutral-600 leading-relaxed">
-                Supervisión de turnos rotativos 24/7, reactores biológicos, sistema DAF y coordinación SAP PM.
+                Supervisión en turnos rotativos 24/7, reactores biológicos, clarificación DAF y gestión en SAP PM.
               </p>
             </div>
 
@@ -76,7 +76,7 @@ export default function AboutSection() {
                 Datos & Gemelos Digitales
               </h3>
               <p className="text-xs text-neutral-600 leading-relaxed">
-                Modelado en Python, tableros en Power BI y macros VBA para erradicar retrasos de información.
+                Modelado en Python, tableros en Power BI y macros VBA para eliminar tiempos muertos de reportabilidad.
               </p>
             </div>
 
@@ -85,10 +85,10 @@ export default function AboutSection() {
                 <ShieldCheck className="w-5 h-5" />
               </div>
               <h3 className="font-bold text-sm text-neutral-900">
-                HSE & Machine Security
+                Seguridad Industrial & HSE
               </h3>
               <p className="text-xs text-neutral-600 leading-relaxed">
-                Bloqueo LOTO, resguardos en 25+ equipos, matrices IPER y cero accidentes laborales.
+                Bloqueo LOTO, resguardos en 25+ máquinas, matrices IPER y cero accidentes laborales.
               </p>
             </div>
 
@@ -97,10 +97,10 @@ export default function AboutSection() {
                 <Flame className="w-5 h-5" />
               </div>
               <h3 className="font-bold text-sm text-neutral-900">
-                Lean Six Sigma
+                Lean Six Sigma & Calidad
               </h3>
               <p className="text-xs text-neutral-600 leading-relaxed">
-                Green Belt certificado, estandarización BPMN 2.0, análisis de causa raíz y reducción de COPQ.
+                Green Belt certificado, estandarización BPMN 2.0, análisis de causa raíz y reducción de scrap.
               </p>
             </div>
 
