@@ -27,7 +27,7 @@ export default function Footer() {
             {/* Titular Editorial Gigante en Español */}
             <div className="lg:col-span-8 space-y-6">
               <span className="text-xs font-mono font-semibold tracking-wider text-neutral-400 uppercase">
-                06 — CONTACTO Y COLABORACIÓN
+                07 — CONTACTO Y COLABORACIÓN
               </span>
               <h2 className="text-5xl sm:text-6xl md:text-7xl font-serif font-bold text-neutral-900 tracking-tight leading-[0.95]">
                 Construyamos <br />

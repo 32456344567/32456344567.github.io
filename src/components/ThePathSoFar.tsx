@@ -15,20 +15,6 @@ interface TimelineItem {
 
 const timeline: TimelineItem[] = [
   {
-    period: "Oct. 2026 — En Cursado",
-    role: "Máster Universitario en Organización y Dirección de Proyectos",
-    company: "Universidad Europea",
-    location: "Madrid, España (Online)",
-    type: "Posgrado Oficial",
-    description:
-      "Especialización en dirección de operaciones industriales, ingeniería de la organización, optimización de cadenas de suministro y metodologías ágiles de proyectos.",
-    achievements: [
-      "Dirección estratégica de proyectos bajo estándares PMI y marcos Agile Scrum.",
-      "Optimización de modelos productivos, gestión del cambio (MOC) y Lean Operations.",
-    ],
-    skills: ["Gestión de Proyectos", "Cadena de Suministro", "Lean Manufacturing", "Scrum"],
-  },
-  {
     period: "Dic. 2024 — Presente",
     role: "Técnico de PTAR",
     company: "Incarpalm",
@@ -119,19 +105,6 @@ const timeline: TimelineItem[] = [
     ],
     skills: ["Calidad de Agua", "Oxígeno Disuelto", "Control de Biomasa", "Bitácoras de Campo"],
   },
-  {
-    period: "2018 — 2024",
-    role: "Grado en Ingeniería Química",
-    company: "Universidad Técnica de Machala (UTMACH)",
-    location: "Machala, Ecuador",
-    type: "Grado Universitario Oficial",
-    description:
-      "Formación integral de 5 años en balances de materia y energía, cinética química, termodinámica, diseño de reactores, operaciones unitarias y tratamiento de efluentes.",
-    achievements: [
-      "Tesis y proyectos enfocados en simulación de procesos industriales y tratamiento biológico y fisicoquímico de aguas.",
-    ],
-    skills: ["Ingeniería Química", "Balances de Materia", "Termodinámica", "Diseño de Reactores", "Aspen HYSYS"],
-  },
 ];
 
 export default function ThePathSoFar() {
@@ -142,14 +115,13 @@ export default function ThePathSoFar() {
         {/* Encabezado Editorial en Español - Jerarquía Nivel 1, 2, 3 */}
         <div className="space-y-3 mb-16">
           <span className="text-xs font-mono font-semibold tracking-wider text-neutral-400 uppercase block">
-            04 — TRAYECTORIA & EXPERIENCIA PROFESIONAL
+            04 — EXPERIENCIA PROFESIONAL EN PLANTA
           </span>
           <h2 className="text-4xl sm:text-5xl font-serif font-bold text-neutral-900 tracking-tight">
             Mi trayectoria profesional.
           </h2>
           <p className="text-neutral-600 text-sm sm:text-base max-w-2xl font-normal leading-relaxed">
-            Historial oficial en planta industrial, pasantías y formación técnica. 
-            Experiencia comprobada en turnos rotativos, fiscalización ambiental y laboratorios de calidad.
+            Historial oficial de cargos técnicos y pasantías industriales en planta continua, tratamiento de efluentes, seguridad industrial HSE y laboratorios de calidad.
           </p>
         </div>
 

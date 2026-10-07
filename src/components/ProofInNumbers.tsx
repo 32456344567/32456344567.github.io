@@ -61,7 +61,7 @@ export default function ProofInNumbers() {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
           <div className="space-y-3">
             <span className="text-xs font-mono font-semibold tracking-wider text-neutral-400 uppercase block">
-              05 — IMPACTO CUANTIFICABLE
+              06 — IMPACTO CUANTIFICABLE
             </span>
             <h2 className="text-4xl sm:text-5xl font-serif font-bold text-neutral-900 tracking-tight">
               Resultados en cifras reales.

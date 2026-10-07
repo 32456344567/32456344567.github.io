@@ -4,6 +4,7 @@ import AboutSection from "@/components/AboutSection";
 import PeriodicTable from "@/components/PeriodicTable";
 import ThingsIveBuilt from "@/components/ThingsIveBuilt";
 import ThePathSoFar from "@/components/ThePathSoFar";
+import EducationSection from "@/components/EducationSection";
 import ProofInNumbers from "@/components/ProofInNumbers";
 import Footer from "@/components/Footer";
 
@@ -16,6 +17,7 @@ export default function Home() {
       <PeriodicTable />
       <ThingsIveBuilt />
       <ThePathSoFar />
+      <EducationSection />
       <ProofInNumbers />
       <Footer />
     </main>

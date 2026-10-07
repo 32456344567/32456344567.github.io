@@ -44,6 +44,9 @@ export default function Navbar() {
             <a href="#experiencia" className="hover:text-neutral-950 transition-colors">
               Experiencia
             </a>
+            <a href="#educacion" className="hover:text-neutral-950 transition-colors">
+              Educación
+            </a>
             <a href="#metricas" className="hover:text-neutral-950 transition-colors">
               Resultados
             </a>
@@ -96,6 +99,7 @@ export default function Navbar() {
             </a>
             <a href="#proyectos" onClick={() => setIsOpen(false)} className="py-1">Proyectos</a>
             <a href="#experiencia" onClick={() => setIsOpen(false)} className="py-1">Experiencia</a>
+            <a href="#educacion" onClick={() => setIsOpen(false)} className="py-1">Educación</a>
             <a href="#metricas" onClick={() => setIsOpen(false)} className="py-1">Resultados</a>
             <a href="#contacto" onClick={() => setIsOpen(false)} className="py-1">Contacto</a>
           </nav>
