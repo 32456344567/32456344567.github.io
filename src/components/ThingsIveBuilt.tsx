@@ -212,15 +212,15 @@ export default function ThingsIveBuilt() {
     <section id="proyectos" className="py-24 border-b border-neutral-200 bg-[#F9F9F8]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Encabezado Editorial en Español */}
+        {/* Encabezado Editorial en Español - Jerarquía Nivel 1, 2, 3 */}
         <div className="space-y-3 mb-14">
-          <span className="text-xs font-mono font-semibold tracking-wider text-neutral-400 uppercase">
+          <span className="text-xs font-mono font-semibold tracking-wider text-neutral-400 uppercase block">
             03 — PROYECTOS INDUSTRIALES REALES
           </span>
           <h2 className="text-4xl sm:text-5xl font-serif font-bold text-neutral-900 tracking-tight">
             Proyectos que he construido.
           </h2>
-          <p className="text-neutral-600 text-sm sm:text-base max-w-2xl font-normal">
+          <p className="text-neutral-600 text-sm sm:text-base max-w-2xl font-normal leading-relaxed">
             Ingeniería química aplicada a planta continua: simulación de procesos, gemelos digitales, 
             control estadístico de calidad y maximización de rendimiento operativo. Cada proyecto cuenta con aplicación en vivo y código abierto.
           </p>
@@ -252,7 +252,7 @@ export default function ThingsIveBuilt() {
                     {proj.number}
                   </span>
                   <div>
-                    <span className="text-[10px] font-mono uppercase tracking-wider text-neutral-400 block mb-0.5">
+                    <span className="text-xs font-mono font-semibold uppercase tracking-wider text-neutral-400 block mb-1">
                       {proj.category.split("·")[0]}
                     </span>
                     <h3
@@ -276,7 +276,7 @@ export default function ThingsIveBuilt() {
               <div className="lg:col-span-7 space-y-6">
                 <div>
                   <div className="flex items-center gap-2 mb-2">
-                    <span className="text-xs font-mono font-bold text-neutral-400">
+                    <span className="text-xs font-mono font-semibold text-neutral-400 uppercase tracking-wider">
                       CASO DE ESTUDIO #{activeProject.number}
                     </span>
                     <span className="text-neutral-300">/</span>
@@ -284,7 +284,7 @@ export default function ThingsIveBuilt() {
                       En Producción
                     </span>
                   </div>
-                  <h3 className="text-2xl sm:text-3xl font-serif font-bold text-neutral-900">
+                  <h3 className="text-2xl sm:text-3xl font-serif font-bold text-neutral-900 leading-tight">
                     {activeProject.title}
                   </h3>
                   <p className="text-sm font-mono text-neutral-500 mt-1">
@@ -292,58 +292,81 @@ export default function ThingsIveBuilt() {
                   </p>
                 </div>
 
-                {/* El Pitch de Negocio (Problema vs Solución) */}
-                <div className="p-4 bg-neutral-50 rounded-xl border border-neutral-200/80 space-y-2 text-xs sm:text-sm">
-                  <p className="text-neutral-700 leading-relaxed">
-                    <strong className="text-neutral-900 font-semibold">El Desafío: </strong>
-                    {activeProject.problem}
-                  </p>
-                  <p className="text-emerald-900 font-medium leading-relaxed pt-1 border-t border-neutral-200/60">
-                    <strong className="text-emerald-950 font-semibold">El Retorno de Inversión: </strong>
-                    {activeProject.businessImpact}
-                  </p>
+                {/* Subtema Estandarizado: El Pitch de Negocio (Problema vs Solución) */}
+                <div className="p-4 bg-neutral-50 rounded-xl border border-neutral-200/80 space-y-3">
+                  <div>
+                    <h4 className="text-xs font-mono font-semibold uppercase tracking-wider text-neutral-500 mb-1">
+                      Desafío Operacional
+                    </h4>
+                    <p className="text-sm text-neutral-700 leading-relaxed font-normal">
+                      {activeProject.problem}
+                    </p>
+                  </div>
+                  <div className="pt-2 border-t border-neutral-200/60">
+                    <h4 className="text-xs font-mono font-semibold uppercase tracking-wider text-emerald-700 mb-1">
+                      Retorno de Inversión (ROI)
+                    </h4>
+                    <p className="text-sm text-neutral-900 font-medium leading-relaxed">
+                      {activeProject.businessImpact}
+                    </p>
+                  </div>
                 </div>
 
-                {/* Métricas de Alto Impacto */}
-                <div className="grid grid-cols-3 gap-3 py-1">
-                  {activeProject.metrics.map((m, idx) => (
-                    <div
-                      key={idx}
-                      className="p-3.5 bg-neutral-50 rounded-xl border border-neutral-100"
-                    >
-                      <span className="block text-2xl sm:text-3xl font-mono font-bold text-neutral-900 tracking-tight">
-                        {m.value}
-                      </span>
-                      <span className="block text-[11px] font-mono text-neutral-800 font-medium uppercase mt-0.5">
-                        {m.label}
-                      </span>
-                      <span className="block text-[10px] text-neutral-500 mt-0.5">
-                        {m.hint}
-                      </span>
-                    </div>
-                  ))}
+                {/* Subtema Estandarizado: Métricas de Alto Impacto */}
+                <div>
+                  <h4 className="text-xs font-mono font-semibold uppercase tracking-wider text-neutral-500 mb-2">
+                    Métricas Clave de Rendimiento
+                  </h4>
+                  <div className="grid grid-cols-3 gap-3">
+                    {activeProject.metrics.map((m, idx) => (
+                      <div
+                        key={idx}
+                        className="p-3.5 bg-neutral-50 rounded-xl border border-neutral-200/80"
+                      >
+                        <span className="block text-2xl sm:text-3xl font-mono font-bold text-neutral-900 tracking-tight">
+                          {m.value}
+                        </span>
+                        <span className="block text-xs font-mono text-neutral-800 font-semibold uppercase mt-1">
+                          {m.label}
+                        </span>
+                        <span className="block text-xs text-neutral-500 mt-0.5">
+                          {m.hint}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
 
-                {/* Viñetas Técnicas Clave */}
-                <div className="space-y-2">
-                  {activeProject.bullets.map((b, idx) => (
-                    <div key={idx} className="flex items-start gap-2.5 text-xs sm:text-sm text-neutral-700">
-                      <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                      <span>{b}</span>
-                    </div>
-                  ))}
+                {/* Subtema Estandarizado: Logros Técnicos & Metodología */}
+                <div>
+                  <h4 className="text-xs font-mono font-semibold uppercase tracking-wider text-neutral-500 mb-2">
+                    Logros Técnicos & Metodología
+                  </h4>
+                  <div className="space-y-2">
+                    {activeProject.bullets.map((b, idx) => (
+                      <div key={idx} className="flex items-start gap-2.5 text-sm text-neutral-700 leading-relaxed">
+                        <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+                        <span>{b}</span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
 
-                {/* Herramientas Empleadas */}
-                <div className="flex flex-wrap gap-1.5 pt-1">
-                  {activeProject.tags.map((t) => (
-                    <span
-                      key={t}
-                      className="px-2.5 py-1 bg-neutral-100 text-neutral-800 text-xs font-mono rounded-lg border border-neutral-200"
-                    >
-                      {t}
-                    </span>
-                  ))}
+                {/* Subtema Estandarizado: Herramientas Empleadas */}
+                <div>
+                  <h4 className="text-xs font-mono font-semibold uppercase tracking-wider text-neutral-500 mb-2">
+                    Herramientas Empleadas
+                  </h4>
+                  <div className="flex flex-wrap gap-1.5">
+                    {activeProject.tags.map((t) => (
+                      <span
+                        key={t}
+                        className="px-2.5 py-1 bg-neutral-100 text-neutral-800 text-xs font-mono rounded-lg border border-neutral-200"
+                      >
+                        {t}
+                      </span>
+                    ))}
+                  </div>
                 </div>
 
                 {/* BOTONES DE ACCIÓN: DEMO EN VIVO + DETALLES COMPLETOS + GITHUB */}
@@ -421,7 +444,7 @@ export default function ThingsIveBuilt() {
                   </a>
 
                   {/* Pie de la ilustración */}
-                  <div className="pt-3 flex items-center justify-between text-[11px] font-mono text-neutral-400">
+                  <div className="pt-3 flex items-center justify-between text-xs font-mono text-neutral-400">
                     <span>ESTADO: OPERACIONAL EN LA NUBE</span>
                     <span className="text-emerald-400 flex items-center gap-1">
                       <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
@@ -439,7 +462,7 @@ export default function ThingsIveBuilt() {
 
       </div>
 
-      {/* MODAL DETALLADO DE CASO DE ESTUDIO (Vender el proyecto con arquitectura completa) */}
+      {/* MODAL DETALLADO DE CASO DE ESTUDIO (Tipografía y jerarquía unificadas) */}
       {modalProject && (
         <div className="fixed inset-0 z-50 overflow-y-auto bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6 animate-fadeIn">
           <div className="bg-white w-full max-w-4xl rounded-2xl shadow-2xl border border-neutral-200 overflow-hidden my-8 max-h-[90vh] flex flex-col">
@@ -447,7 +470,7 @@ export default function ThingsIveBuilt() {
             {/* Cabecera del Modal */}
             <div className="p-6 border-b border-neutral-200 flex items-start justify-between bg-neutral-50/80 sticky top-0 z-10">
               <div>
-                <span className="text-xs font-mono font-bold text-neutral-400 uppercase block mb-1">
+                <span className="text-xs font-mono font-semibold text-neutral-500 uppercase tracking-wider block mb-1">
                   CASO DE ESTUDIO INDUSTRIAL // PROYECTO {modalProject.number}
                 </span>
                 <h3 className="text-xl sm:text-2xl font-serif font-bold text-neutral-900 leading-tight">
@@ -467,69 +490,88 @@ export default function ThingsIveBuilt() {
               </button>
             </div>
 
-            {/* Contenido Desplazable del Modal */}
+            {/* Contenido Desplazable del Modal con Subtemas Estandarizados */}
             <div className="p-6 sm:p-8 space-y-8 overflow-y-auto">
               
-              {/* Tarjeta de Resumen Ejecutivo (El Pitch de Venta) */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                
-                <div className="p-4 bg-red-50/60 rounded-xl border border-red-200/70 space-y-2">
-                  <div className="flex items-center gap-1.5 text-xs font-mono font-bold text-red-800 uppercase">
-                    <TrendingDown className="w-4 h-4 text-red-600" />
-                    <span>1. El Problema en Planta</span>
+              {/* Tarjeta de Resumen Ejecutivo: 3 Subtemas del Pitch */}
+              <div>
+                <h4 className="text-xs font-mono font-semibold uppercase tracking-wider text-neutral-500 mb-3">
+                  Diagnóstico, Solución & Retorno de Inversión
+                </h4>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  
+                  <div className="p-4 bg-red-50/60 rounded-xl border border-red-200/70 space-y-2">
+                    <h5 className="flex items-center gap-1.5 text-xs font-mono font-semibold text-red-800 uppercase tracking-wider">
+                      <TrendingDown className="w-4 h-4 text-red-600" />
+                      <span>1. El Problema en Planta</span>
+                    </h5>
+                    <p className="text-sm text-neutral-700 leading-relaxed font-normal">
+                      {modalProject.problem}
+                    </p>
                   </div>
-                  <p className="text-xs text-neutral-700 leading-relaxed font-normal">
-                    {modalProject.problem}
-                  </p>
-                </div>
 
-                <div className="p-4 bg-blue-50/60 rounded-xl border border-blue-200/70 space-y-2">
-                  <div className="flex items-center gap-1.5 text-xs font-mono font-bold text-blue-800 uppercase">
-                    <Zap className="w-4 h-4 text-blue-600" />
-                    <span>2. Solución de Ingeniería</span>
+                  <div className="p-4 bg-blue-50/60 rounded-xl border border-blue-200/70 space-y-2">
+                    <h5 className="flex items-center gap-1.5 text-xs font-mono font-semibold text-blue-800 uppercase tracking-wider">
+                      <Zap className="w-4 h-4 text-blue-600" />
+                      <span>2. Solución de Ingeniería</span>
+                    </h5>
+                    <p className="text-sm text-neutral-700 leading-relaxed font-normal">
+                      {modalProject.solution}
+                    </p>
                   </div>
-                  <p className="text-xs text-neutral-700 leading-relaxed font-normal">
-                    {modalProject.solution}
-                  </p>
-                </div>
 
-                <div className="p-4 bg-emerald-50/60 rounded-xl border border-emerald-200/70 space-y-2">
-                  <div className="flex items-center gap-1.5 text-xs font-mono font-bold text-emerald-800 uppercase">
-                    <TrendingUp className="w-4 h-4 text-emerald-600" />
-                    <span>3. Retorno de Inversión (ROI)</span>
+                  <div className="p-4 bg-emerald-50/60 rounded-xl border border-emerald-200/70 space-y-2">
+                    <h5 className="flex items-center gap-1.5 text-xs font-mono font-semibold text-emerald-800 uppercase tracking-wider">
+                      <TrendingUp className="w-4 h-4 text-emerald-600" />
+                      <span>3. Retorno de Inversión (ROI)</span>
+                    </h5>
+                    <p className="text-sm text-neutral-700 leading-relaxed font-normal">
+                      {modalProject.businessImpact}
+                    </p>
                   </div>
-                  <p className="text-xs text-neutral-700 leading-relaxed font-normal">
-                    {modalProject.businessImpact}
-                  </p>
-                </div>
 
+                </div>
               </div>
 
-              {/* Ficha Técnica del Proceso */}
-              <div className="p-4 bg-neutral-50 rounded-xl border border-neutral-200 space-y-2 text-xs font-mono">
-                <span className="font-bold text-neutral-900 uppercase block mb-1">
+              {/* Ficha Técnica del Proceso - Subtema Estandarizado */}
+              <div>
+                <h4 className="text-xs font-mono font-semibold text-neutral-500 uppercase tracking-wider mb-2">
                   Especificaciones Técnicas del Caso
-                </span>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-neutral-600">
-                  <div>
-                    <strong className="text-neutral-900 block">Tren Operativo:</strong>
-                    <span>{modalProject.technicalDetails.process}</span>
-                  </div>
-                  <div>
-                    <strong className="text-neutral-900 block">Base de Datos:</strong>
-                    <span>{modalProject.technicalDetails.dataset}</span>
-                  </div>
-                  <div>
-                    <strong className="text-neutral-900 block">Rigor de Ingeniería:</strong>
-                    <span>{modalProject.technicalDetails.engineeringFocus}</span>
+                </h4>
+                <div className="p-4 bg-neutral-50 rounded-xl border border-neutral-200 space-y-2">
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div>
+                      <span className="text-xs font-mono font-semibold text-neutral-500 uppercase block mb-1">
+                        Tren Operativo
+                      </span>
+                      <p className="text-sm text-neutral-800 leading-relaxed">
+                        {modalProject.technicalDetails.process}
+                      </p>
+                    </div>
+                    <div>
+                      <span className="text-xs font-mono font-semibold text-neutral-500 uppercase block mb-1">
+                        Base de Datos
+                      </span>
+                      <p className="text-sm text-neutral-800 leading-relaxed">
+                        {modalProject.technicalDetails.dataset}
+                      </p>
+                    </div>
+                    <div>
+                      <span className="text-xs font-mono font-semibold text-neutral-500 uppercase block mb-1">
+                        Rigor de Ingeniería
+                      </span>
+                      <p className="text-sm text-neutral-800 leading-relaxed">
+                        {modalProject.technicalDetails.engineeringFocus}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              {/* Galería de Vistas y Entregables de Planta */}
-              <div className="space-y-4">
-                <h4 className="text-sm font-mono font-bold text-neutral-900 uppercase tracking-wider flex items-center gap-2">
-                  <Layers className="w-4 h-4 text-neutral-600" />
+              {/* Galería de Vistas y Entregables de Planta - Subtema Estandarizado */}
+              <div>
+                <h4 className="text-xs font-mono font-semibold text-neutral-500 uppercase tracking-wider flex items-center gap-2 mb-3">
+                  <Layers className="w-4 h-4 text-neutral-500" />
                   <span>Vistas y Módulos de la Plataforma en Producción</span>
                 </h4>
 
@@ -548,10 +590,10 @@ export default function ThingsIveBuilt() {
                         />
                       </div>
                       <div>
-                        <h5 className="font-bold text-xs text-neutral-900">
+                        <h5 className="font-bold text-sm text-neutral-900">
                           {v.title}
                         </h5>
-                        <p className="text-[11px] text-neutral-600 leading-relaxed mt-0.5">
+                        <p className="text-sm text-neutral-600 leading-relaxed mt-1">
                           {v.desc}
                         </p>
                       </div>
@@ -567,7 +609,7 @@ export default function ThingsIveBuilt() {
                     <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
                     Servidor en la nube activo
                   </span>
-                  <h4 className="text-lg font-bold">
+                  <h4 className="text-base sm:text-lg font-bold">
                     ¿Quieres interactuar con los datos y setpoints en tiempo real?
                   </h4>
                   <p className="text-xs text-neutral-400">

@@ -11,8 +11,8 @@ export default function AboutSection() {
           
           {/* Columna Izquierda: Introducción */}
           <div className="lg:col-span-7 space-y-6">
-            <div className="space-y-2">
-              <span className="text-xs font-mono font-semibold tracking-wider text-neutral-400 uppercase">
+            <div className="space-y-3">
+              <span className="text-xs font-mono font-semibold tracking-wider text-neutral-400 uppercase block">
                 01 — PERFIL PROFESIONAL
               </span>
               <h2 className="text-4xl sm:text-5xl font-serif font-bold text-neutral-900 tracking-tight">
@@ -25,8 +25,8 @@ export default function AboutSection() {
               Mi enfoque une el <strong className="font-semibold text-neutral-900">rigor técnico de los balances de materia y la química industrial</strong> con herramientas modernas de analítica de datos, Lean Six Sigma y automatización digital.
             </p>
 
-            <p className="text-sm sm:text-base text-neutral-600 leading-relaxed">
-              Actualmente como <strong className="font-medium text-neutral-900">Técnico de PTAR en Incarpalm</strong>, aseguro el 100% de cumplimiento normativo ambiental TULSMA, optimizo la dosificación en sistemas DAF y coordino la confiabilidad mecánica de bombas y sopladores mediante SAP PM. En mis pasantías y cargos previos en <strong className="font-medium text-neutral-900">Symrise AG</strong>, <strong className="font-medium text-neutral-900">Agua Azul Ec.</strong>, <strong className="font-medium text-neutral-900">MAATE</strong> y <strong className="font-medium text-neutral-900">Camaronera Montealto</strong>, lideré diagnósticos de resguardos de maquinaria (Machine Security en 25+ equipos), protocolos LOTO, fiscalizaciones ambientales y control de calidad bajo normas NTE INEN.
+            <p className="text-sm sm:text-base text-neutral-600 leading-relaxed font-normal">
+              Actualmente como <strong className="font-semibold text-neutral-900">Técnico de PTAR en Incarpalm</strong>, aseguro el 100% de cumplimiento normativo ambiental TULSMA, optimizo la dosificación en sistemas DAF y coordino la confiabilidad mecánica de bombas y sopladores mediante SAP PM. En mis pasantías y cargos previos en <strong className="font-semibold text-neutral-900">Symrise AG</strong>, <strong className="font-semibold text-neutral-900">Agua Azul Ec.</strong>, <strong className="font-semibold text-neutral-900">MAATE</strong> y <strong className="font-semibold text-neutral-900">Camaronera Montealto</strong>, lideré diagnósticos de resguardos de maquinaria (Machine Security en 25+ equipos), protocolos LOTO, fiscalizaciones ambientales y control de calidad bajo normas NTE INEN.
             </p>
 
             {/* Enlaces de Perfil */}
@@ -53,17 +53,17 @@ export default function AboutSection() {
             </div>
           </div>
 
-          {/* Columna Derecha: 4 Pilares de Excelencia */}
+          {/* Columna Derecha: 4 Pilares de Excelencia - Subtemas con tipografía estandarizada */}
           <div className="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
             
             <div className="p-5 bg-neutral-50 rounded-2xl border border-neutral-200/80 space-y-2">
               <div className="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center">
                 <Factory className="w-5 h-5" />
               </div>
-              <h3 className="font-bold text-sm text-neutral-900">
+              <h3 className="font-bold text-base text-neutral-900">
                 Operaciones Continuas
               </h3>
-              <p className="text-xs text-neutral-600 leading-relaxed">
+              <p className="text-sm text-neutral-600 leading-relaxed font-normal">
                 Supervisión en turnos rotativos 24/7, reactores biológicos, clarificación DAF y gestión en SAP PM.
               </p>
             </div>
@@ -72,10 +72,10 @@ export default function AboutSection() {
               <div className="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center">
                 <Cpu className="w-5 h-5" />
               </div>
-              <h3 className="font-bold text-sm text-neutral-900">
+              <h3 className="font-bold text-base text-neutral-900">
                 Datos & Gemelos Digitales
               </h3>
-              <p className="text-xs text-neutral-600 leading-relaxed">
+              <p className="text-sm text-neutral-600 leading-relaxed font-normal">
                 Modelado en Python, tableros en Power BI y macros VBA para eliminar tiempos muertos de reportabilidad.
               </p>
             </div>
@@ -84,10 +84,10 @@ export default function AboutSection() {
               <div className="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center">
                 <ShieldCheck className="w-5 h-5" />
               </div>
-              <h3 className="font-bold text-sm text-neutral-900">
+              <h3 className="font-bold text-base text-neutral-900">
                 Seguridad Industrial & HSE
               </h3>
-              <p className="text-xs text-neutral-600 leading-relaxed">
+              <p className="text-sm text-neutral-600 leading-relaxed font-normal">
                 Bloqueo LOTO, resguardos en 25+ máquinas, matrices IPER y cero accidentes laborales.
               </p>
             </div>
@@ -96,10 +96,10 @@ export default function AboutSection() {
               <div className="w-10 h-10 rounded-xl bg-rose-100 text-rose-700 flex items-center justify-center">
                 <Flame className="w-5 h-5" />
               </div>
-              <h3 className="font-bold text-sm text-neutral-900">
+              <h3 className="font-bold text-base text-neutral-900">
                 Lean Six Sigma & Calidad
               </h3>
-              <p className="text-xs text-neutral-600 leading-relaxed">
+              <p className="text-sm text-neutral-600 leading-relaxed font-normal">
                 Green Belt certificado, estandarización BPMN 2.0, análisis de causa raíz y reducción de scrap.
               </p>
             </div>

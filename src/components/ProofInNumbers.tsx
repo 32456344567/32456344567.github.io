@@ -60,13 +60,13 @@ export default function ProofInNumbers() {
         {/* Encabezado Editorial en Español */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
           <div className="space-y-3">
-            <span className="text-xs font-mono font-semibold tracking-wider text-neutral-400 uppercase">
+            <span className="text-xs font-mono font-semibold tracking-wider text-neutral-400 uppercase block">
               05 — IMPACTO CUANTIFICABLE
             </span>
             <h2 className="text-4xl sm:text-5xl font-serif font-bold text-neutral-900 tracking-tight">
               Resultados en cifras reales.
             </h2>
-            <p className="text-neutral-600 text-sm sm:text-base max-w-xl font-normal">
+            <p className="text-neutral-600 text-sm sm:text-base max-w-xl font-normal leading-relaxed">
               Resultados concretos de rigor técnico, reducción de mermas y disciplina en planta. 
               Métricas auditadas que respaldan cada proyecto.
             </p>
@@ -106,9 +106,9 @@ export default function ProofInNumbers() {
                   </div>
                 </div>
 
-                {/* Explicación de Negocio */}
+                {/* Explicación de Negocio Estandarizada */}
                 <div className="pt-6 mt-6 border-t border-neutral-100">
-                  <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed font-normal">
+                  <p className="text-sm text-neutral-600 leading-relaxed font-normal">
                     {m.context}
                   </p>
                 </div>

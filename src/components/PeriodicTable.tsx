@@ -453,14 +453,14 @@ export default function PeriodicTable() {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div className="space-y-3">
             <div className="flex items-center gap-2">
-              <span className="text-xs font-mono font-semibold tracking-wider text-neutral-400 uppercase">
+              <span className="text-xs font-mono font-semibold tracking-wider text-neutral-400 uppercase block">
                 02 — ARQUITECTURA DE COMPETENCIAS
               </span>
             </div>
             <h2 className="text-4xl sm:text-5xl font-serif font-bold text-neutral-900 tracking-tight">
               La tabla periódica de mi stack técnico.
             </h2>
-            <p className="text-neutral-600 text-sm sm:text-base max-w-2xl font-normal">
+            <p className="text-neutral-600 text-sm sm:text-base max-w-2xl font-normal leading-relaxed">
               30 competencias técnicas de ingeniería química, planta industrial y analítica de datos agrupadas por familias químicas. 
               Haz clic en cualquier elemento para inspeccionar su aplicación real en planta.
             </p>
@@ -633,57 +633,60 @@ export default function PeriodicTable() {
                 </div>
               </div>
 
-              {/* Descripción de Aplicación en Planta */}
+              {/* Descripción de Aplicación en Planta - Subtemas Estandarizados */}
               <div className="py-5 space-y-4 text-sm">
+                
+                {/* Subtema 1: Definición Técnica */}
                 <div>
-                  <h4 className="text-xs font-mono font-medium text-neutral-400 uppercase tracking-wider mb-1.5">
+                  <h4 className="text-xs font-mono font-semibold text-neutral-500 uppercase tracking-wider mb-1.5">
                     Definición Técnica & Alcance
                   </h4>
-                  <p className="text-neutral-700 leading-relaxed font-normal">
+                  <p className="text-sm text-neutral-700 leading-relaxed font-normal">
                     {activeElement.description}
                   </p>
                 </div>
 
-                {/* Experiencia Real Asociada */}
-                <div className="p-3.5 bg-neutral-50 rounded-xl border border-neutral-100 space-y-1">
-                  <div className="flex items-center gap-1.5 text-xs font-mono font-semibold text-neutral-800">
-                    <Building2 className="w-3.5 h-3.5 text-neutral-600" />
+                {/* Subtema 2: Aplicación en Terreno */}
+                <div className="p-3.5 bg-neutral-50 rounded-xl border border-neutral-200/80 space-y-1.5">
+                  <h4 className="text-xs font-mono font-semibold text-neutral-600 uppercase tracking-wider flex items-center gap-1.5">
+                    <Building2 className="w-3.5 h-3.5 text-neutral-500" />
                     <span>Aplicación en Terreno</span>
-                  </div>
-                  <p className="text-xs text-neutral-600 leading-relaxed">
+                  </h4>
+                  <p className="text-sm text-neutral-700 leading-relaxed font-normal">
                     {activeElement.experience}
                   </p>
                 </div>
 
-                {/* Certificación Oficial si aplica */}
+                {/* Subtema 3: Certificación Verificada */}
                 {activeElement.certification && (
-                  <div className="p-3.5 bg-amber-50/70 rounded-xl border border-amber-200/80 space-y-1">
-                    <div className="flex items-center gap-1.5 text-xs font-mono font-semibold text-amber-900">
+                  <div className="p-3.5 bg-amber-50/70 rounded-xl border border-amber-200/80 space-y-1.5">
+                    <h4 className="text-xs font-mono font-semibold text-amber-900 uppercase tracking-wider flex items-center gap-1.5">
                       <Award className="w-3.5 h-3.5 text-amber-700" />
                       <span>Certificación Verificada</span>
-                    </div>
-                    <p className="text-xs text-amber-800 leading-relaxed font-medium">
+                    </h4>
+                    <p className="text-sm text-amber-900/90 leading-relaxed font-medium">
                       {activeElement.certification}
                     </p>
                   </div>
                 )}
 
-                {/* Etiquetas / Parámetros */}
+                {/* Subtema 4: Variables & Palabras Clave */}
                 <div>
-                  <h4 className="text-xs font-mono font-medium text-neutral-400 uppercase tracking-wider mb-2">
+                  <h4 className="text-xs font-mono font-semibold text-neutral-500 uppercase tracking-wider mb-2">
                     Variables & Palabras Clave
                   </h4>
                   <div className="flex flex-wrap gap-1.5">
                     {activeElement.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="px-2 py-0.5 bg-neutral-100 text-neutral-700 font-mono text-[11px] rounded-md border border-neutral-200/60"
+                        className="px-2.5 py-1 bg-neutral-100 text-neutral-700 font-mono text-xs rounded-md border border-neutral-200/60"
                       >
                         {tag}
                       </span>
                     ))}
                   </div>
                 </div>
+
               </div>
 
               {/* Pie de la tarjeta */}

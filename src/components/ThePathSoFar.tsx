@@ -139,15 +139,15 @@ export default function ThePathSoFar() {
     <section id="experiencia" className="py-24 border-b border-neutral-200 bg-white">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Encabezado Editorial en Español */}
+        {/* Encabezado Editorial en Español - Jerarquía Nivel 1, 2, 3 */}
         <div className="space-y-3 mb-16">
-          <span className="text-xs font-mono font-semibold tracking-wider text-neutral-400 uppercase">
+          <span className="text-xs font-mono font-semibold tracking-wider text-neutral-400 uppercase block">
             04 — TRAYECTORIA & EXPERIENCIA PROFESIONAL
           </span>
           <h2 className="text-4xl sm:text-5xl font-serif font-bold text-neutral-900 tracking-tight">
             Mi trayectoria profesional.
           </h2>
-          <p className="text-neutral-600 text-sm sm:text-base max-w-2xl font-normal">
+          <p className="text-neutral-600 text-sm sm:text-base max-w-2xl font-normal leading-relaxed">
             Historial oficial en planta industrial, pasantías y formación técnica. 
             Experiencia comprobada en turnos rotativos, fiscalización ambiental y laboratorios de calidad.
           </p>
@@ -165,60 +165,73 @@ export default function ThePathSoFar() {
                 <span className="text-base sm:text-lg font-mono font-bold text-neutral-900 block">
                   {item.period}
                 </span>
-                <span className="text-xs font-mono text-neutral-400 block mt-1">
+                <span className="text-xs font-mono font-semibold text-neutral-400 block mt-1">
                   {item.type}
                 </span>
               </div>
 
-              {/* Rol, Empresa y Logros */}
-              <div className="md:col-span-9 space-y-3">
-                <div className="flex flex-wrap items-baseline justify-between gap-2">
-                  <h3 className="text-xl sm:text-2xl font-bold text-neutral-900 group-hover:text-neutral-700 transition-colors">
-                    {item.role}
-                  </h3>
-                  <span className="text-xs sm:text-sm font-medium text-neutral-500 flex items-center gap-1">
-                    <MapPin className="w-3.5 h-3.5" />
-                    {item.location}
-                  </span>
+              {/* Rol, Empresa y Logros con Subtemas Estandarizados */}
+              <div className="md:col-span-9 space-y-4">
+                <div>
+                  <div className="flex flex-wrap items-baseline justify-between gap-2">
+                    <h3 className="text-xl sm:text-2xl font-bold text-neutral-900 group-hover:text-neutral-700 transition-colors">
+                      {item.role}
+                    </h3>
+                    <span className="text-xs sm:text-sm font-medium text-neutral-500 flex items-center gap-1">
+                      <MapPin className="w-3.5 h-3.5 text-neutral-400" />
+                      {item.location}
+                    </span>
+                  </div>
+
+                  <div className="flex items-center gap-2 text-sm font-semibold text-neutral-800 mt-1">
+                    <Briefcase className="w-4 h-4 text-neutral-500" />
+                    <span>{item.company}</span>
+                  </div>
                 </div>
 
-                <div className="flex items-center gap-2 text-sm font-semibold text-neutral-800">
-                  <Briefcase className="w-4 h-4 text-neutral-500" />
-                  <span>{item.company}</span>
-                </div>
-
-                <p className="text-neutral-600 text-sm leading-relaxed font-normal">
+                <p className="text-sm text-neutral-600 leading-relaxed font-normal">
                   {item.description}
                 </p>
 
-                {/* Viñetas de Logros */}
-                <ul className="space-y-1.5 pt-1">
-                  {item.achievements.map((ach, aIdx) => (
-                    <li
-                      key={aIdx}
-                      className="text-xs sm:text-sm text-neutral-700 flex items-start gap-2 before:content-['—'] before:text-neutral-400 before:font-bold"
-                    >
-                      <span>{ach}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                {/* Habilidades Técnicas Aplicadas */}
-                <div className="flex flex-wrap gap-1.5 pt-2">
-                  {item.skills.map((skill) => (
-                    <span
-                      key={skill}
-                      className="px-2 py-0.5 bg-neutral-100 text-neutral-600 text-[11px] font-mono rounded"
-                    >
-                      {skill}
-                    </span>
-                  ))}
+                {/* Subtema: Logros & Aportes Clave */}
+                <div>
+                  <h4 className="text-xs font-mono font-semibold text-neutral-500 uppercase tracking-wider mb-2">
+                    Logros & Aportes en Terreno
+                  </h4>
+                  <ul className="space-y-1.5">
+                    {item.achievements.map((ach, aIdx) => (
+                      <li
+                        key={aIdx}
+                        className="text-sm text-neutral-700 leading-relaxed flex items-start gap-2 before:content-['—'] before:text-neutral-400 before:font-bold"
+                      >
+                        <span>{ach}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
+
+                {/* Subtema: Competencias Aplicadas */}
+                <div>
+                  <h4 className="text-xs font-mono font-semibold text-neutral-500 uppercase tracking-wider mb-2">
+                    Competencias Técnicas Aplicadas
+                  </h4>
+                  <div className="flex flex-wrap gap-1.5">
+                    {item.skills.map((skill) => (
+                      <span
+                        key={skill}
+                        className="px-2.5 py-1 bg-neutral-100 text-neutral-700 text-xs font-mono rounded-md border border-neutral-200/60"
+                      >
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
               </div>
             </div>
           ))}
 
-          {/* Tarjeta Final: "Next Step" en Español */}
+          {/* Tarjeta Final: "Próximo Paso" */}
           <div className="pt-6">
             <div className="bg-neutral-50 border border-neutral-200 rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
               <div className="space-y-1 text-center sm:text-left">

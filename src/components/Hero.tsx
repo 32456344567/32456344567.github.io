@@ -141,7 +141,7 @@ export default function Hero() {
                     className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
                     priority
                   />
-                  <div className="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-black/75 backdrop-blur-sm text-[10px] font-mono text-white">
+                  <div className="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-black/75 backdrop-blur-sm text-xs font-mono text-white">
                     EN VIVO
                   </div>
                 </div>
@@ -157,7 +157,7 @@ export default function Hero() {
                     </p>
                   </div>
 
-                  <div className="p-3 bg-neutral-50 rounded-xl border border-neutral-100 space-y-1.5 text-[11px] font-mono">
+                  <div className="p-3.5 bg-neutral-50 rounded-xl border border-neutral-100 space-y-2 text-xs font-mono">
                     <div className="flex justify-between text-neutral-500">
                       <span>UBICACIÓN</span>
                       <strong className="text-neutral-800 font-medium">Guayaquil, Ecuador</strong>
@@ -173,12 +173,12 @@ export default function Hero() {
                   </div>
 
                   {/* Pie de la tarjeta con Código QR & Verificación */}
-                  <div className="pt-2 flex items-center justify-between border-t border-neutral-100 text-[11px] text-neutral-500">
+                  <div className="pt-2 flex items-center justify-between border-t border-neutral-100 text-xs text-neutral-500">
                     <div className="flex items-center gap-1.5">
                       <QrCode className="w-4 h-4 text-neutral-700" />
-                      <span className="font-mono text-[10px]">REGISTRO: IQ-2024-EC</span>
+                      <span className="font-mono text-xs">REGISTRO: IQ-2024-EC</span>
                     </div>
-                    <span className="text-[10px] font-mono text-neutral-400">Efecto 3D</span>
+                    <span className="text-xs font-mono text-neutral-400">Efecto 3D</span>
                   </div>
                 </div>
 
